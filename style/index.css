@@ -1,0 +1,134 @@
+#orderHead{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 50px;
+    background-color: #e3d6b4;
+}
+#orderHead>div:nth-child(2)>a>h4{
+    border: 0.4px solid black;
+    background-color: #e78471!important ;
+    color: white;
+    padding: 5px;
+}
+#orderHead>div:nth-child(2)>a{
+    text-decoration: none;
+}
+#nav{
+    width: 100%;
+    height: 52px;
+    background-color: #fff;
+    margin-top: 5px;
+}
+#nav>div{
+    width: 80%;
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+#nav>div>div:last-child{
+    width: 80%;
+    display: flex;
+    gap: 10px;
+    justify-content: right;
+    gap: 20px;
+    align-items: center;
+}
+#nav>div>div>div>a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+#nav>div>div:last-child>div{
+    /* height: 40px; */
+    padding: 11px;
+    border: 1px solid black;
+}
+#nav>div>div>div>a>img{
+   width: 18px;
+   height: 16.2px;
+   margin: auto;
+}
+.fa-angle-right{
+    color: black;
+    margin-left: 2px;
+    font-size: 13px;
+}
+#footer{
+    width: 100%;
+    background-color: #414042;
+    color: white;
+}
+#footer>div:first-child{
+display: grid;
+grid-template-columns: repeat(5,19%);
+justify-content: space-evenly;
+
+}
+#footer>div:first-child>div>a{
+    display: grid;
+    width: 100%;
+    height: 30px;
+    text-decoration: none;
+    color: white;
+}
+#footer>div:last-child{
+    text-align: center;
+    padding: 5px;
+}
+#container{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    align-items: center;
+    height: 65px;
+    width: 100%;
+    background-color: rgb(247, 247, 197);
+
+}
+#container>div:first-child{
+    margin-left: 20px;
+}
+#container>div:first-child>a{
+    padding: 10px;
+    text-decoration: none;
+    color: rgb(109, 107, 107);
+}
+#container>div:last-child{
+    margin-right: 20px;
+}
+#container>div:last-child>a{
+    padding: 10px;
+    border: 0.6px solid rgb(107, 104, 104);
+    text-decoration: none;
+    background-color: white;
+    margin-left: 10px;
+}
+#award_section>div{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    height: 578px;
+}
+#award_section{
+    width: 100%;
+    height: 600px;
+    background-color: #FFFBF0;
+}
+#award_section>h1{
+    width: 100%;
+    text-align: center;
+    padding-top: 30px;
+}
+#award_section>div>div>img{
+   width: 293px;
+   height: 396px;
+}
+body{
+    font-family: sans-serif;
+}
