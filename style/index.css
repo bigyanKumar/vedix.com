@@ -79,15 +79,18 @@ justify-content: space-evenly;
 #footer>div:last-child{
     text-align: center;
     padding: 5px;
+    height: 110px;
 }
 #container{
     display: flex;
     justify-content: space-between;
-    position: absolute;
+    position: fixed;
+    z-index: 999;
+    bottom: 0;
     align-items: center;
     height: 65px;
     width: 100%;
-    background-color: rgb(247, 247, 197);
+    background-color: #f2e9d1;
 
 }
 #container>div:first-child{
