@@ -67,7 +67,7 @@ const contain = ()=>{
     <a href="#">Home</a>
     <a href="./whyVedix/whyVedix.html">Why Vedix</a>
     <a href="#">Science</a>
-    <a href="#">Pricing</a>
+    <a href="./price/price.html">Pricing</a>
     <a href="#">Reviews</a>
     <a href="#">Blog</a>
     <a href="#">Faqs</a>
