@@ -65,7 +65,7 @@ const footer = ()=>{
 const contain = ()=>{
     return ` <div>
     <a href="#">Home</a>
-    <a href="#">Why Vedix</a>
+    <a href="./whyVedix/whyVedix.html">Why Vedix</a>
     <a href="#">Science</a>
     <a href="#">Pricing</a>
     <a href="#">Reviews</a>
