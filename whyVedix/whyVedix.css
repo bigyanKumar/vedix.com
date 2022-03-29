@@ -1,0 +1,155 @@
+body {
+    font-family: Source Sans Pro,sans-serif;
+    font-size: 16px;
+    color: #414042;
+    line-height: 1.5;
+    
+}
+#WhyVedix{
+    width: 100%;
+    margin: 0 auto;
+    height:auto;
+    /* border: 1px solid black; */
+    /* font-family: 'IBM Plex Sans Arabic', sans-serif; */
+}
+
+#sub-p-img{
+    display: flex;
+    width: 85%;
+    margin: auto;
+    height:40%;
+    /* border: 1px solid black; */
+    justify-content: space-around;
+    gap:30px;
+}
+h1{
+    
+    margin-left: 100px;
+    /* border: 1px solid black;  */
+}
+#sub-p-img>.ptag{
+    width:40%;
+    height:45%;    
+    /* border: 1px solid black; */
+    text-align: justify;
+    line-height: 1.5;
+    
+}
+#sub-p-img>.imgtag{
+    width:40%;
+    height:45%;
+    /* border: 1px solid black; */
+}
+.imgtag>img{
+    width:500px;
+    height:380px;
+    /* border: 1px solid black; */
+}
+p{
+    word-spacing: 4px;
+   
+}
+
+#second-info{
+    background-color:rgb(255,251,240);
+    display: flex;
+    width: 85%;
+    margin: auto;
+    height:40%;
+    justify-content: space-around;
+    gap:30px;
+    /* border: 1px solid blue; */
+}
+#pink{
+    width:100%;
+    padding-top:70px;
+    padding-bottom:70px;
+    background-color:rgb(255,251,240);
+    margin-top:50px;
+    /* border: 1px solid blue; */
+}
+
+.experts{
+    padding-top: 50px;
+      /* border: 1px solid blue; */
+      width: 85%;
+      height:auto;
+      margin: auto;
+      text-align: justify;
+}
+#two{
+    display: flex;
+    text-align:justify;
+    gap:50px;
+}
+.sub-h4{
+    text-align: center;
+}
+.sub-p{
+    background-color:rgb(250,250,250);
+    padding:9px;
+    border-radius:30px;
+}
+.sub-h4>img{
+    width:280px;
+    height:280px;
+    border-radius:30px;
+}
+#zeel{
+    border-top-left-radius:60px;
+    border-top-right-radius:60px;
+    padding-top:30px;
+}
+.awardsacco{
+    padding-top: 50px;
+    /* border:1px solid black; */
+    width:85%;
+    text-align:center;
+    margin: auto;
+}
+#awardlogo{
+    display:flex;
+    margin-left: 200px;
+}
+#awardlogo>img{
+    width:180px;
+    height:180px;
+}
+.safty{
+    width:85%;
+    /* border: 1px solid black  ; */
+    margin:auto;
+    text-align:center;
+    padding-top: 30px;
+}
+#saftylogo{
+    display:grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows:auto;
+    gap:30px;
+}
+#saftylogo>div>img{
+    width:100px;
+    height:100px;
+    margin-bottom: -20px;
+}
+.knowbtn{
+    
+    margin-left:40%;
+    display:flex;
+    gap:10px;
+    /* border-top: 1px solid blue; */
+}
+.knowbtn>div{
+   background-color:rgb(231,132,113);
+   padding:10px;
+   border: 1px solid rgb(24, 24, 26);
+   margin-top: 5px;
+   margin-bottom: 15px;
+   border-radius:5px;
+}
+.knowbtn>div>a{
+    text-decoration:none;
+    color: black;
+}
+
