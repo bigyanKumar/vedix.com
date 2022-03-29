@@ -165,6 +165,8 @@ x.innerHTML=contain();
 let y= document.getElementById("footer");
 y.innerHTML=footer();
 //  let headOrd = document.getElementById("orderHead")
+let z = document.getElementById("nav")
+z.innerHTML = navBar()
  
 //  headOrd.innerHTML = headOrder()
 //  let navbar = document.getElementById("nav")
