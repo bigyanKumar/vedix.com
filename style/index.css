@@ -26,6 +26,7 @@
     width: 80%;
     height: 80%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     margin: auto;
@@ -33,6 +34,7 @@
 #nav>div>div:last-child{
     width: 80%;
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
     justify-content: right;
     gap: 20px;
@@ -83,6 +85,7 @@ justify-content: space-evenly;
 }
 #container{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     position: fixed;
     z-index: 999;
@@ -168,7 +171,7 @@ body{
    text-decoration: none;
    color: white;
 }
-#home_acq>div>div:nth-child(3)>div{
+#home_acq>div>div:nth-child(3)>div,.btn{
     border: 1px solid black;
     width: 220px;
     height: 48px;
@@ -184,4 +187,152 @@ body{
      color: white;
      margin-left: 5px;
      font-size: 15px;
+ }
+ #freebie_offer{
+    position: relative;
+    max-width: 100%;
+    background: url(https://cdn.shopify.com/s/files/1/0037/7690/5283/files/vxoilbackfreebie.png?v=1632221135)no-repeat right bottom;
+    background-size: contain;
+    background-position: center center;
+    height: 465px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#freebie_offer>div:first-child>img{
+    width: 465px;
+    height: 465px;
+    padding-top: 30px;
+}
+#freebie_offer>div:last-child{
+    width: 465px;
+    height: 180px;
+    padding-top: 70px;
+    padding-left: 30px;
+}
+.btn{   
+    width: 220px;
+    height: 48px;
+    background-color: #e78471;
+    border: 1px solid black;
+}
+.btn>a{
+    text-decoration: none;
+    color: white;
+
+}
+.btn>a>h4{
+    margin-top: 14px;
+    font-size: 18px;
+}
+.btn>a>h4>i{
+    color: white;
+     margin-left: 5px;
+     font-size: 15px;
+}
+#Customised-hair-content{
+    width: 100%;
+}
+#Customised-hair-content>div{
+    width: 900px;
+    display: flex;
+    height: 370px;
+    align-items: center;
+    margin: auto;
+}
+#Customised-hair-content>div>div:last-child>img{
+    width: 430px;
+    height: 286px;
+}
+.color{
+    color: #414042;
+    font-size: 35px;
+    font-weight: lighter;
+}
+.font-size{
+    font-size: 16px;
+}
+
+#product-display{
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    color: #414042;
+    align-items: center;
+}
+.mbunderline::after{
+    margin-bottom: 3rem!important;
+    content: "";
+    display: block;
+    height: 4px;
+    width: 100%;
+    margin-top: 10px;
+    background: rgba(231,132,113,1);
+    max-width: 45px;
+    width: 100%;
+}
+#product-display>div:last-child>h2{
+    font-size: 35px;
+    width: 418px;
+}
+#product-display>div:last-child{
+    padding-left: 30px;
+}
+#product-display>div:last-child>p{
+    width: 418px;
+    font-size: 16px;
+}
+#vedix-step{
+    background-color: #FFFBF0;
+    width: 100%;
+}
+#vedix-step>div:first-child>h3{
+    font-size: 35px;
+    height: 130px;
+    padding-top: 40px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    
+}
+.vedix-box{
+    width: 600px;
+    display: flex;
+    color: #414042;
+}
+.vedix-font{
+    font-size: 100px;
+    border-right: 1px solid #E78471;
+    color: #E78471;
+    opacity: 0.3;
+}
+#append{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: #414042;
+}
+#append>div:first-child>img{
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    border: 15px solid #f2e9d1;
+}
+#append>div:first-child{
+   width: 30%;
+}
+#append>div:last-child{
+    width: 40%;
+    opacity: 0.9;
+ }
+ #move{
+     display: flex;
+     justify-content: right;
+     align-items: center;
+     gap: 10px;
+     padding-right: 30px;
+ }
+ .arr{
+     cursor: pointer;
  }
