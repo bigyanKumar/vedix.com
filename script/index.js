@@ -14,8 +14,17 @@ let imgage = JSON.parse(localStorage.getItem("images"))||[]
  console.log(imgage)
 let i=0;
 let app = document.getElementById("append")
-const slide=(i)=>{
+
 setInterval(()=>{
+   slide(i)
+    if(i===5){
+        i = 0
+        slide(i)
+    }
+    i++
+},4000)
+
+const slide = (i) => {
     app.innerHTML = ""
 let firstdiv = document.createElement("div")
 let seconddiv = document.createElement("div") 
@@ -48,19 +57,26 @@ let p3 = document.createElement("p")
 p3.innerText = imgage[i].post
 seconddiv.append(stardiv,h1,h2,p1,p2,p3)
 app.append(firstdiv,seconddiv)
-   // console.log(img[i])
-    if(i===5){
-        i = 0
+
+ }
+ document.querySelector("#back").addEventListener("click",()=>{
+     clearInterval()
+     let j =i
+     if(j==0){
+         j=5
+     }
+    j--
+    console.log(j)
+    slide(j)
+})
+document.querySelector("#forw").addEventListener("click",()=>{
+    clearInterval()
+    let j = i
+    if(j==5){
+        j=0
     }
-    i++
-},3000)
-}
-slide(i)
-// document.querySelector("#back").addEventListener("click",()=>{
-//     i--
-//     slide(i)
-// })
-// document.querySelector("#forw").addEventListener("click",()=>{
-//     i++
-//     slide(i)
-// })
+    j++
+
+    console.log(j)
+    slide(j)
+})
