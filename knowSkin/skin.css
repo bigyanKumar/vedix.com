@@ -1,0 +1,110 @@
+#vedix{
+    text-align: center;
+ }
+ #page{
+     width: 35%; 
+     /*border: 1px solid black; */
+     margin: auto;
+     padding-bottom:10px;
+ }
+
+ body {
+    font-family: Source Sans Pro,sans-serif;
+    font-size: 16px;
+    color: #414042;
+    line-height: 1.5;
+    
+}
+
+
+ #page>div:nth-child(1){
+     text-align: right;
+     font-size: 12px;
+ }
+
+ #first>div:nth-child(2)
+ {
+     display: flex;
+     gap:2px;
+     margin-top: -15px;
+ }
+ 
+ hr{
+     width:270px;
+     padding-left:4px;
+     border-radius:3px
+ }
+ hr#qo{
+    border: 3px solid green;
+    border-radius: 5px;
+    width:220px;
+ }
+ #qt{
+    width:215px;
+ }
+ #second{
+     margin: auto;
+     
+ }
+ #second>h4{
+    text-align:center;
+ }
+ #second>input{
+     width:95%;
+     height:35px;
+     font-size:20px;
+     margin-left:10px;
+     background-color:rgb(232,232,232);
+     border:none
+ }
+ hr{
+     width:95%;
+ }
+ h4{
+     text-align:center;
+ }
+ #third>div{
+     width: 60%;
+     display: grid;
+     grid-template-columns: repeat(3,1fr);
+     grid-gap:10px 10px;
+     margin:auto;
+     
+ }
+ button{
+     width:80px;
+     height:40px;
+     border-radius:5px;
+     border-width: medium;
+     border:1px solid grey;
+     background-color: white ;
+     
+ }
+ button:hover{
+     background-color:lightcoral;
+ }
+ #fourth>div{
+    width: 40%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap:10px 10px;
+    margin:auto;
+    
+}
+#fifth>div{
+    width: 40%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap:10px 10px;
+    margin:auto;
+    
+}
+#continue{
+    text-align: center;
+    width: 25%;
+    height:30px;
+    margin:auto;
+    background-color:rgb(231,132,113);
+    border-radius: 5px;
+}
+ 
