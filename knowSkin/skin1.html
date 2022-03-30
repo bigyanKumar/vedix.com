@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style/index.css">
+    <link rel="stylesheet" href="skin.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@200&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0a03bfd4cc.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <p id="vedix"><img  src="https://cdn.shopify.com/s/files/1/0037/7690/5283/files/logo.svg?v=1585630376"></p>
+    <div id="page">
+        <div id="first">
+            <div><p>SKIN QUIZ 1/2</p></div>
+           <div>
+              <div><hr id="qo"></div>
+              <div><hr id="qt"></div>
+           </div>
+        </div>
+        <div id="second">
+            <h4>Enter Your Name</h4>
+            <input type="text" id="name" placeholder="Your name">
+            <hr>
+        </div>
+        <div id="third">
+            <h4>Select Your Age</h4>
+            <div > 
+                <button class="mybtn" value="12-18" onclick="btnfunc(value)">12-18</button>
+                <button class="mybtn" value="18-25" onclick="btnfunc(value)">18-25</button>
+                <button class="mybtn" value="26-35" onclick="btnfunc(value)">26-35</button>
+                <button class="mybtn" value="36-45" onclick="btnfunc(value)">36-45</button>
+                <button class="mybtn" value="46-55" onclick="btnfunc(value)">46-55</button>
+                <button class="mybtn" value="55+" onclick="btnfunc(value)">55+</button>
+            </div>
+            <hr>
+        </div>
+        <div id="fourth">
+            <h4>Select Your Gender</h4>
+           <div>
+            <button class="mybtn1" value="male" onclick="btn1func(value)">Male</button>
+            <button class="mybtn1" value="female" onclick="btn1func(value)">Female</button >
+           </div>
+        </div>
+        <hr>
+   
+    <div id="fifth">
+        <h4>What Problem With Skin Concerns You Most</h4>
+        <div>
+            <button class="mybtn2" value="acne" onclick="btn2func(value)">Acne</button>
+            <button class="mybtn2" value="spots" onclick="btn2func(value)">Dark Spots</button>
+            <button class="mybtn2" value="tan" onclick="btn2func(value)">Tan</button>
+            <button class="mybtn2" value="againg" onclick="btn2func(value)">Aging</button>
+        </div>
+        <hr>
+    </div>
+    <div id="continue" onclick="main()">
+        <h3>CONTINUE</h3>
+    </div>
+</div> 
+</body>
+</html>
+<script src="skin.js"></script>
