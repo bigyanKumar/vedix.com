@@ -1,22 +1,4 @@
-/* #orderHead{
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    height: 50px;
-    background-color: #e3d6b4;
-    border:1px solid red;
-}
-#orderHead>div:nth-child(2)>a>h4{
-    border: 0.4px solid black;
-    background-color: #e78471!important ;
-    color: white;
-    padding: 5px;
-} */
-/* #orderHead>div:nth-child(2)>a{
-    text-decoration: none;
-} */
+
 p{
 color:lite black;
 }
@@ -232,27 +214,7 @@ justify-content: space-evenly;
     background-color: white;
     margin-left: 10px;
 }
-/* #award_section>div{
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    flex-wrap: wrap;
-    height: 578px;
-}
-#award_section{
-    width: 100%;
-    height: 600px;
-    background-color: #FFFBF0;
-}
-#award_section>h1{
-    width: 100%;
-    text-align: center;
-    padding-top: 30px;
-}
-#award_section>div>div>img{
-   width: 293px;
-   height: 396px;
-} */
+
 body{
     font-family: sans-serif;
 }

@@ -24,7 +24,7 @@ const footer = ()=>{
     return `<div>
     <div>
         <h3>Quick Links</h3>
-        <a href="blog.html">Blog</a>
+        <a href="#">Blog</a>
         <a href="#">Our Team</a>
         <a href="#">About Us</a>
         <a href="#">Contact Us</a>
@@ -64,13 +64,13 @@ const footer = ()=>{
 }
 const contain = ()=>{
     return ` <div>
-    <a href="#">Home</a>
-    <a href="./whyVedix/whyVedix.html">Why Vedix</a>
+    <a href="../index.html">Home</a>
+    <a href="./whyVedix.html">Why Vedix</a>
     <a href="#">Science</a>
-    <a href="./price/price.html">Pricing</a>
-    <a href="#">Reviews</a>
-    <a href="blog.html">Blog</a>
-    <a href="#">Faqs</a>
+    <a href="./price.html">Pricing</a>
+    <a href="./main.html">Reviews</a>
+    <a href="#">Blog</a>
+    <a href="./faqs.html">Faqs</a>
 </div>
 <div>
     <a href="#">Shop<i class="fa-solid fa-angle-right"></i></a>
