@@ -44,9 +44,9 @@ const footer = ()=>{
     <div>
         <h3>Follow Us</h3>
        <div style="display: flex; gap: 5px;">
-           <a href="#"><div><img src="https://cdn.shopify.com/s/files/1/0037/7690/5283/files/facebook.png?v=1589958280" alt="facebook"></div></a>
-           <a href="#"><div><img src="https://cdn.shopify.com/s/files/1/0037/7690/5283/files/instagram.png?v=1589958271" alt="Instagram"></div></a>
-          <a href="#"><div><img src="https://cdn.shopify.com/s/files/1/0037/7690/5283/files/Youtube-icon_62e7ba53-63d1-42c0-a538-f1497f11da75.png?v=1591359272" alt="Youtube"></div></a>
+           <a href="https://www.facebook.com/vedixofficial/" target="_blank"><div><img src="https://cdn.shopify.com/s/files/1/0037/7690/5283/files/facebook.png?v=1589958280" alt="facebook"></div></a>
+           <a href="https://www.instagram.com/vedixofficial/" target="_blank"><div><img src="https://cdn.shopify.com/s/files/1/0037/7690/5283/files/instagram.png?v=1589958271" alt="Instagram"></div></a>
+          <a href="https://www.youtube.com/c/VedixOfficial" target="_blank"><div><img src="https://cdn.shopify.com/s/files/1/0037/7690/5283/files/Youtube-icon_62e7ba53-63d1-42c0-a538-f1497f11da75.png?v=1591359272" alt="Youtube"></div></a>
        </div>
     </div>
     <div>
