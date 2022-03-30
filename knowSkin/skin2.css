@@ -1,0 +1,120 @@
+
+#vedix{
+    text-align: center;
+ }
+ #page{
+     width: 35%; 
+     /*border: 1px solid black; */
+     margin: auto;
+     padding-bottom:10px;
+ }
+
+ body {
+    font-family: Source Sans Pro,sans-serif;
+    font-size: 16px;
+    color: #414042;
+    line-height: 1.5;
+    
+}
+
+
+ #page>div:nth-child(1){
+     text-align: right;
+     font-size: 12px;
+ }
+
+ #first>div:nth-child(2)
+ {
+     display: flex;
+     gap:2px;
+     margin-top: -15px;
+ }
+ 
+ hr{
+     width:270px;
+     padding-left:4px;
+     border-radius:3px
+ }
+ hr#qo{
+    border: 3px solid green;
+    border-radius: 5px;
+    width:220px;
+ }
+ #qt{
+    width:215px;
+    border: 3px solid green;
+    border-radius: 5px;
+ }
+ #second{
+     margin: auto;
+     
+ }
+ #second>h4{
+    text-align:center;
+ }
+
+ hr{
+     width:95%;
+ }
+ h4{
+     text-align:center;
+ }
+ #third>div{
+     width: 80%;
+     margin:auto;
+     
+ }
+ button{
+     width:100%;
+     height:40px;
+     margin-top: 10px;
+     border-radius:5px;
+     border-width: medium;
+     border:1px solid grey;
+     background-color: white ;
+     
+ }
+ button:hover{
+     background-color:lightcoral;
+ }
+ #fourth>div{
+    width: 80%;    
+    margin:auto;
+    
+}
+#fifth>div{
+    width: 80%;
+    margin:auto;
+    
+}
+#sixth>div{
+    width: 80%;
+    margin:auto;
+    
+}
+#seventh>div{
+    width: 80%;
+    margin:auto;
+    
+}
+#eigth>div{
+    width: 80%;
+    margin:auto;
+    
+}
+#continue{
+   
+    width: 33%;
+    height:35px;
+    display: flex;
+    justify-content:space-around;
+    margin:auto;
+ }
+#continue>div{
+    background-color:rgb(231,132,113);
+    border-radius: 5px;
+}
+#continue>div>h3{
+    margin-top:2px;
+}
+ 
