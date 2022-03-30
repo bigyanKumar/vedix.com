@@ -204,3 +204,26 @@ h1{
     color:white;
     border-color: white;
 }
+#body2{
+    display: flex;
+    width: 50%;
+    margin:auto;
+}
+#body2>input{
+    width: 90%;
+    border-color: black;
+    background-color:white;
+    padding: 8px;
+}
+.fa-magnifying-glass{
+    width: 15px;
+    height: 13px;
+    color: black;
+    padding-top: 50%;
+    padding-left: 10%;
+}
+#body2>div{
+    width: 10%;
+    border: 1px solid black;
+    border-radius: 12px;
+ }
