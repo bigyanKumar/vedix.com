@@ -64,13 +64,13 @@ const footer = ()=>{
 }
 const contain = ()=>{
     return ` <div>
-    <a href="#">Home</a>
-    <a href="./whyVedix/whyVedix.html">Why Vedix</a>
+    <a href="../index.html">Home</a>
+    <a href="./whyVedix.html">Why Vedix</a>
     <a href="#">Science</a>
-    <a href="./price/price.html">Pricing</a>
-    <a href="#">Reviews</a>
+    <a href="./price.html">Pricing</a>
+    <a href="./main.html">Reviews</a>
     <a href="#">Blog</a>
-    <a href="#">Faqs</a>
+    <a href="./faqs.html">Faqs</a>
 </div>
 <div>
     <a href="#">Shop<i class="fa-solid fa-angle-right"></i></a>
