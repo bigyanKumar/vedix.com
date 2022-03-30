@@ -8,14 +8,16 @@ const navBar = ()=>{
     return `<div>
     <div>
         <div>
+        <a href="./index.html">
             <img src="https://cdn.shopify.com/s/files/1/0037/7690/5283/files/logo.svg?v=1585630376" alt="Vedix Logo">
+            </a>
         </div>
     </div>
     <div>
         <div><a href="">Know Your Skin<i class="fa-solid fa-angle-right"></i></a>
         </div>
         <div><a href="#">Know Your Hair<i class="fa-solid fa-angle-right"></i></a> </div>
-        <div><a href="#"><img src="https://cdn.shopify.com/s/files/1/0037/7690/5283/files/cart_icon_93f3b819-aa16-479e-b6ba-c5007e8520d2.png?v=1623129140" alt="cart_img"></a></div>
+        <div><a href="./cart.html"><img src="https://cdn.shopify.com/s/files/1/0037/7690/5283/files/cart_icon_93f3b819-aa16-479e-b6ba-c5007e8520d2.png?v=1623129140" alt="cart_img"></a></div>
         <div><a href="./account/accounts.html"><img src="https://cdn.shopify.com/s/files/1/0037/7690/5283/files/signin-lock.png?v=1623746079" alt="profile_img"></a></div>
     </div>
 </div>`
