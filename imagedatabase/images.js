@@ -420,13 +420,7 @@ let hair = [{
     rating:3.2,
     dis:12,
     cat:"ORAL-CARE-OILS",
-}
-];
-
-localStorage.setItem("hair-product",JSON.stringify(hair));
-
-
-let skin=[{
+},{
     src:"https://cdn.shopify.com/s/files/1/0037/7690/5283/products/Anuva-01_400x400.jpg?v=1641988328",
     name:"Anaha Deep Cleansing Face Wash For Women",
     price:499,
@@ -632,4 +626,10 @@ let skin=[{
 }
 ];
 
-localStorage.setItem("face-product",JSON.stringify(skin));
+localStorage.setItem("products",JSON.stringify(hair));
+
+
+// let skin=[
+// ];
+
+// localStorage.setItem("face-product",JSON.stringify(skin));
