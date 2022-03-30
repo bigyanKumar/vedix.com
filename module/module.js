@@ -24,7 +24,7 @@ const footer = ()=>{
     return `<div>
     <div>
         <h3>Quick Links</h3>
-        <a href="#">Blog</a>
+        <a href="blog.html">Blog</a>
         <a href="#">Our Team</a>
         <a href="#">About Us</a>
         <a href="#">Contact Us</a>
@@ -69,7 +69,7 @@ const contain = ()=>{
     <a href="#">Science</a>
     <a href="./price/price.html">Pricing</a>
     <a href="#">Reviews</a>
-    <a href="#">Blog</a>
+    <a href="blog.html">Blog</a>
     <a href="#">Faqs</a>
 </div>
 <div>
