@@ -1,3 +1,4 @@
  import { navBar } from "../module/module.js";
  let Nav = document.getElementById("nav")
- Nav.innerHTML = (navBar)
+ //console.log(navBar())
+ Nav.innerHTML = navBar()
