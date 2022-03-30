@@ -69,7 +69,7 @@ const contain = ()=>{
     <a href="#">Science</a>
     <a href="./price.html">Pricing</a>
     <a href="./main.html">Reviews</a>
-    <a href="#">Blog</a>
+    <a href="./blog.html">Blog</a>
     <a href="./faqs.html">Faqs</a>
 </div>
 <div>
