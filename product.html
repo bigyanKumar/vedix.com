@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <link rel="stylesheet" href="./style/index.css">
+    <link rel="stylesheet" href="./cart/product/product.css">
+    <script src="https://kit.fontawesome.com/0a03bfd4cc.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="filter">
+    <div><h3><i id="disp1" class="fa-solid fa-angle-left"></i>Filter</h3></div>
+    <div>
+        <h4>Gender</h4>
+        <div>
+            <div>
+                <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            </div>
+            <div>
+                <input type="radio" id="Female" name="gender" value="Female">
+            <label for="Female">Female</label>
+            </div>
+            <!-- <h4><i class="fa-solid fa-circle-dot"></i>Male</h4>
+            <h4><i class="fa-solid fa-circle-dot"></i>Female</h4> -->
+        </div>
+    </div>
+    <div>
+        <h4>Category</h4>
+        <div id="check-box">
+           <div> <input type="radio" id="Regimen" name="product_type" value="regimen">
+            <label for="regimen">Full Regimen</label></div>
+            <div>
+                <input type="radio" id="Active" name="product_type" value="active">
+            <label for="active">Active</label>
+            </div>
+            <div>
+                <input type="radio" id="anti-dendruff-serums" name="product_type" value="anti-dendruff-serums">
+            <label for="anti-dendruff-serums">Anti Dendruff Serums</label>
+            </div>
+            <div> <input type="radio" id="anti-dendruff-shampoo" name="product_type" value="anti-dendruff-shampoo">
+                <label for="anti-dendruff-shampoo">Anti Dendruff Shampoos</label></div>
+            <div>
+                <input type="radio" id="Anti-Hairfall-Serums" name="product_type" value="Anti-Hairfall-Serums">
+                <label for="Anti-Hairfall-Serums">Anti Hairfall Serums</label>
+            </div>
+            <div>
+                <input type="radio" id="Anti-Hairfall-Shampoo" name="product_type" value="Anti-Hairfall-Shampoo">
+                <label for="Anti-Hairfall-Shampoo">Anti Hairfall Shampoo</label>
+            </div>
+            <div>
+                <input type="radio" id="Anti-Hairfall-Shampoo" name="product_type" value="Anti-Hairfall-Shampoo">
+                <label for="Anti-Hairfall-Shampoo">Anti Hairfall Shampoo</label>
+            </div>
+            <div>
+                <input type="radio" id="Cleaners" name="product_type" value="Cleaners">
+                <label for="Cleaners">Cleaners</label>
+            </div>
+            <div>
+                <input type="radio" id="Face-Masks" name="product_type" value="Face-Masks">
+                <label for="Face-Masks">Face Masks</label>
+            </div>
+            <div>
+                <input type="radio" id="Face-Oils" name="product_type" value="Face-Oils">
+                <label for="Face-Oils">Face Oils</label>
+            </div>
+            <div>
+                <input type="radio" id="Face-Toners" name="product_type" value="Face-Toners">
+                <label for="Face-Toners">Face Toners</label>
+            </div>
+            <div>
+                <input type="radio" id="Gift-Boxes" name="product_type" value="Gift-Boxes">
+                <label for="Gift-Boxes">Gift Boxes</label>
+            </div>
+            <div>
+                <input type="radio" id="Hair-Base-Oils" name="product_type" value="Hair-Base-Oils">
+                <label for="Hair-Base-Oils">Hair Base Oils</label>
+            </div>
+            <div>
+                <input type="radio" id="Hair-Conditioners" name="product_type" value="Hair-Conditioners">
+                <label for="Hair-Conditioners">Hair Conditioners</label>
+            </div>
+            <div>
+                <input type="radio" id="Hair-Masks" name="product_type" value="Hair-Masks">
+                <label for="Hair-Masks">Hair Masks</label>
+            </div>
+            <div>
+                <input type="radio" id="Hair-Mists" name="product_type" value="Hair-Mists">
+                <label for="Hair-Mists">Hair Mists</label>
+            </div>
+            <div>
+                <input type="radio" id="Hair-Packs" name="product_type" value="Hair-Packs">
+                <label for="Hair-Packs">Hair Packs</label>
+            </div>
+            <div>
+                <input type="radio" id="Moisturisers" name="product_type" value="Moisturisers">
+                <label for="Moisturisers">Moisturisers</label>
+            </div>
+            <div>
+                <input type="radio" id="Oils" name="product_type" value="Oils">
+                <label for="Oils">Oils</label>
+            </div>
+            <div>
+                <input type="radio" id="Onion-Range-Hair-Masks" name="product_type" value="Onion-Range-Hair-Masks">
+                <label for="Onion-Range-Hair-Masks">Onion Range - Hair Masks</label>
+            </div>
+            <div>
+                <input type="radio" id="Onion-Range-Hair-Oils" name="product_type" value="Onion-Range-Hair-Oils">
+                <label for="Onion-Range-Hair-Oils">Onion Range - Hair Oils</label>
+            </div>
+            <div>
+                <input type="radio" id="Onion-Range-Hair-Shampoos" name="product_type" value="Onion-Range-Hair-Shampoos">
+                <label for="Onion-Range-Hair-Shampoos">Onion Range - Hair Shampoos</label>
+            </div>
+            <div>
+                <input type="radio" id="Oral-Care-Oils" name="product_type" value="Oral-Care-Oils">
+                <label for="Oral-Care-Oils">Oral Care Oils</label>
+            </div>
+            <div>
+                <input type="radio" id="Shower-Gels" name="product_type" value="Shower-Gels">
+                <label for="Shower-Gels">Shower Gels</label>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div><h3>Rest</h3></div>
+        <div><h3>Apply</h3></div>
+    </div>
+</div>
+    <div id="nav"></div>
+    <div id="seNav">
+        <div><h4>All Products</h4></div>
+        <div><h4>Super Saver Combo</h4></div>
+        <div><h4>Holi Care Essentials</h4></div>
+    </div>
+
+    <div id="work">
+        <div id="search">
+            <div>
+                <div>
+                    <h2>All Products</h2>
+                </div>
+                <div>
+                    <input type="text" placeholder="Search Products....">
+                    <div><i class="fa-solid fa-magnifying-glass"></i></div>
+                </div>
+            </div>
+            <div>
+                <div id="disp">Filter Products</div>
+            </div>
+        </div>
+        <div id="poster">
+            <div class="pos"><img src="https://cdn.shopify.com/s/files/1/0037/7690/5283/files/Holi_Banner.jpg?v=1646131283" alt=""></div>
+            <div class="pos"><img src="https://cdn.shopify.com/s/files/1/0037/7690/5283/files/CUSTOMISED-REGIMENS-for-men-_-women.jpg?v=1635417626" alt=""></div>
+            <div id="regimen"></div>
+            <div class="pos"><img src="//cdn.shopify.com/s/files/1/0037/7690/5283/collections/bestsellers_1200x.jpg?v=1640351105" alt=""></div>
+            <div id="best-seller"></div>
+            <div class="pos"><img src="//cdn.shopify.com/s/files/1/0037/7690/5283/collections/hair-oils-banner_1200x.jpg?v=1634802784" alt=""></div>
+            <div id="hair-oil"></div>
+            <div class="pos"><img src="//cdn.shopify.com/s/files/1/0037/7690/5283/collections/hair-shampoo_1200x.jpg?v=1634803030" alt=""></div>
+            <div id="shampoos"></div>
+            <div class="pos"><img src="//cdn.shopify.com/s/files/1/0037/7690/5283/collections/face-serums_1200x.jpg?v=1634881360" alt=""></div>
+            <div id="hair-serums"></div>
+            <div class="pos"><img src="//cdn.shopify.com/s/files/1/0037/7690/5283/collections/hair-conditioners_1200x.jpg?v=1634802949" alt=""></div>
+            <div id="hair-conditioners"></div>
+            <div class="pos"><img src="//cdn.shopify.com/s/files/1/0037/7690/5283/collections/face-cleansers_1200x.jpg?v=1634803185" alt=""></div>
+            <div id="face-cleaners"></div>
+            <div class="pos"><img src="//cdn.shopify.com/s/files/1/0037/7690/5283/collections/face-moisturizers_1200x.jpg?v=1634803157" alt=""></div>
+            <div id="face-moisturisers"></div>
+            <div class="pos"><img src="//cdn.shopify.com/s/files/1/0037/7690/5283/collections/face-serums_a2a9a21e-ca68-40b7-bb52-60c7c21b8668_1200x.jpg?v=1634803132" alt=""></div>
+            <div id="face-serums"></div>
+            <div class="pos"><img src="//cdn.shopify.com/s/files/1/0037/7690/5283/collections/face-oils_1200x.jpg?v=1634802864" alt=""></div>
+            <div id="face-oils"></div>
+            <div class="pos"><img src="//cdn.shopify.com/s/files/1/0037/7690/5283/collections/face-masks_1200x.jpg?v=1634802835" alt="">
+            </div>
+            <div id="face-masks"></div>
+            <div class="pos">
+                <img src="//cdn.shopify.com/s/files/1/0037/7690/5283/collections/Face-toners_1200x.jpg?v=1634802892" alt="">
+            </div>
+            <div id="face-toners"></div>
+            <div class="pos"><img src="//cdn.shopify.com/s/files/1/0037/7690/5283/collections/oil-pulling-oils_1200x.jpg?v=1634803100" alt=""></div>
+            <div id="oil-pulling-oil"></div>
+            <div class="pos"><img src="//cdn.shopify.com/s/files/1/0037/7690/5283/collections/OR-Shampoo_1200x.jpg?v=1640321343" alt=""></div>
+            <div id="onion-range-shompoos"></div>
+            <div class="pos"><img src="//cdn.shopify.com/s/files/1/0037/7690/5283/collections/OR-oils_1200x.jpg?v=1640321825" alt=""></div>
+            <div id="onion-range-oil"></div>
+            <div class="pos"><img src="//cdn.shopify.com/s/files/1/0037/7690/5283/collections/OR-mask_1200x.jpg?v=1640321990" alt=""></div>
+            <div id="onin-hair-mask"></div>
+            <div class="pos"><img src="//cdn.shopify.com/s/files/1/0037/7690/5283/collections/bodywash_1200x.jpg?v=1640321624" alt=""></div>
+            <div id="body-care"></div>
+            <div class="pos"><img src="//cdn.shopify.com/s/files/1/0037/7690/5283/collections/value-combos_1200x_badf481c-2ba1-43b9-ad23-9164a8bae1a8_1200x.png?v=1646113186" alt=""></div>
+            <div id="value-combo"></div>
+            <div class="pos"><img src="//cdn.shopify.com/s/files/1/0037/7690/5283/collections/holi_1200x.png?v=1646127239" alt=""></div>
+            <div id="holi-care"></div>
+        </div>
+    </div>
+</body>
+</html>
+<script type="module" src="./cart/product/product.js"></script>
