@@ -8,7 +8,9 @@ const navBar = ()=>{
     return `<div>
     <div>
         <div>
+        <a href="./index.html">
             <img src="https://cdn.shopify.com/s/files/1/0037/7690/5283/files/logo.svg?v=1585630376" alt="Vedix Logo">
+            </a>
         </div>
     </div>
     <div>
