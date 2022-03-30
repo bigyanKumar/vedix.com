@@ -53,3 +53,26 @@ let images = [{
 }]
 
 localStorage.setItem("images",JSON.stringify(images))
+
+let hair = [{
+    src:"https://cdn.shopify.com/s/files/1/0037/7690/5283/files/collections-full-regimen-hair.png?v=1616498725",
+    name:"",
+    price:"",
+    rating:"",
+    dis:"",
+    cat:"",
+},{
+    src:"",
+    name:"",
+    price:"",
+    rating:"",
+    dis:"",
+}]
+let skin=[{
+    src:"",
+    name:"",
+    price:"",
+    rating:"",
+    dis:"",
+    cat:"",
+}]
