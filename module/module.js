@@ -1,7 +1,7 @@
 const headOrder = ()=>{
     return `<div><h4>Order Now & Get Assured Dispatch In 24hrs</h4></div>
     <div>
-        <a href="#"><h4>Order Now</h4></a>
+        <a href="./product.html"><h4>Order Now</h4></a>
     </div>`
 }
 const navBar = ()=>{
