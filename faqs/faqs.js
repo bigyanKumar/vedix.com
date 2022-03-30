@@ -12,3 +12,10 @@ const showDetail= ()=>{
 
    // document.getElementById("toggleDiv").append(toggle)
 }
+
+import { contain,navBar} from "../module/module.js";
+
+let Con= document.getElementById("container");
+Con.innerHTML=contain();
+let Nav = document.getElementById("nav");
+Nav.innerHTML = navBar()

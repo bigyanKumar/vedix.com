@@ -17,7 +17,7 @@
     /* border:1px solid blue; */
     margin-top: 10px ;
 }
-#container{
+#contain{
     width:80%;
     height:85%;
     /* border:1px solid blue; */
@@ -25,7 +25,7 @@
     margin-top: 20px;
     display: flex;
 }
-#container>div{
+#contain>div{
     width:90%;
     height:94%;
     /* border:1px solid blue; */
