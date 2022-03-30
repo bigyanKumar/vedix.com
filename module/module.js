@@ -79,5 +79,10 @@ const contain = ()=>{
     <a href="#">Know Your Hair<i class="fa-solid fa-angle-right"></i></a>
 </div>`
 }
-
-export {headOrder,navBar,footer,contain}
+const Deta = (Products,search) => {
+    let Reg = Products.filter(function(ele){
+        return ele.cat.includes(search)
+    })
+    return Reg
+}
+export {headOrder,navBar,footer,contain,Deta}
