@@ -16,15 +16,19 @@ const box=()=>{
 
 //  })
 let Cart  = JSON.parse(localStorage.getItem("cart"))||[]
+let BuynowPage = JSON.parse(localStorage.getItem("BuynowPage"))||[]
 const app = (data,divA)=>{
     divA.innerHTML = ""
     data.map((ele)=>{
         //console.log(ele)
         let div = document.createElement("div")
         let img = document.createElement("img")
+        img.style.cursor = "Pointer"
         img.addEventListener("click",()=>{
             ele["qnt"] = 1
-            BuyNowPage(ele)
+            BuynowPage.splice(0,BuynowPage.length-1)
+            BuynowPage.push(ele)
+            localStorage.setItem("BuynowPage",JSON.stringify(BuynowPage))
         })
         img.src = ele.src
         let p1 = document.createElement("p")
@@ -220,9 +224,9 @@ const cartPop = ()=>{
     //     dis1.style.display = "none"
     // })
 }
-const BuyNowPage = (ele)=>{
-    console.log(ele)
-}
+// const BuyNowPage = (ele)=>{
+//     console.log(ele)
+// }
 const cartAppdend = (Deta,div)=>{
     let Total = 0
     div.innerHTML = ""
