@@ -2,8 +2,13 @@ console.log("hey");
 let obj = { 
     frame:null
     
-}
+};
 
-const fun1 = (v) => {
-  console.log(v);
+
+document.querySelector(".btn1").addEventListener("click",fun1(title));
+
+function fun1(t)
+{
+ 
+  console.log(t)
 }
