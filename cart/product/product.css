@@ -212,12 +212,36 @@
     color: white;
     padding: 15px 2px 15px 2px;
 }
-#cartPop>div:nth-child(4)>div{
+#cartPop>div:nth-child(4){
     height: 520px;
-    border: 1px solid black;
     overflow: scroll;
 }
 #cartPop>div:nth-child(5)>div{
     max-width: 95%;
     margin: auto;
+}
+.fa-minus,.fa-plus{
+    color: black;
+}
+#cartDiv{
+    max-width: 100%;
+}
+#cartDiv>div>img{
+    width: 80px;
+    height: 80px;
+    border: 0.3px solid black;
+    padding: 2px;
+}
+#cartDiv>div{
+    align-items: center;
+    padding: 5px;
+    border: 0.2px solid black;
+}
+#inc>h3:nth-child(1){
+    border: .8px solid black;
+    border-radius: 50%;
+}
+#inc>h3:nth-child(3){
+    border: .8px solid black;
+    border-radius: 50%;
 }
