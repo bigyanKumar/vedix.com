@@ -47,16 +47,11 @@ let h3 = document.createElement("h3");
 h3.innerHTML=`RS. ${data.price} <s>${data.priceS}</s>`
 prodinfo.append(h2,p,h3);
 
-
-
-
-
-
-
-
 if(data.category=='skin')
 {
-
+    let ul=document.createElement("ul");
+    let li=document.createElement("li");
+    li.innerText
 }
 
 
