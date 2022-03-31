@@ -1,0 +1,63 @@
+.frame>div>img{
+    background-color:lightgray;
+    height: 90px;
+    width: 90px;
+    border-radius:45px
+}
+
+.frame{
+    display:flex;
+    gap:80px;
+    text-align:center;
+    margin:auto;
+}
+#hair1{
+    width: 45%; 
+    /*border: 1px solid black; */
+    margin: auto;
+    padding-bottom:10px;
+}
+#vedix,#first,#second,#third,#fourth,#fifth,#sixth{
+    text-align:center;
+}
+#lines{
+    display:flex;
+    margin-top: -20px;
+}
+hr{
+    width:33%;
+    padding-left:4px;
+    border-radius:3px
+}
+hr#qo,#qt,#qth{
+    border: 3px solid green;
+    border-radius: 5px;
+    width:220px;
+ }
+ #vedix+p{
+     font-size: 12px;text-align:right
+ }
+ #second>hr,#third>hr,#fourth>hr,#fifth>hr,#sixth>hr{
+     width: 100%;
+ }
+ #sixth>.frame{
+   padding-left: 23%;
+   /* border:1px solid black; */
+   /* margin: 0 auto; */
+ }
+ .btn{
+     margin-left: 25%;
+     width:200px;
+     height:40px;
+     font-size: 25px;
+     background-color:lightcoral;
+     border:none;
+     border-radius:10px;
+     color:azure;
+     margin-top:20px
+ }
+ #btns{
+     display:flex;
+     justify-content:space-between;
+     margin-left: -150px;
+ }
