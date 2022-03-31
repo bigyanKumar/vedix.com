@@ -1,13 +1,7 @@
-.frame>div>img{
-    background-color:lightgray;
-    height: 90px;
-    width: 90px;
-    border-radius:45px
-}
 
 .frame{
     display:flex;
-    gap:80px;
+    gap:40px;
     text-align:center;
     margin:auto;
 }
@@ -17,15 +11,22 @@
     margin: auto;
     padding-bottom:10px;
 }
-#vedix,#first,#second,#third,#fourth,#fifth,#sixth{
+#vedix,#first,#second,#third,#fourth{
     text-align:center;
+    margin:auto;
+}
+#second>input{
+    background-color:lightgray;
+    width: 98%;
+    height:40px;
+    border:none;
 }
 #lines{
     display:flex;
     margin-top: -20px;
 }
 hr{
-    width:33%;
+    width:32%;
     padding-left:4px;
     border-radius:3px
 }
@@ -40,11 +41,26 @@ hr#qo,#qt,#qth{
  #second>hr,#third>hr,#fourth>hr,#fifth>hr,#sixth>hr{
      width: 100%;
  }
- #sixth>.frame{
-   padding-left: 23%;
-   /* border:1px solid black; */
-   /* margin: 0 auto; */
+ #third>.frame>button{
+     width:100px;
+     height:30px;
+     background-color:white;
+     border: none;
+     border:1px solid lightgray;
+    border-radius:3px;
  }
+ #fourth>.frame>button{
+    
+    height:30px;
+    background-color:white;
+    border: none;
+    border-width: thin;
+    border:1px solid lightgray;
+    border-radius:3px;
+}
+#fourth>.frame{
+    margin-left:38%;
+}
  .btn{
      margin-left: 25%;
      width:200px;
