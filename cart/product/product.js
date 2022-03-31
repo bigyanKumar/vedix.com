@@ -25,7 +25,7 @@ const app = (data,divA)=>{
         let img = document.createElement("img")
         img.style.cursor = "Pointer"
         img.addEventListener("click",()=>{
-            BuynowPage.splice(0,BuynowPage.length-1)
+            BuynowPage.splice(0,BuynowPage.length)
             ele["qnt"] = 1
             BuynowPage.push(ele)
             localStorage.setItem("BuynowPage",JSON.stringify(BuynowPage))
