@@ -10,6 +10,7 @@
     <script src="https://kit.fontawesome.com/0a03bfd4cc.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <div id="cartPop"></div>
     <div id="filter">
     <div><h3><i id="disp1" class="fa-solid fa-angle-left"></i>Filter</h3></div>
     <div>
@@ -23,110 +24,108 @@
                 <input type="radio" id="Female" name="gender" value="Female">
             <label for="Female">Female</label>
             </div>
-            <!-- <h4><i class="fa-solid fa-circle-dot"></i>Male</h4>
-            <h4><i class="fa-solid fa-circle-dot"></i>Female</h4> -->
         </div>
     </div>
     <div>
         <h4>Category</h4>
         <div id="check-box">
-           <div> <input type="radio" id="Regimen" name="product_type" value="regimen">
+           <div> <input type="radio" id="Regimen" name="product_type" value="Hair-CARE-REGIMEN">
             <label for="regimen">Full Regimen</label></div>
             <div>
-                <input type="radio" id="Active" name="product_type" value="active">
+                <input type="radio" id="Active" name="product_type" value="Hair-Oil">
             <label for="active">Active</label>
             </div>
             <div>
-                <input type="radio" id="anti-dendruff-serums" name="product_type" value="anti-dendruff-serums">
+                <input type="radio" id="anti-dendruff-serums" name="product_type" value="Shampoo">
             <label for="anti-dendruff-serums">Anti Dendruff Serums</label>
             </div>
-            <div> <input type="radio" id="anti-dendruff-shampoo" name="product_type" value="anti-dendruff-shampoo">
+            <div> <input type="radio" id="anti-dendruff-shampoo" name="product_type" value="Hair-Serum">
                 <label for="anti-dendruff-shampoo">Anti Dendruff Shampoos</label></div>
             <div>
-                <input type="radio" id="Anti-Hairfall-Serums" name="product_type" value="Anti-Hairfall-Serums">
+                <input type="radio" id="Anti-Hairfall-Serums" name="product_type" value="Conditioner">
                 <label for="Anti-Hairfall-Serums">Anti Hairfall Serums</label>
             </div>
             <div>
-                <input type="radio" id="Anti-Hairfall-Shampoo" name="product_type" value="Anti-Hairfall-Shampoo">
+                <input type="radio" id="Anti-Hairfall-Shampoo" name="product_type" value="Hair-Pack">
                 <label for="Anti-Hairfall-Shampoo">Anti Hairfall Shampoo</label>
             </div>
             <div>
-                <input type="radio" id="Anti-Hairfall-Shampoo" name="product_type" value="Anti-Hairfall-Shampoo">
+                <input type="radio" id="Anti-Hairfall-Shampoo" name="product_type" value="Hair-Pack-COMBO">
                 <label for="Anti-Hairfall-Shampoo">Anti Hairfall Shampoo</label>
             </div>
             <div>
-                <input type="radio" id="Cleaners" name="product_type" value="Cleaners">
+                <input type="radio" id="Cleaners" name="product_type" value="CLEANSERS">
                 <label for="Cleaners">Cleaners</label>
             </div>
             <div>
-                <input type="radio" id="Face-Masks" name="product_type" value="Face-Masks">
+                <input type="radio" id="Face-Masks" name="product_type" value="MOISTURISERS">
                 <label for="Face-Masks">Face Masks</label>
             </div>
             <div>
-                <input type="radio" id="Face-Oils" name="product_type" value="Face-Oils">
+                <input type="radio" id="Face-Oils" name="product_type" value="FACE-OILS">
                 <label for="Face-Oils">Face Oils</label>
             </div>
             <div>
-                <input type="radio" id="Face-Toners" name="product_type" value="Face-Toners">
+                <input type="radio" id="Face-Toners" name="product_type" value="FACE-TONER">
                 <label for="Face-Toners">Face Toners</label>
             </div>
             <div>
-                <input type="radio" id="Gift-Boxes" name="product_type" value="Gift-Boxes">
+                <input type="radio" id="Gift-Boxes" name="product_type" value="CLEANSERS">
                 <label for="Gift-Boxes">Gift Boxes</label>
             </div>
             <div>
-                <input type="radio" id="Hair-Base-Oils" name="product_type" value="Hair-Base-Oils">
+                <input type="radio" id="Hair-Base-Oils" name="product_type" value="Hair-Pack-OILS">
                 <label for="Hair-Base-Oils">Hair Base Oils</label>
             </div>
             <div>
-                <input type="radio" id="Hair-Conditioners" name="product_type" value="Hair-Conditioners">
+                <input type="radio" id="Hair-Conditioners" name="product_type" value="Conditioner">
                 <label for="Hair-Conditioners">Hair Conditioners</label>
             </div>
             <div>
-                <input type="radio" id="Hair-Masks" name="product_type" value="Hair-Masks">
+                <input type="radio" id="Hair-Masks" name="product_type" value="FACE-SERUMS">
                 <label for="Hair-Masks">Hair Masks</label>
             </div>
             <div>
-                <input type="radio" id="Hair-Mists" name="product_type" value="Hair-Mists">
+                <input type="radio" id="Hair-Mists" name="product_type" value="FACE-SERUMS">
                 <label for="Hair-Mists">Hair Mists</label>
             </div>
             <div>
-                <input type="radio" id="Hair-Packs" name="product_type" value="Hair-Packs">
+                <input type="radio" id="Hair-Packs" name="product_type" value="Conditioner">
                 <label for="Hair-Packs">Hair Packs</label>
             </div>
             <div>
-                <input type="radio" id="Moisturisers" name="product_type" value="Moisturisers">
+                <input type="radio" id="Moisturisers" name="product_type" value="MOISTURISERS">
                 <label for="Moisturisers">Moisturisers</label>
             </div>
             <div>
-                <input type="radio" id="Oils" name="product_type" value="Oils">
+                <input type="radio" id="Oils" name="product_type" value="ORAL-CARE-OILS">
                 <label for="Oils">Oils</label>
             </div>
             <div>
-                <input type="radio" id="Onion-Range-Hair-Masks" name="product_type" value="Onion-Range-Hair-Masks">
+                <input type="radio" id="Onion-Range-Hair-Masks" name="product_type" value="Hair-Pack-COMBO">
                 <label for="Onion-Range-Hair-Masks">Onion Range - Hair Masks</label>
             </div>
             <div>
-                <input type="radio" id="Onion-Range-Hair-Oils" name="product_type" value="Onion-Range-Hair-Oils">
+                <input type="radio" id="Onion-Range-Hair-Oils" name="product_type" value="ONION-Hair-MASK">
                 <label for="Onion-Range-Hair-Oils">Onion Range - Hair Oils</label>
             </div>
             <div>
-                <input type="radio" id="Onion-Range-Hair-Shampoos" name="product_type" value="Onion-Range-Hair-Shampoos">
+                <input type="radio" id="Onion-Range-Hair-Shampoos" name="product_type" value="Hair-Pack-COMBO">
                 <label for="Onion-Range-Hair-Shampoos">Onion Range - Hair Shampoos</label>
             </div>
             <div>
-                <input type="radio" id="Oral-Care-Oils" name="product_type" value="Oral-Care-Oils">
+                <input type="radio" id="Oral-Care-Oils" name="product_type" value="Hair-Pack-COMBO">
                 <label for="Oral-Care-Oils">Oral Care Oils</label>
             </div>
             <div>
-                <input type="radio" id="Shower-Gels" name="product_type" value="Shower-Gels">
+                <input type="radio" id="Shower-Gels" name="product_type" value="Conditioner">
                 <label for="Shower-Gels">Shower Gels</label>
             </div>
         </div>
     </div>
     <div>
-        <div><h3>Rest</h3></div>
-        <div><h3>Apply</h3></div>
+        <div id="rest"><h3>Rest</h3></div>
+        <div id="apply"><h3>Apply</h3></div>
     </div>
 </div>
     <div id="nav"></div>
@@ -151,6 +150,11 @@
                 <div id="disp">Filter Products</div>
             </div>
         </div>
+        <div id="FilterP">
+            <div class="pos"><img src="https://cdn.shopify.com/s/files/1/0037/7690/5283/files/Holi_Banner.jpg?v=1646131283" alt=""></div>
+            <div class="Product" id="filter_item"> </div> 
+        </div>
+
         <div id="poster">
             <div class="pos"><img src="https://cdn.shopify.com/s/files/1/0037/7690/5283/files/Holi_Banner.jpg?v=1646131283" alt=""></div>
             <div class="pos"><img src="https://cdn.shopify.com/s/files/1/0037/7690/5283/files/CUSTOMISED-REGIMENS-for-men-_-women.jpg?v=1635417626" alt=""></div>
@@ -194,6 +198,7 @@
             <div class="Product" id="value-combo"></div>
             <div class="pos"><img src="//cdn.shopify.com/s/files/1/0037/7690/5283/collections/holi_1200x.png?v=1646127239" alt=""></div>
             <div class="Product" id="holi-care"></div>
+        
         </div>
     </div>
 </body>

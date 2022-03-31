@@ -85,33 +85,4 @@ const Deta = (Products,search) => {
     })
     return Reg
 }
-const app = (data,divA)=>{
-    divA.innerHTML = ""
-    data.map((ele)=>{
-        //console.log(ele)
-        let div = document.createElement("div")
-        let img = document.createElement("img")
-        img.src = ele.src
-        let p1 = document.createElement("p")
-        p1.innerText = ele.name
-        let h1 = document.createElement("h4")
-        h1.innerText = "*****"
-        let pricediv = document.createElement("div")
-        pricediv.style.display = "flex"
-        pricediv.style.justifyContent = "space-evenly"
-        pricediv.style.alignItems = "center"
-        let p2 = document.createElement("p")
-        p2.innerText = "Rs. " + (ele.price-(ele.dis*ele.price/100)).toFixed(1)
-
-        let p3  = document.createElement("p")
-        p3.innerText = "Rs. "+ele.price
-        p3.style.textDecoration = "line-through"
-        p3.style.fontSize = "13px"
-        pricediv.append(p2,p3)
-        let btn = document.createElement("button")
-        btn.innerText = "Add To Cart"
-        div.append(img,p1,h1,pricediv,btn)
-        divA.append(div)
-    })
-}
-export {headOrder,navBar,footer,contain,Deta,app}
+export {headOrder,navBar,footer,contain,Deta}
