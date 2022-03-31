@@ -5,10 +5,8 @@ let obj = {
 };
 
 
-document.querySelector(".btn1").addEventListener("click",fun1(title));
-
-function fun1(t)
-{
- 
-  console.log(t)
+const fun1=()=>{
+  
+  let x = document.getElementById(id).getAttribute('value'); 
+  console.log(x);
 }
