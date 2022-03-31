@@ -233,7 +233,6 @@
     padding: 2px;
 }
 #cartDiv>div{
-    align-items: center;
     padding: 5px;
     border: 0.2px solid black;
 }
@@ -244,4 +243,8 @@
 #inc>h3:nth-child(3){
     border: .8px solid black;
     border-radius: 50%;
+}
+.fa-xmark{
+    width: 17px;
+    height: 17px;
 }
