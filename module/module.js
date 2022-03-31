@@ -44,9 +44,9 @@ const footer = ()=>{
     <div>
         <h3>Follow Us</h3>
        <div style="display: flex; gap: 5px;">
-           <a href="#"><div><img src="https://cdn.shopify.com/s/files/1/0037/7690/5283/files/facebook.png?v=1589958280" alt="facebook"></div></a>
-           <a href="#"><div><img src="https://cdn.shopify.com/s/files/1/0037/7690/5283/files/instagram.png?v=1589958271" alt="Instagram"></div></a>
-          <a href="#"><div><img src="https://cdn.shopify.com/s/files/1/0037/7690/5283/files/Youtube-icon_62e7ba53-63d1-42c0-a538-f1497f11da75.png?v=1591359272" alt="Youtube"></div></a>
+           <a href="https://www.facebook.com/vedixofficial/" target="_blank"><div><img src="https://cdn.shopify.com/s/files/1/0037/7690/5283/files/facebook.png?v=1589958280" alt="facebook"></div></a>
+           <a href="https://www.instagram.com/vedixofficial/" target="_blank"><div><img src="https://cdn.shopify.com/s/files/1/0037/7690/5283/files/instagram.png?v=1589958271" alt="Instagram"></div></a>
+          <a href="https://www.youtube.com/c/VedixOfficial" target="_blank"><div><img src="https://cdn.shopify.com/s/files/1/0037/7690/5283/files/Youtube-icon_62e7ba53-63d1-42c0-a538-f1497f11da75.png?v=1591359272" alt="Youtube"></div></a>
        </div>
     </div>
     <div>
@@ -79,5 +79,39 @@ const contain = ()=>{
     <a href="#">Know Your Hair<i class="fa-solid fa-angle-right"></i></a>
 </div>`
 }
+const Deta = (Products,search) => {
+    let Reg = Products.filter(function(ele){
+        return ele.cat.includes(search)
+    })
+    return Reg
+}
+const app = (data,divA)=>{
+    divA.innerHTML = ""
+    data.map((ele)=>{
+        //console.log(ele)
+        let div = document.createElement("div")
+        let img = document.createElement("img")
+        img.src = ele.src
+        let p1 = document.createElement("p")
+        p1.innerText = ele.name
+        let h1 = document.createElement("h4")
+        h1.innerText = "*****"
+        let pricediv = document.createElement("div")
+        pricediv.style.display = "flex"
+        pricediv.style.justifyContent = "space-evenly"
+        pricediv.style.alignItems = "center"
+        let p2 = document.createElement("p")
+        p2.innerText = "Rs. " + (ele.price-(ele.dis*ele.price/100)).toFixed(1)
 
-export {headOrder,navBar,footer,contain}
+        let p3  = document.createElement("p")
+        p3.innerText = "Rs. "+ele.price
+        p3.style.textDecoration = "line-through"
+        p3.style.fontSize = "13px"
+        pricediv.append(p2,p3)
+        let btn = document.createElement("button")
+        btn.innerText = "Add To Cart"
+        div.append(img,p1,h1,pricediv,btn)
+        divA.append(div)
+    })
+}
+export {headOrder,navBar,footer,contain,Deta,app}
