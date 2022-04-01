@@ -183,7 +183,7 @@ p+span{
     gap:10px
 }
 #suggest>div{
-    width: 20%;
+    width: 23%;
 }
 #suggest>div>img{
     width:100%;
@@ -192,6 +192,7 @@ p+span{
 #suggest>div>button{
     width: 70%;
     margin: auto;
+   
     background-color:lightcoral;
     height:20px
 }
@@ -200,6 +201,8 @@ a{
     color:lightcoral;
 
 }
+
+
 
  
  

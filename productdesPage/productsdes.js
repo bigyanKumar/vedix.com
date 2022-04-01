@@ -1,6 +1,6 @@
 console.log("hey")
-let data1=JSON.parse(localStorage.getItem('BuynowPage'));
-let data=data1[0];
+let data=JSON.parse(localStorage.getItem('BuynowPage'));
+// let data=data1[0];
 console.log("data1",data);
 
 // cat: "Hair-Oil"
@@ -134,7 +134,7 @@ document.querySelector("#sec3").addEventListener("click",()=>{
          img
       }
 
-      let data = localStorage.setItem(JSON.stringify(obj))
+      let form = localStorage.setItem(JSON.stringify(obj))
     //   register(data)
   });
 
@@ -145,12 +145,23 @@ document.querySelector("#sec3").addEventListener("click",()=>{
   let pr = JSON.parse(localStorage.getItem('products'))
   console.log(pr);
   s.innerHTML=null;
+  let addcart = JSON.parse(localStorage.getItem('cart'))
+  let count=0;
   for(let k=0;k<pr.length;k++)
   {
+    console.log("hhhhhhhhhhhhhh",data.cat,pr[k].cat)
     
     if(pr[k].cat==data.cat)
     {
+      count++;
       let div = document.createElement("div");
+      div.addEventListener("click",()=>{
+        data = pr[k];
+      //   console.log(data);
+        //  data.push(pr[k]);
+        localStorage.setItem('BuynowPage',JSON.stringify(data));
+        window.location.href="produsDescription.html"
+       })
       let img = document.createElement("img");
       img.src=pr[k].src;
       let h4= document.createElement("h4");
@@ -161,15 +172,34 @@ document.querySelector("#sec3").addEventListener("click",()=>{
       p.innerText=`Rs.${pr[k].price}`
       let button = document.createElement("button");
       button.innerText="ADD TO CART";
+      button.addEventListener("click",() => {
+        console.log("abc");
+        console.log(data);
+        addcart.push(data);
+        localStorage.setItem('cart', JSON.stringify(addcart));
+        
+      });
       div.append(img,h4,review,p,button);
        s.append(div)
       console.log(div);
 
     }
-    if(k==5){
+    if(count==4){
       break;
     }
   }
+
+  
+  
+
+  let addbtn = document.querySelector("#add");
+  addbtn.addEventListener("click", () => {
+    console.log("abc");
+    console.log(data);
+    addcart.push(data);
+    localStorage.setItem('cart', JSON.stringify(addcart));
+    
+  });
   
  
 
