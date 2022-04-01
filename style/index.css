@@ -590,19 +590,25 @@ body{
         padding-left: 10px;
     }
     #nav>div{
-        width: 100%;
+        width: fit-content;
         height: auto;
         display: block;
         justify-content: left;
     }
+
     #nav>div>div:last-child{
-        width: 100%;
+        width: fit-content;
         display: block;
-        padding-top: 10px;
-        justify-content: left;
-        gap: 20px;
-        align-items: center;
+        
     }
+   #login_page{
+       padding: 30px;
+       margin-top: 10px;
+   }
+   #cart_page{
+       padding: 30px;
+       margin-top: 10px;
+   }
     #nav>div>div>div:first-child>a>img{
         display: block;
         align-items: center;
