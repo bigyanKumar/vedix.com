@@ -1,4 +1,9 @@
-
+/* @media all and (min-width:0px) and (max-width:380px){
+    #nav{
+        display:grid;
+        grid-template-columns: repeat();
+    }
+} */
 
 p{
 color:lite black;
