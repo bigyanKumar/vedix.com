@@ -22,15 +22,15 @@
         <div id="second">
            <h4>MY BODY FRAME IS</h4>
            <div class="frame">
-               <div class="btn1" value="thin" onclick="fun1()" >
+               <div id="btn1" value="thin" onclick="fun1(event)" >
                 <img src="https://cdn.shopify.com/s/files/1/0037/7690/5283/files/body_frame_thin.svg?v=1622450612" alt="">
                 <p>Thin</p>
                </div>
-               <div class="btn1" value="medium" onclick="fun1()">
+               <div id="btn2" value="medium" onclick="fun2()">
                 <img src="https://cdn.shopify.com/s/files/1/0037/7690/5283/files/body_frame_medium.svg?v=1622450612" alt="">
                 <p>Medium</p>
                </div>
-               <div class="btn1" value="large" onclick="fun1()">
+               <div id="btn3" value="large" onclick="fun3()">
                 <img src="https://cdn.shopify.com/s/files/1/0037/7690/5283/files/body_frame_large.svg?v=1622450612" alt="">
                 <p>Large</p>
                </div>
@@ -39,16 +39,16 @@
         </div>
         <div id="third">
             <h4>I SWEAT</h4>
-            <div class="frame">
-                <div>
+            <div class="frame" >
+                <div id="frame1" onclick="fun4()" value="less">
                  <img src="https://cdn.shopify.com/s/files/1/0037/7690/5283/files/sweat_less.svg?v=1622450612" alt="">
                  <p>Less</p>
                 </div>
-                <div>
+                <div id="frame2" onclick="fun5()" value="normal">
                  <img src="https://cdn.shopify.com/s/files/1/0037/7690/5283/files/sweat_normal.svg?v=1622450612" alt="">
                  <p>Normal</p>
                 </div>
-                <div>
+                <div id="frame3" onclick="fun6()" value="a_lot">
                  <img src="https://cdn.shopify.com/s/files/1/0037/7690/5283/files/sweat_lot.svg?v=1622450612" alt="">
                  <p>A Lot</p>
                 </div>
@@ -58,22 +58,22 @@
          <div id="fourth">
             <h4>MY APPETITE IS</h4>
             <div class="frame">
-                <div>
+                <div id="frame4" onclick="fun7()" value="irregular" >
                  <img src="https://cdn.shopify.com/s/files/1/0037/7690/5283/files/appetite_strong.svg?v=1622450612" alt="">
                  <p>Irregular</p>
                 </div>
-                <div>
+                <div id="frame5" onclick="fun8()" value="strong">
                  <img src="https://cdn.shopify.com/s/files/1/0037/7690/5283/files/appetite_irregular.svg?v=1622450612" alt="">
                  <p>Strong</p>
                 </div>
-                <div>
+                <div id="frame6" onclick="fun9()" value="normal">
                  <img src="https://cdn.shopify.com/s/files/1/0037/7690/5283/files/appetite_normal.svg?v=1622450612" alt="">
                  <p>Normal</p>
                 </div>
             </div>
             <hr>
          </div>
-        <button id="btn">CONTINUE</button>
+        <button id="btn" onclick="next()">CONTINUE</button>
 
     </div>
     
