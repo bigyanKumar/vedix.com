@@ -1,3 +1,10 @@
+window.addEventListener("load",()=>{
+    let Login =JSON.parse(localStorage.getItem("UserDeta"))||{}
+   if(Login.length!==undefined){
+       alert("User Logged In")
+    window.location.href = "../index.html"
+   }
+})
 let signUp = document.getElementById("create")
 signUp.addEventListener("click",(event)=>{
     event.preventDefault()
@@ -14,15 +21,13 @@ signUp.addEventListener("click",(event)=>{
         email,
         password,
         username,
-        mobile,
-        description
     }
     let payload = JSON.stringify(obj)
     createA(payload)
     console.log("signup")
 })
 const createA = (deta)=>{
-    fetch("https://masai-api-mocker.herokuapp.com/auth/register",{
+    fetch("http://localhost:3000/Users",{
         method : 'POST',
         headers : {
             'Content-Type' : 'application/json'

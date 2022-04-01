@@ -14,6 +14,10 @@ document.querySelector("#login_page").addEventListener("click",()=>{
 
 let Cart  = JSON.parse(localStorage.getItem("cart"))||[]
 let dis1 = document.getElementById("CartD")
+console.log(Cart)
+if(Cart.length===0){
+    dis1.style.display = "none"
+}else{
 const cartPop = ()=>{
     // Cart.push(ele)
     // localStorage.setItem("cart",JSON.stringify(Cart))
@@ -190,3 +194,4 @@ const removeDeta = (ele,ind) =>{
     cartPop()
 }
 cartPop()
+}
