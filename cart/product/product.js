@@ -41,9 +41,10 @@ const app = (data,divA)=>{
         pricediv.style.display = "flex"
         pricediv.style.justifyContent = "space-evenly"
         pricediv.style.alignItems = "center"
+        pricediv.style.marginTop = "-60px"
         let p2 = document.createElement("p")
         p2.innerText = "Rs. " + (ele.price-(ele.dis*ele.price/100)).toFixed(1)
-
+        p2.style.fontWeight = "bold"
         let p3  = document.createElement("p")
         p3.innerText = "Rs. "+ele.price
         p3.style.textDecoration = "line-through"
@@ -267,6 +268,7 @@ const cartAppdend = (Deta,div)=>{
         divsum.style.gap = "10px"
         divsum.setAttribute("id","inc")
         let h1 = document.createElement("h3")
+        h1.style.cursor = "pointer"
         h1.addEventListener("click",()=>{
             min(ele,ind)
         })
@@ -276,6 +278,7 @@ const cartAppdend = (Deta,div)=>{
         let h2 = document.createElement("h3")
         h2.innerText = ele.qnt
         let h3 =document.createElement("h3")
+        h3.style.cursor = "pointer"
         h3.addEventListener("click",()=>{
             max(ele,ind)
         })
