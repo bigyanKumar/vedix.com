@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="products.css">
+    <script src="https://kit.fontawesome.com/0a03bfd4cc.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
@@ -31,21 +32,59 @@
               </div>
 
             <div id="btns">
-                <button>ADD TO CART</button>
-                <button>BUY NOW</button>
+                <button id="add">ADD TO CART</button>
+                <button id="now">BUY NOW</button>
             </div>
-            <div class="dropdown" onclick="show()">
-                <h4>Product Description</h4>               
+            <div id="sec1" >
+                <div><h3>Product Description</h3></div>  
+                <div><h3>v</h3></div>             
             </div>
-            <div class="mydiv">
-              
+            <div id="mydiv1">
+              <p>
+                  <ul>
+                      <li>This toner is made with Tea Tree, Salicylic Acid, Witch Hazel and more than 12 herbs that work together to reduce acne and redness caused by it.</li>
+                      <li>It helps unclog pores and purify skin. The herbs increase hydration and keep skin moisturized.</li>
+                  </ul>
+              </p>
             </div>
-            <div class="dropdown" onclick="show()">
-                <h4>Key Ingredients</h4>
-            </div>
-            <div class="dropdown" onclick="show()">
-                <h4>Recommended Use</h4>
+            <div id="sec2" >
                
+                <div><h3>Key Ingredients</h3></div>  
+                <div><h3>v</h3></div> 
+            </div>
+            <div id="mydiv2">
+                <div>
+                    <img src="https://cdn.shopify.com/s/files/1/0037/7690/5283/files/Tea-Tree-mask-vxshop.png?v=1636457073" alt="">
+                    <p>Tea Tree - Reduces Acne And Purifies Skin</p>
+                </div>
+                <div>
+                    <img src="https://cdn.shopify.com/s/files/1/0037/7690/5283/files/Salicylicacid-vxshop.png?v=1636458359" alt="">
+                    <p>Salicylic Acid (2% PM) - Unclogs Pores And Detoxifies Skin</p>
+                </div>
+            </div>
+            <div id="sec3" >
+                
+                <div><h3>Recommended Use</h3></div>  
+                <div><h3>v</h3></div> 
+                              
+            </div>
+            <div id="mydiv3">
+                <div>
+                    <img src="https://cdn.shopify.com/s/files/1/0037/7690/5283/files/toneruse1-vxshop.png?v=1636457648" alt="">
+                    <p>1. Gently cleanse face and neck</p>
+                </div>
+                <div>
+                    <img src="https://cdn.shopify.com/s/files/1/0037/7690/5283/files/toneruse2-vxshop.png?v=1636457648" alt="">
+                    <p>2. Spray a generous amount of the toner and leave it on until dry.</p>
+                </div>
+                <div>
+                    <img src="https://cdn.shopify.com/s/files/1/0037/7690/5283/files/toneruse3-vxshop.png?v=1636457648" alt="">
+                    <p>3. If using a cotton ball or pad for application, soak them completely before applying</p>
+                </div>
+                <div>
+                    <img src="https://cdn.shopify.com/s/files/1/0037/7690/5283/files/toneruse4-vxshop.png?v=1636457648" alt="">
+                    <p>4. Follow it up with a moisturizer. For best results, use twice everyday</p>
+                </div>
             </div>
         </div>
          
@@ -53,8 +92,107 @@
         
 
     </div>
+    <div id="comments">
+        <form id="main">
+            <label>Name</label>
+            <br>
+            <input type="text" id="name" name="name_input" placeholder="Your Name">
+            <br>
+            <label >Email</label>
+            <br>
+            <input type="email" id="email" name="email_input" placeholder="Your Email">
+            <br>
+            <label > Rating</label>
+            <br>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <br>
+            <label >Review Title</label>
+            <br>
+            <input type="text" name="review_Title" id="title">
+            <br>
+            <label >Review</label>
+            <br>
+            <textarea name="review_" placeholder="Review description"></textarea>
+            <br>
+           <i class="fa-solid fa-circle-camera"><input type="file" name="myImage" accept="image/png, image/gif, image/jpeg" name="img_input" /></i>
+           <br>
+           <input type="submit" value="Submit" id="Sbtn">
+        </form>
+
+      <div id="commentsreview">
+        <h4>Here’s What Our Customers Say About Us</h4>
+
+        <h5>Ani</h5>
+
+        <p><span>⭐5</span> <span>25th july 2021</span></p>
+
+        <p>Lessened my acne and rashes with frequent use. Feels soooo fresh too</p>
+
+        
+
+        <h5>Shreya</h5>
+
+        <p><span>⭐5</span> <span>29th july 2021</span></p>
+
+        <p>SKin irritation and redness has come down. Awesome product if you have acne</p>
+        
+
+        <h5>Mohi</h5>
+
+        <p><span>⭐4</span> <span>15th aug 2021</span></p>
+
+        <p>A must buy. Skin feels happy and fresh</p>
+        
+
+        <h5>Shree</h5>
+
+        <p><span>⭐5</span> <span>2nd sep 2021</span></p>
+
+        <p>Skin feels happy and glowing.</p>
+
+        <button>View All</button>
+      </div>
+
+
+
+    </div>
+    <h3>Similar Products</h3>
+    <div id="suggest">
+
+    </div>
 
     
 </body>
 </html>
-<script type="text/javascript" src="productsdes.js"></script>
+<script type="module" src="./productsdes.js">
+   
+//    function show() {
+//   console.log("working")
+//     var x = document.querySelector(".mydiv");
+//     if (x.style.display === "none") {
+//       x.style.display = "block";
+//     } else {
+//       x.style.display = "none";
+//     }
+//   }
+//   function show1() {
+//     var x = document.querySelector(".mydiv1");
+//     if (x.style.display === "none") {
+//       x.style.display = "block";
+//     } else {
+//       x.style.display = "none";
+//     }
+//   }
+//   function show3() {
+//     var x = document.querySelector(".mydiv3");
+//     if (x.style.display === "none") {
+//       x.style.display = "block";
+//     } else {
+//       x.style.display = "none";
+//     }
+//   }
+</script>
