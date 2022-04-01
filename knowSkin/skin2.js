@@ -53,7 +53,7 @@ const main = () => {
     else{
 
         localStorage.setItem("skin1",JSON.stringify(obj));
-        window.location.href="skin2.html";
+        window.location.href="skinresult.html";
     }
 }
 
