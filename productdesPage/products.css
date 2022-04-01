@@ -56,6 +56,7 @@ body {
     font-size: 16px;
     color: #414042;
     line-height: 1.5;
+    margin-bottom: 100px;
     
 }
 
@@ -180,7 +181,8 @@ p+span{
 
 #suggest{
     display:flex;
-    gap:10px
+    gap:10px;
+    max-height:500px;
 }
 #suggest>div{
     width: 23%;
@@ -192,7 +194,9 @@ p+span{
 #suggest>div>button{
     width: 70%;
     margin: auto;
-   
+    /* margin-top:70px; */
+    top: 50%;
+    transform: translateY(-50%);
     background-color:lightcoral;
     height:20px
 }
@@ -201,6 +205,31 @@ a{
     color:lightcoral;
 
 }
+#priceinfo+div{
+    display:flex;
+    gap:20px;
+    width:40%;
+}
+#total{
+    display:flex;
+    justify-content:space-around;
+    width:100%;
+    align-items: center;
+}
+#total>div:nth-child(2)>#add1,#total>div:nth-child(2)>#now1{
+   width:100%;
+   height: 30%;
+   background-color:lightcoral;
+}
+
+#total {
+    overflow: hidden;
+    /* background-color: #333; */
+    position: fixed; 
+    bottom: 0;
+    width: 100%; /* Full width */
+    background-color:lemonchiffon
+  }
 
 
 

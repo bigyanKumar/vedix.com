@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./information page/info.css" />
+  </head>
+  <body>
+    <div id="fullpage">
+      <div id="left">
+        <div id="div1">
+          <div id="appIcon">
+            <a href=""
+              ><img
+                src="https://cdn.shopify.com/s/files/1/0037/7690/5283/files/logo.svg?v=1585630376"
+                alt=""
+            /></a>
+          </div>
+          <div id="switchPage">
+            <div><a href="">Cart Items</a></div>
+            <div><a href="">Information </a></div>
+            <div><a href="">Shipping </a></div>
+            <div><a href=""> Payment </a></div>
+          </div>
+        </div>
+
+        <div id="div2">
+          <form id="form">
+            <div id="Email">
+              <div class="static"><h2>Contact information</h2></div>
+              <div class="static1">
+                <p>Already have an account?<a> Log in</a></p>
+              </div>
+            </div>
+            <div id="inner">
+              <div id="emailInput">
+                <input name="enterEmail" type="text" placeholder="Email" />
+              </div>
+            </div>
+            <div id="div3">
+              <div class="info"><h2>Shipping address</h2></div>
+              <br />
+              <div class="info">
+                <input
+                  name="country"
+                  type="text"
+                  placeholder="Country/region"
+                />
+              </div>
+              <div class="info1">
+                <div class="inner2">
+                  <input
+                    name="firstname"
+                    type="text"
+                    placeholder="First name"
+                  />
+                </div>
+                <div class="inner2">
+                  <input name="Last name" type="text" placeholder="Last name" />
+                </div>
+              </div>
+              <div class="info">
+                <input name="Address" type="text" placeholder="Address" />
+              </div>
+              <div class="info">
+                <input
+                  name="locality"
+                  type="text"
+                  placeholder="Apartment,suite,etc,(optional)"
+                />
+              </div>
+              <div class="info2">
+                <div class="inner3">
+                  <input name="city" type="text" placeholder="City" />
+                </div>
+                <div class="inner3">
+                  <input name="state" type="text" placeholder="State" />
+                </div>
+                <div class="inner3">
+                  <input name="pincode" type="number" placeholder="PIN code" />
+                </div>
+              </div>
+              <div class="info">
+                <input name="phone" type="number" placeholder="Phone" />
+              </div>
+              <br /><br />
+
+              <div class="infobtn">
+                <input
+                  type="submit"
+                  name="submit"
+                  value="Continue to shipping"
+                  id="submit"
+                />
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div id="right">
+        <div id="cartitem">
+          <!-- cart product -->
+        </div>
+        <hr />
+        <div id="coupn">
+          <div id="enterCoupon">
+            <input type="text" placeholder="Enter code" />
+          </div>
+          <div id="button"><button class="btn">Apply</button></div>
+        </div>
+        <hr />
+
+        <div class="subtotal1">
+          <div class="smallBox"><h4>subtotal</h4></div>
+          <div class="smallBox" id="amount"></div>
+        </div>
+
+        <div class="subtotal1">
+          <div class="smallBox"><h4>shipping</h4></div>
+          <div class="smallBox"><h4>Free</h4></div>
+        </div>
+        <hr />
+        <div id="total">
+          <div><h4>Total</h4></div>
+          <div id="totalPrice"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="./information page/information.js"></script>
+
+<!-- data stored in local storage by name of "userdetail". -->
