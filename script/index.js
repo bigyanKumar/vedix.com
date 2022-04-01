@@ -49,6 +49,7 @@ let h2 = document.createElement("h3")
 h2.innerText = imgage[i].Ele
 let p1 = document.createElement("p")
 p1.innerText = imgage[i].dsc
+p1.style.textAlign = "justify"
 let p2 = document.createElement("p")
 p2.innerText = imgage[i].name
 p2.style.color = "#E78471"
