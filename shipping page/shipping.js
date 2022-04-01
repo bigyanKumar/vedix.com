@@ -87,17 +87,7 @@ let shipto = document.querySelector("#ssdiv2");
     }
 
 
-    // address: "BLOCK D-1/51 MANSA RAM PARK UTTAM NAGAR"
-    // city: "West delhi"
-    // country: "India"
-    // email: "tarunanangla131@gmail.com"
-    // firstname: "TARUNA"
-    // lastname: ""
-    // locality: "NEW DELHI-110059"
-    // phone: "09811687795"
-    // pincode: "110059"
-    // state: "Delhi"
-
+    
 
 
 // })
