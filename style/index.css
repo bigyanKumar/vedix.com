@@ -609,17 +609,7 @@ body{
        padding: 30px;
        margin-top: 10px;
    }
-    #nav>div>div>div:first-child>a>img{
-        display: block;
-        align-items: center;
-        width: 50%;
-        height: 50%;
-    }
-    #nav>div>div>div:first-child>a>img{
-        display: block;
-        justify-content: center;
-        align-items: center;
-     }
+ 
     #footer>div:first-child{
         display: block;
         justify-content: center;
@@ -771,45 +761,103 @@ body{
            align-items: center;
         }
         #vedix-Box1{
-            padding: 50px 15px 0px; 
+            padding: 10px 15px 0px; 
             margin: 0px 10px;
         }
         #vedix-Box1>div:last-child>h6{
-            width: fit-content;
+            width: 80%;
             text-align: justify;
             padding-right: 10px;
         }
         #vedix-Box1>div:last-child>p{
-            width: fit-content;
+            width: 80%;
+            max-width: 80%;
             text-align: justify;
-            padding-right: 10px;
         }
         #vedix-Box2{
             width: 100%;
-            padding: 50px 15px 0px;
+            padding: 10px 15px 0px;
              margin: 0px 10px;
         }
         #vedix-Box3>div:last-child>p{
-            width: fit-content;
+            width: 80%;
             text-align: justify;
            
         }
         #vedix-Box2>div:last-child>h6{
-            width: fit-content;
+            width: 80%;
             text-align: justify; 
         }
         #vedix-Box3{
             width: 100%;
-            padding: 50px 15px 0px; 
+            padding: 10px 15px 0px; 
             margin: 0px 10px;
         }
         #vedix-Box2>div:last-child>p{
-            width: fit-content;
+            width: 80%;
             text-align: justify;
             
         }
         #vedix-Box3>div:last-child>h6{
-            width: fit-content;
+            width: 80%;
             text-align: justify;
         }
+     /* nav bar setting */
+     #nav{
+        width: 100%;
+        height: auto;
+    }
+    #nav>div>div>div:first-child>a>img{
+        width: 50%;
+        height: 50%;
+    }
+   
+    #nav>div{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 2;
+        grid-template-rows: 1;
+        justify-content: left;
+    }
+    #nav>div>div:last-child{
+        width: 100%;
+        display: flex;
+        gap: 2px;
+        justify-content: left;
+        align-items: center;
+    }
+    #nav>div>div>div>a{
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+    }
+    #nav>div>div:last-child>div{
+        /* height: 40px; */
+        padding: 5px;
+        border: 1px solid black;
+    }
+    #nav>div>div:last-child>div:nth-child(3){
+        /* height: 40px; */
+        margin-top: -0px;
+    }
+    #nav>div>div:last-child>div:nth-child(4){
+        /* height: 40px; */
+        margin-top: -0px;
+    }
+    #nav>div>div:last-child>div:nth-child(1)>a{
+        /* height: 40px; */
+        font-size: 12px;
+    }
+    #nav>div>div:last-child>div:nth-child(2)>a{
+        /* height: 40px; */
+        font-size: 12px;
+    }
+    #nav>div>div:last-child>div:nth-child(1)>a>i{
+        /* height: 40px; */
+        font-size: 12px;
+    }
+    #nav>div>div:last-child>div:nth-child(2)>a>i{
+        /* height: 40px; */
+        font-size: 12px;
+    }
  }
