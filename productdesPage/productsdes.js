@@ -198,8 +198,44 @@ document.querySelector("#sec3").addEventListener("click",()=>{
     console.log(data);
     addcart.push(data);
     localStorage.setItem('cart', JSON.stringify(addcart));
+    window.location.href="../product.html"
     
   });
+
+  let buybtn = document.querySelector("#now");
+  buybtn.addEventListener("click", () => {
+    console.log("abc");
+    addcart.push(data);
+    localStorage.setItem('cart', JSON.stringify(addcart));
+    window.location.href="#"
+  })
   
- 
+  let total = document.querySelector("#total");
+  let pricei= document.querySelector("#priceinfo");
+   let h4 = document.createElement("h4");
+  h4.innerText=data.name;
+ let pri = document.createElement("p")
+ pri.innerText=data.price;
+pricei.append(h4,pri) ;
+
+
+let addbtn1 = document.querySelector("#add1");
+addbtn1.addEventListener("click", () => {
+  console.log("abc");
+  // console.log(data);
+  addcart.push(data);
+  localStorage.setItem('cart', JSON.stringify(addcart));
+  window.location.href="../product.html"
+  
+});
+
+let buybtn1 = document.querySelector("#now1");
+buybtn1.addEventListener("click", () => {
+  console.log("abc");
+  addcart.push(data);
+  localStorage.setItem('cart', JSON.stringify(addcart));
+  window.location.href="#"
+})
+
+
 
