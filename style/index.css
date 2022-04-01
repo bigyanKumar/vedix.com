@@ -87,17 +87,13 @@ justify-content: space-evenly;
     padding: 5px;
     height: 110px;
 }
-
-
 #container{
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
     position: fixed;
     z-index: 999;
     bottom: 0;
-    align-items: center;
-    height: 65px;
     width: 100%;
     max-width: 100%;
     background-color: #f2e9d1;
@@ -105,21 +101,30 @@ justify-content: space-evenly;
 }
 #container>div:first-child{
     margin-left: 20px;
+    display: flex;
 }
-#container>div:first-child>a{
+#container>div:first-child>p>a{
     padding: 10px;
     text-decoration: none;
     color: rgb(109, 107, 107);
 }
 #container>div:last-child{
-    margin-right: 40px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 10px;
+    padding-right: 20px;
+   
 }
-#container>div:last-child>a{
-    padding: 10px;
-    border: 0.6px solid rgb(107, 104, 104);
+#container>div:last-child>p>a{
     text-decoration: none;
-    background-color: white;
     color: black;
+ }
+#container>div:last-child>p{
+   text-decoration: none;
+   padding: 10px;
+   border: 0.6px solid rgb(107, 104, 104);
+   background-color: white;
 }
 #award_section>div{
     display: flex;
@@ -304,7 +309,7 @@ body{
     
 }
 .vedix-box{
-    width: 600px;
+    width: 100%;
     display: flex;
     color: #414042;
 }
@@ -342,4 +347,444 @@ body{
  }
  .arr{
      cursor: pointer;
+ }
+#slide-part>div:nth-child(1)>h2{
+    margin-left: 35%
+}
+
+#vedix-Box1{
+    padding: 50px 15px 0px; 
+    margin: 0px 80px;
+}
+#vedix-Box2{
+
+    padding: 50px 15px 0px;
+     margin: 0px 500px;
+}
+#vedix-Box3{
+    padding: 50px 15px 0px; 
+    margin: 0px 800px;
+}
+
+ @media only screen and (min-width: 421px) and (max-width: 720px) {
+    #orderHead{
+        display: grid;
+        height: auto;
+        width: 100%;
+    }
+    #nav{
+        height: auto;
+    }
+    #nav>div{
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    #nav>div>div:last-child{
+        width: 100%;
+        display: grid;
+        padding-top: 10px;
+        justify-content: left;
+    }
+    #footer>div:first-child{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+        
+        }
+        #home_acq>div>div:nth-child(1){
+            width: 100%;
+            height: 100%;
+            padding-top: 30px;
+            color: #414042;
+        }
+        #home_acq{
+            height: fit-content;
+        }
+        #nav>div>div>div:first-child>a>img{
+           display: block;
+           justify-content: center;
+           align-items: center;
+        }
+        #freebie_offer{
+            height: fit-content;
+        }
+        #freebie_offer>div:first-child>img{
+            display: none;
+        }
+        #freebie_offer>div:last-child{
+            padding-left: 10px;
+        }
+        #Customised-hair-content>div{
+            width: 100%;
+            display: block;
+            height: fit-content;
+            align-items: center;
+            padding-left: 10px;
+        }
+        #Customised-hair-content>div>div:last-child>img{
+            width: 100%;
+            height: fit-content;
+        }
+        #Customised-hair-content{
+            margin-top: 130px;
+        }
+        #product-display{
+            width: 100%;
+            flex-wrap: wrap;
+
+        }
+        #product-display>div:first-child>img{
+            width: 100%;
+
+        }
+        #product-display>div:last-child>h2{
+            width: fit-content;
+        }
+        #product-display>div:last-child{
+            padding-left: 10px;
+        }
+        #product-display>div:last-child>p{
+            width: fit-content;
+            font-size: 16px;
+        }
+        #vedix-step>div:first-child>h3{
+            justify-content: left;
+            align-items: left;
+            
+        }
+        #footer{
+            margin-top: 1000px;
+        }
+        #append{
+            width: 100%;
+            display: block;
+            justify-content: center;
+            align-items: center;
+        }
+        #append>div:first-child{
+            width: 100%;
+            display: block;
+         }
+         #append>div:first-child{
+            margin-left: 30%;
+            margin-bottom: 20%;
+         }
+         #append>div:last-child{
+             width: 100%;
+             opacity: 0.9;
+             display: block;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+          }
+          #slide-part>div:nth-child(1)>h2{
+            margin-left: 10px
+        }
+        #container{
+            position: relative;
+            display: block;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            width: 100%;
+            max-width: 100%;
+            margin-top: 20px;
+        
+        }
+        #container>div{
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        #container>div:first-child{
+            width: 100%;
+            display: block;
+            justify-content: center;
+            height: 100%;
+        }
+        #container>div:last-child{
+            display: block;
+            max-width: 100%;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding-left: 20px;
+        }
+        #container>div:last-child>p{
+           display: block;
+           justify-content: center;
+           align-items: center;
+           
+        }
+        #vedix-Box1{
+            width: fit-content;
+            padding: 50px 15px 0px; 
+            margin: 0px 10px;
+        }
+        #vedix-Box1>div:last-child>h6{
+            width: fit-content;
+            text-align: justify;
+            padding-right: 10px;
+        }
+        #vedix-Box1>div:last-child>p{
+            width: fit-content;
+            text-align: justify;
+            padding-right: 10px;
+        }
+        #vedix-Box2{
+            width: fit-content;
+            padding: 50px 15px 0px;
+             margin: 0px 10px;
+        }
+        #vedix-Box3>div:last-child>p{
+            width: fit-content;
+            text-align: justify;
+           
+        }
+        #vedix-Box2>div:last-child>h6{
+            width: fit-content;
+            text-align: justify; 
+        }
+        #vedix-Box3{
+            width: fit-content;
+            padding: 50px 15px 0px; 
+            margin: 0px 10px;
+        }
+        #vedix-Box2>div:last-child>p{
+            width: fit-content;
+            text-align: justify;
+            
+        }
+        #vedix-Box3>div:last-child>h6{
+            width: fit-content;
+            text-align: justify;
+        }
+}
+
+ @media only screen and (min-width: 0px) and (max-width: 420px) {
+    #orderHead{
+        display: grid;
+        justify-content: center;
+        height: auto;
+        padding-left: 10px;
+    }
+    #nav>div{
+        width: 100%;
+        height: auto;
+        display: block;
+        justify-content: left;
+    }
+    #nav>div>div:last-child{
+        width: 100%;
+        display: block;
+        padding-top: 10px;
+        justify-content: left;
+        gap: 20px;
+        align-items: center;
+    }
+    #nav>div>div>div:first-child>a>img{
+        display: block;
+        align-items: center;
+        width: 50%;
+        height: 50%;
+    }
+    #nav>div>div>div:first-child>a>img{
+        display: block;
+        justify-content: center;
+        align-items: center;
+     }
+    #footer>div:first-child{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+        padding-top: 10px;
+        
+        }
+        #home_acq>div>div:nth-child(1){
+            width: 100%;
+            height: 100%;
+            padding-top: 200px;
+            color: #414042;
+        }
+        #home_acq{
+            height: fit-content;
+        }
+        #freebie_offer>div:first-child>img{
+            display: none;
+        }
+        #freebie_offer>div:last-child{
+            display: block;
+            justify-content: left;
+            padding-left: 10px;
+        }
+        #freebie_offer{
+            height: fit-content;
+        }
+        #Customised-hair-content>div{
+            width: 100%;
+            display: block;
+            height: fit-content;
+            align-items: left;
+            justify-content: left;
+            padding-left: 10px;
+        }
+        #Customised-hair-content>div>div:last-child>img{
+            width: 100%;
+            height: fit-content;
+            display: block;
+            align-items: left;
+            justify-content: left;
+        }
+        #Customised-hair-content{
+            margin-top: 160px;
+        }
+        #product-display{
+            width: 100%;
+            display: block;
+            padding-top: 20px;
+            justify-content: center;
+
+        }
+        #product-display>div:first-child>img{
+            width: 100%;
+
+        }
+        #product-display>div:last-child>h2{
+            width: fit-content;
+        }
+        #product-display>div:last-child{
+            padding-left: 10px;
+        }
+        #product-display>div:last-child>p{
+            width: fit-content;
+            font-size: 16px;
+        }
+        #vedix-step>div:first-child>h3{
+            justify-content: left;
+            align-items: left;
+            
+        }
+        #vedix-step>div:last-child{
+            display: block;
+            justify-content: left;
+            align-items: left;
+            padding-left: 10px;
+        }
+        #footer{
+            margin-top: 1000px;
+        }
+        #append{
+            width: 100;
+            display: block;
+        }
+        #append>div:first-child{
+            width: 100%;
+            display: block;
+            justify-content: center;
+            
+         }
+         #append>div:first-child{
+             margin-left: 16%;
+            margin-bottom: 20%;
+         }
+         #append>div:last-child{
+             width: 100%;
+             opacity: 0.9;
+             display: block;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+          }
+          #slide-part>div:nth-child(1)>h2{
+            margin-left: 10px
+        }
+        #container{
+            position: relative;
+            display: block;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            width: 100%;
+            max-width: 100%;
+            margin-top: 20px;
+    /* justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 999;
+    bottom: 0;
+    width: 100%;
+    max-width: 100%;
+    background-color: #f2e9d1; */
+        
+        }
+        #container>div:first-child{
+            width: 100%;
+            display: block;
+            justify-content: left;
+            height: 100%;
+        }
+        #container>div{
+           padding-top: 20px;
+           padding-bottom: 20px;
+        }
+        #container>div:last-child{
+            display: block;
+            max-width: 100%;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding-left: 20px;
+          
+        }
+        #container>div:last-child>p{
+           display: block;
+           justify-content: center;
+           align-items: center;
+        }
+        #vedix-Box1{
+            padding: 50px 15px 0px; 
+            margin: 0px 10px;
+        }
+        #vedix-Box1>div:last-child>h6{
+            width: fit-content;
+            text-align: justify;
+            padding-right: 10px;
+        }
+        #vedix-Box1>div:last-child>p{
+            width: fit-content;
+            text-align: justify;
+            padding-right: 10px;
+        }
+        #vedix-Box2{
+            width: 100%;
+            padding: 50px 15px 0px;
+             margin: 0px 10px;
+        }
+        #vedix-Box3>div:last-child>p{
+            width: fit-content;
+            text-align: justify;
+           
+        }
+        #vedix-Box2>div:last-child>h6{
+            width: fit-content;
+            text-align: justify; 
+        }
+        #vedix-Box3{
+            width: 100%;
+            padding: 50px 15px 0px; 
+            margin: 0px 10px;
+        }
+        #vedix-Box2>div:last-child>p{
+            width: fit-content;
+            text-align: justify;
+            
+        }
+        #vedix-Box3>div:last-child>h6{
+            width: fit-content;
+            text-align: justify;
+        }
  }

@@ -66,17 +66,17 @@ const footer = ()=>{
 }
 const contain = ()=>{
     return ` <div>
-    <a href="../index.html">Home</a>
-    <a href="./whyVedix.html">Why Vedix</a>
-    <a href="#">Science</a>
-    <a href="./price.html">Pricing</a>
-    <a href="./main.html">Reviews</a>
-    <a href="./blog.html">Blog</a>
-    <a href="./faqs.html">Faqs</a>
+    <p><a href="../index.html">Home</a></p>
+    <p><a href="./whyVedix.html">Why Vedix</a></p>
+    <p><a href="#">Science</a></p>
+    <p><a href="./price.html">Pricing</a></p>
+    <p><a href="./main.html">Reviews</a></p>
+    <p><a href="./blog.html">Blog</a></p>
+    <p><a href="./faqs.html">Faqs</a></p>
 </div>
 <div>
-    <a href="#">Shop<i class="fa-solid fa-angle-right"></i></a>
-    <a href="#">Know Your Hair<i class="fa-solid fa-angle-right"></i></a>
+    <p><a href="#">Shop<i class="fa-solid fa-angle-right"></i></a></p>
+   <p> <a href="#">Know Your Hair<i class="fa-solid fa-angle-right"></i></a></p>
 </div>`
 }
 const Deta = (Products,search) => {

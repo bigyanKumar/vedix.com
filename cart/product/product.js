@@ -47,6 +47,8 @@ const app = (data,divA)=>{
         p3.style.textDecoration = "line-through"
         p3.style.fontSize = "13px"
         pricediv.append(p2,p3)
+        let btndiv = document.createElement("div")
+        btndiv.setAttribute("id","btn")
         let btn = document.createElement("button")
         btn.innerText = "Add To Cart"
         btn.addEventListener("click",()=>{
@@ -55,7 +57,8 @@ const app = (data,divA)=>{
             localStorage.setItem("cart",JSON.stringify(Cart))
             cartPop()
         })
-        div.append(img,p1,h1,pricediv,btn)
+        btndiv.append(btn)
+        div.append(img,p1,h1,pricediv,btndiv)
         divA.append(div)
     })
 }

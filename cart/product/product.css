@@ -162,16 +162,43 @@
     width: 100%;
     height: 40%;
 }
-.Product>div>button{
-    width: 100%;
+/* .Product>div>div{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    width: 80%;
     height: 10%;
     margin-top: 0px;
+} */
+#btn{
+    width: 100;
+    height: 9%;
+    padding-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
 }
+#btn>button{
+    width: 80%;
+    height: 100%;
+    background-color: #e78471;
+    border: 0.3px solid #414042;
+    color: white;
+}
+
 .Product>div>p{
     font-size: 12px;
     font-weight: bold;
-    padding-left: 5px;
-    padding-right: 5px;
+    width: 100%;
+    height: 50px;
+    max-height: 50px;
+    max-width: 90%;
+    padding-left: 10px;
+    text-align: left;
 }
 .Product>div>h4{
     width: 100%;
@@ -248,3 +275,221 @@
     width: 17px;
     height: 17px;
 }
+@media only screen and (min-width: 421px) and (max-width: 720px) {
+    .Product{
+        grid-template-columns: repeat(2,48%);
+        justify-content: space-evenly;
+        gap: 5px;
+    }
+    #seNav{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        width: 100%;
+        max-width: 100%;
+        margin-top: 20%;
+    }
+    #filter{
+        width: 60%;
+        height: 100%;
+        max-width: 60%;
+        overflow: scroll;
+    }
+    #seNav>div{
+        padding-top: 8px;
+        text-align: center;
+    }
+    #search>div{
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        gap: 10px;
+    }
+    #search>div:first-child{
+       width: 100%;
+    }
+    #search>div>div:last-child{
+        display: flex;
+        border: 1px solid black;
+        border-radius: 2px;
+        width: 50%;
+        background-color: #EEEEF0;
+    }
+    #search>div>div:last-child>input{
+        width: 60%;
+        border: none;
+        background-color: #EEEEF0;
+        padding: 8px;
+    }
+    #search>div:last-child{
+        width: 60%;
+        border: none;
+        margin-bottom: 5px;
+    }
+    #search>div:last-child>div{
+        width: 100%;
+        border-radius: 5px;
+
+    }
+    #search{
+        display: block;
+        gap: 5px;
+        width: 70%;
+        margin: auto;
+        align-items: center;
+    }
+    #search>div{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        margin: auto;
+    }
+    #search>div:first-child{
+       width: 100%;
+       
+    }
+    #search>div>div:last-child{
+        margin-right: 10px;
+        display: flex;
+        border: 1px solid black;
+        border-radius: 2px;
+        width: 50%;
+        background-color: #EEEEF0;
+    }
+    #search>div>div:last-child>input{
+        width: 80%;
+        border: none;
+        background-color: #EEEEF0;
+        padding: 8px;
+    }
+    #search>div:last-child{
+        margin-left: 0px;
+        width: 30%;
+        border: none;
+        margin-bottom: 5px;
+    }
+    #search>div:last-child>div{
+        width: 100%;
+        border-radius: 5px;
+
+    }
+    #cartPop{
+        width: 60%;
+        height: 100%;
+        max-width: 60%;
+        overflow: scroll;
+
+    }
+
+}
+
+ /* small screens */
+ @media only screen and (min-width: 0px) and (max-width: 420px) {
+    .Product{
+        grid-template-columns: repeat(1,100%);
+        justify-content: center;
+        gap: 5px;
+    }
+    #seNav{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        width: 100%;
+        max-width: 100%;
+        margin-top: 50%;
+    }
+    #seNav>div{
+        padding-top: 8px;
+        text-align: center;
+    }
+    #search>div{
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        gap: 10px;
+    }
+    #search>div:first-child{
+       width: 100%;
+    }
+    #search>div>div:last-child{
+        display: flex;
+        border: 1px solid black;
+        border-radius: 2px;
+        width: 50%;
+        background-color: #EEEEF0;
+    }
+    #search>div>div:last-child>input{
+        width: 60%;
+        border: none;
+        background-color: #EEEEF0;
+        padding: 8px;
+    }
+    #search>div:last-child{
+        width: 60%;
+        border: none;
+        margin-bottom: 5px;
+    }
+    #search>div:last-child>div{
+        width: 100%;
+        border-radius: 5px;
+
+    }
+    #search{
+        display: block;
+        gap: 5px;
+        width: 70%;
+        margin: auto;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #search>div{
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        gap: 10px;
+    }
+    #search>div:first-child{
+       width: 100%;
+    }
+    #search>div>div:last-child{
+        display: flex;
+        border: 1px solid black;
+        border-radius: 2px;
+        width: 50%;
+        background-color: #EEEEF0;
+    }
+    #search>div>div:last-child>input{
+        width: 60%;
+        border: none;
+        background-color: #EEEEF0;
+        padding: 8px;
+    }
+    #search>div:last-child{
+        width: 60%;
+        border: none;
+        margin-bottom: 5px;
+    }
+    #search>div:last-child>div{
+        width: 100%;
+        border-radius: 5px;
+
+    }
+    #filter{
+        width: 100%;
+        height: 100%;
+        overflow: scroll;
+        max-width: 100%;
+    }
+    #cartPop{
+        width: 100%;
+        height: 100%;
+        overflow: scroll;
+        max-width: 100%;
+    }
+    
+
+
+ }
