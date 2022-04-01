@@ -36,12 +36,14 @@ const app = (data,divA)=>{
         let p1 = document.createElement("p")
         p1.innerText = ele.name
         let h1 = document.createElement("h4")
-        h1.innerText = "*****"
+        h1.innerText = "⭐⭐⭐⭐⭐"
+        h1.style.fontSize = "16px"
+        h1.style.paddingBottom = "25px"
         let pricediv = document.createElement("div")
         pricediv.style.display = "flex"
         pricediv.style.justifyContent = "space-evenly"
         pricediv.style.alignItems = "center"
-        pricediv.style.marginTop = "-60px"
+        pricediv.style.marginTop = "-55px"
         let p2 = document.createElement("p")
         p2.innerText = "Rs. " + (ele.price-(ele.dis*ele.price/100)).toFixed(1)
         p2.style.fontWeight = "bold"

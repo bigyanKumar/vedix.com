@@ -191,6 +191,8 @@
     background-color: #e78471;
     border: 0.3px solid #414042;
     color: white;
+    font-size: 17px;
+    box-shadow: 0.5px 3px 2px 3px rgb(124, 123, 123);
 }
 #btn>button:hover{
     width: 82%;
