@@ -1,3 +1,8 @@
+body{
+    width: 100%;
+    max-width: 99%;
+    overflow-x: hidden;
+}
 #orderHead{
     display: flex;
     width: 100%;
@@ -95,7 +100,7 @@ justify-content: space-evenly;
     z-index: 999;
     bottom: 0;
     width: 100%;
-    max-width: 100%;
+    max-width:100%;
     background-color: #f2e9d1;
 
 }
@@ -310,6 +315,7 @@ body{
 }
 .vedix-box{
     width: 100%;
+    max-width: 100%;
     display: flex;
     color: #414042;
 }
@@ -353,17 +359,30 @@ body{
 }
 
 #vedix-Box1{
+    width: 100%;
+    max-width: 100%;
     padding: 50px 15px 0px; 
-    margin: 0px 80px;
+    margin: 0px 10%;
 }
 #vedix-Box2{
-
+    width: 100%;
+    max-width: 100%;
     padding: 50px 15px 0px;
-     margin: 0px 500px;
+     margin: 0px 20%;
 }
 #vedix-Box3{
     padding: 50px 15px 0px; 
-    margin: 0px 800px;
+    margin: 0% 40%;
+}
+#vedix-Box2>div:last-child>p{
+    max-width: 78%;
+    width: 100%;
+    text-align: justify;
+    
+}
+#vedix-Box3>div:last-child>h6{
+    width: fit-content;
+    text-align: justify;
 }
 
  @media only screen and (min-width: 421px) and (max-width: 720px) {
