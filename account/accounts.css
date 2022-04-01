@@ -49,3 +49,20 @@
      width: 65px;
      height: 65px;
  }
+ @media only screen and (min-width: 421px) and (max-width: 720px) {
+    #main{
+        margin: auto;
+        width: 70%;
+    }
+
+}
+
+
+ /* small screens */
+ @media only screen and (min-width: 0px) and (max-width: 420px) {
+    #main{
+        margin: auto;
+        width: 80%;
+    }
+  
+ }
