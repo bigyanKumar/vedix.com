@@ -30,6 +30,7 @@ const app = (data,divA)=>{
            // BuynowPage.push(ele)
            BuynowPage = ele;
             localStorage.setItem("BuynowPage",JSON.stringify(BuynowPage))
+            window.location.href="../productdesPage/produsDescription.html"
         })
         img.src = ele.src
         let p1 = document.createElement("p")
