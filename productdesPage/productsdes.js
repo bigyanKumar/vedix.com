@@ -1,19 +1,30 @@
 console.log("hey")
+let data1=JSON.parse(localStorage.getItem('BuynowPage'));
+let data=data1[0];
+console.log("data1",data);
 
-let data = {
+// cat: "Hair-Oil"
+// dis: 10
+// name: "Praya Root Stimulating Hair Oil For Women"
+// price: 699
+// qnt: 1
+// rating: 4.3
+// src: "https://cdn.shopify.com/s/files/1/0037/7690/5283/products/Praya-Root-Stimulating-Hair-oil_400x400.jpg?v=1640273247"
+
+
+
+let data2 = {
     imgurl:["https://cdn.shopify.com/s/files/1/0037/7690/5283/products/Vaimal-One-Step-Clarifying-Facial-Toner-For-Acne-Prone-Skin_400x400.jpg?v=1640281184","https://cdn.shopify.com/s/files/1/0037/7690/5283/products/2_6d36dbd5-ebfc-4b2d-86d6-85b208a223cd_400x400.jpg?v=1640281184","https://cdn.shopify.com/s/files/1/0037/7690/5283/products/3_9f277982-c2de-4a01-a2c1-7be2c6c45537_400x400.jpg?v=1640281184","https://cdn.shopify.com/s/files/1/0037/7690/5283/products/4_89a81160-7742-4f53-9b5d-8f6340e0becf_400x400.jpg?v=1640281184"],
-    name : "Vaimal One Step Clarifying Facial Toner For Acne Prone Skin 100ml",
-    review : 5,
-    priceS : 500,
-    price : 359,
-    category : "skin"
+//     name : "Vaimal One Step Clarifying Facial Toner For Acne Prone Skin 100ml",
+//     review : 5,
+//     priceS : 500,
+//     price : 359,
+//     category : "skin"
    
 }
+data2.imgurl[0] = data.src;
 
-let desSkin = {
-    productDes1 : "This product is made with Tea Tree, Salicylic Acid, Witch Hazel and more than 12 herbs that work together to reduce acne and redness caused by it. ",
-    productsDes2 : "It helps unclog pores and purify skin. The herbs increase hydration and keep skin moisturized"
-}
+
 
 
 
@@ -22,10 +33,10 @@ page.innerHTML = `<h4><a href=""#>Home</a> > <a href=""#>All</a> > <a href=""#>P
 
 let img = document.getElementById("prodImg");
 let prodimg = document.createElement("img");
-prodimg.src=data.imgurl[0];
+prodimg.src=data.src;
 img.append(prodimg);
 var imglist1 = document.getElementById("imglist");
-let x= data.imgurl;
+let x= data2.imgurl;
 console.log(x)
 for(let i =0;i<x.length;i++){
     let img = document.createElement("img");
@@ -41,20 +52,124 @@ let h2 = document.createElement("h2");
 h2.innerText=data.name;
 
 let p = document.createElement("p");
-p.innerText = "⭐"+ data.review ;
+p.innerText = "⭐"+ data.rating ;
 p.setAttribute("id", "review");
 let h3 = document.createElement("h3");
-h3.innerHTML=`RS. ${data.price} <s>${data.priceS}</s>`
+let Oprice= data.price-(data.dis/100)*data.price ;
+h3.innerHTML=`RS. ${Oprice} <s>${data.price}</s>`
 prodinfo.append(h2,p,h3);
 
-if(data.category=='skin')
-{
-    let ul=document.createElement("ul");
-    let li=document.createElement("li");
-    li.innerText
-}
+var  y = document.getElementById("mydiv2");
+document.querySelector("#sec2").addEventListener("click",()=>{
+  if (y.style.display == "none") {
+    y.style.display = "block";
+  } else {
+    y.style.display = "none";
+  }
+});
+
+document.querySelector("#sec1").addEventListener("click",()=>{
+  let  y = document.getElementById("mydiv1");
+  if (y.style.display == "none") {
+    y.style.display = "block";
+  } else {
+    y.style.display = "none";
+  }
+});
+document.querySelector("#sec3").addEventListener("click",()=>{
+  let  y = document.getElementById("mydiv3");
+  if (y.style.display == "none") {
+    y.style.display = "block";
+  } else {
+    y.style.display = "none";
+  }
+});
+// function show1() {
+//   console.log("working")
+//     var x = document.querySelector(".mydiv");
+//     if (x.style.display === "none") {
+//       x.style.display = "block";
+//     } else {
+//       x.style.display = "none";
+//     }
+//   }
+ 
+  // function show() {
+   
+  //   if (y.style.display == "none") {
+  //     y.style.display = "block";
+  //   } else {
+  //     y.style.display = "none";
+  //   }
+  // }
+  // function show3() {
+  //   var x = document.querySelector(".mydiv3");
+  //   if (x.style.display === "none") {
+  //     x.style.display = "block";
+  //   } else {
+  //     x.style.display = "none";
+  //   }
+  // }
 
 
+  let registerForm = document.getElementById("main")
+
+  registerForm.addEventListener("submit", (event) => {
+      event.preventDefault()
+      
+      const formData = new FormData(registerForm);
+      let name = formData.get("name_input")
+      let email = formData.get("email_input")
+      let rating = formData.get("password_input")
+      let reviewTitle = formData.get("review_Title")
+      let review = formData.get("review_")
+      let img = formData.get("img_input")
+
+      let obj = {
+          name,
+          email,
+          rating,
+          reviewTitle,
+         review,
+         img
+      }
+
+      let data = localStorage.setItem(JSON.stringify(obj))
+    //   register(data)
+  });
 
 
+  let s = document.getElementById("suggest");
+  console.log(s);
+  
+  let pr = JSON.parse(localStorage.getItem('products'))
+  console.log(pr);
+  s.innerHTML=null;
+  for(let k=0;k<pr.length;k++)
+  {
+    
+    if(pr[k].cat==data.cat)
+    {
+      let div = document.createElement("div");
+      let img = document.createElement("img");
+      img.src=pr[k].src;
+      let h4= document.createElement("h4");
+      h4.innerText=pr[k].name
+      let review=document.createElement("p")
+      review.innerText="⭐⭐⭐⭐⭐";
+      let p = document.createElement("p")
+      p.innerText=`Rs.${pr[k].price}`
+      let button = document.createElement("button");
+      button.innerText="ADD TO CART";
+      div.append(img,h4,review,p,button);
+       s.append(div)
+      console.log(div);
+
+    }
+    if(k==5){
+      break;
+    }
+  }
+  
+ 
 
