@@ -1,156 +1,110 @@
-#science{
-       
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    /* border: 1px solid black;   */
-    /* color: white; */
-    margin-left: 300px;
-    margin-right: 300px;
-    height: 580px;
-    }
-    #science>div:nth-child(1){
-    /* border: 1px solid black;  */
-    height: 700px; 
-    width: 770px;
-    margin-left: 0px;
+#scienceskinp{
+  /* border: 1px solid black; */
+  width: 1000px;
+  margin: auto;
+  height: 350px;
+  display: flex;
+}
+#scienceskin>div{
+  /* border: 1px solid pink; */
+  height:380px ;
+  width: 500%;
+}
 
-   }
+hr{
+width: 60px;
+height: 3px;  
+margin-left: 0;
+background-color: #e78471; 
+  
+}
+.scip{
+/* border: 1px solid black; */
 
-   #picsci{
-    /* border: 1px solid black;  */
-    height: 440px; 
-    width: 700px;
-    padding-top: 50px;
-   }
-   hr{
-       width: 70px;
-       height: 5px;  
-       margin-left: 0;
-       background-color: #e78471; 
-            
-   }
-   #science>div>h1{
-    /* border: 1px solid black; */
-    /* width: 350px;  */
-    height: 40px;  
-    color: #414042;
-    font-family: sans-serif;
-    font-weight: 600;
-    font-size: 32px;
-    padding-top: 70px;
-   }
+font-family: sans-serif;
+line-height: 20px;
+width: 606px;
+font-size: 16px;
+color: #414042;
+}
+div>h1{
+margin-top: 40px;
+}
 
-   #scip{
-    /* border: 1px solid black; */
-    width: 815px;
-    height: 150px;
-    font-family: sans-serif;
-    line-height: 45px;
-    font-size: 22px;
-    color: #414042;
-   }
-   
-   #scitwo{
-       /* border: 1px solid black; */
-       height: 1100px;
-       background-color: #fffbf0;
-        
-   }
+.sciimg1{
+width: 350px;
+height: 300px;
+margin-left: 20px;
+margin-top: 30px;
+}
 
-   #scitwo>h2{
-    font-size: 45px;
-    color: #414042;
-    font-family: sans-serif;
-    margin-left:310px ;
-    font-weight: 600;
-    padding-top: 40px;
-   }
+#scienceskindown{
+/* border: 1px solid black; */
+height: 1000px;
+background-color: #fffbf0;
+}
+h2{
+margin-left: 250px;
+font-size: 28px;
+color: #414042;
+font-family: sans-serif;
 
-   #schr{
-    margin-left:310px ;
-    width: 95px;
-   }
-   #scidiv{
-    display: flex;
-    flex-direction: row;
-    /* justify-content: space-around; */
-    /* border: 1px solid black;   */
-    /* color: white; */
-    margin-left: 310px;
-    margin-right: 300px;
-    height: 840px;
-   }
+font-weight: 600;
+padding-top: 40px;
+}
+.hr2{
+margin-left: 250px; 
+}
+#smain{
+/* border: 1px solid black; */
+  width: 1000px;
+  margin: auto;
+  height: 750px;
+  display: flex;
+}
 
-   #scidiv>div:nth-child(1){
-    /* border: 1px solid black;  */
-    height: 900px; 
-    width: 850px;
-    /* margin-left: 0px; */
+#smain>div{
+/* border: 1px solid pink; */
+  height:650px ;
+  width: 500%;
+}
 
-   }
+h3{    font-size: 22px;
+margin-bottom: 0.5em;
+font-family: sans-serif;
+}
 
-   #scidiv>div:nth-child(2) img{
-    /* border: 1px solid black;  */
-    height: 700px; 
-    width: 600px;
-    margin-left: 40px;
-    margin-top: 40px;
-   }
-   #scidiv1>div:nth-child(1),#scidiv2>div:nth-child(1),#scidiv3>div:nth-child(1){
-
-   font-size: 32px;
-   margin-bottom: 0.5em;
-   font-family: sans-serif;
-   color: #414042;
-   font-weight: 600;
-   }
-
-
-   
-   #scidiv1>div:nth-child(2),#scidiv3>div:nth-child(2){
-    font-family: Source Sans Pro,sans-serif;
-    font-size: 20px;
-    letter-spacing: .48px;
-    line-height: 26px;
-    margin-bottom: 10px;
-  }
-  #ppp{
-    font-size: 25px; 
-    color: #414042;
-    font-family: sans-serif;
-  }
-  #scibutton{
-    background: #e78471 0 0 no-repeat padding-box;
-    border: 1px solid #414042;
-    letter-spacing: .5px;
-    color: #fff;
-    width: 250px;
-    height: 50px;
-    border-radius: 2px;
-    font-weight: 600; 
-    font-size: 20px; 
-    margin-left: 300px;
-
-  }
-
-  #scibutton:hover{
-    color: #e78471 ;
-    border: 1px solid #414042;
-    letter-spacing: .5px;
-    background-color: #fff;
-    width: 250px;
-    height: 50px;
-    border-radius: 2px;
-    font-weight: 600; 
-    font-size: 20px; 
-    margin-left: 300px;
-
-  }
-  #ppp1{
-    font-family: Source Sans Pro,sans-serif;
-font-size: 20px;
+div>p{
+font-family: sans-serif;
+width:575px;
+font-size: 16px;
 letter-spacing: .48px;
 line-height: 26px;
 margin-bottom: 10px;
-  }
+}
+#sskinright>img{
+height: 550px;
+width: 350px;
+margin-top: 90px;
+margin-left: 60px;
+}
+
+.scibutton{
+background: #e78471 0 0 no-repeat padding-box;
+/* border: 1px solid #414042; */
+letter-spacing: .5px;
+color: #fff;
+width: 200px;
+height: 40px;
+border-radius: 2px;
+font-weight: 600; 
+font-size: 16px; 
+margin-left: 250px;
+
+}
+
+.scibutton:hover{
+
+background-color: #fff;
+color: #e78471;
+}
