@@ -13,6 +13,13 @@ const showDetail= ()=>{
    // document.getElementById("toggleDiv").append(toggle)
 }
 
+const hair = () => {
+    window.location.href="./knowhair/hair1.html"
+}
+const skin = () => {
+    window.location.href="./knowSkin/skin1.html"
+}
+
 import { contain,navBar} from "../module/module.js";
 
 let Con= document.getElementById("container");

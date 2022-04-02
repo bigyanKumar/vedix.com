@@ -88,16 +88,17 @@ hr{
     display:grid;
     grid-template-columns: repeat(3,1fr);
     gap:20px;
-    width: 900px;
-    margin-left: 290px;
+    width: 72%;
+    margin: auto;
+    /* margin-left: 290px; */
     padding-top: 40px;
-    
+    /* border: 1px solid; */
 }
 #threecontainer>div{
     border: 1px solid orange;
     height: fit-content;
     border-radius: 10px;
-    width: 545px;
+    /* width: 545px; */
     background-color: #fffbf0;
     margin-bottom: 40px;
     padding-bottom: 10px;
@@ -106,6 +107,7 @@ hr{
     display: flex;
     justify-content: row;
     /* justify-content: space-around; */
+    /* border: 1px solid black; */
 
 }
 

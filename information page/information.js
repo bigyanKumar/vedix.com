@@ -34,8 +34,33 @@ window.addEventListener("load", () => {
     infoarr.push(infoObj)
     console.log(infoarr)
     localStorage.setItem("userdetail", JSON.stringify(infoarr));
+    
+    let UpdateUser ={
+      address,
+      locality,
+      city,
+      state,
+      pincode,
+      phone
+    };
+
+    var x=JSON.stringify(UpdateUser);
+    fetch(`http://localhost:3001/Users/${email}`,{
+      method: "PATCH",
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: x
+    })
+    .then((res) => res.json())
+    .then((res) => console.log(res))
+    .catch((err) => console.log(err))
+  
+  
+    console.log(infoObj);
 
     //console.log(data)
+   
   });
 });
 
@@ -89,4 +114,20 @@ cartdata.forEach((elem)=>{
       div.append(image,name,price)
       cartproduct.append(div)
       
+// document.getElementById("submit").addEventListener("click", ()=>{
+ 
+// });
+
+
+
+
+    
+
+document.querySelector("#cart_page").addEventListener("click",()=>{
+  console.log("Hello")
+  window.location.href = "../cart.html"
+})
+document.querySelector("#login_page").addEventListener("click",()=>{
+  console.log("Hello2")
+  window.location.href = "../account/accounts.html"
 })
