@@ -86,9 +86,33 @@ document.querySelector("#cart_page").addEventListener("click",()=>{
     console.log("Hello")
     window.location.href = "../cart.html"
 })
+let profile_details = JSON.parse(localStorage.getItem("UserDeta"))||{}
+let Profile_div = document.getElementById("prifile_div")
 document.querySelector("#login_page").addEventListener("click",()=>{
-    console.log("Hello2")
-    window.location.href = "../account/accounts.html"
+    console.log(profile_details.length)
+    if(profile_details.length!==undefined){
+        console.log(profile_details)
+        document.querySelector("#prifile_div>div:last-child>h3").innerHTML = profile_details[0].name
+        document.querySelector("#prifile_div>div:last-child>h4").innerHTML = profile_details[0].email
+        console.log(profile_details[0].name)
+        Profile_div.style.display = "flex"
+    }else{
+
+        window.location.href = "../account/accounts.html"
+    }
+    
+})
+document.querySelector("#cancel").addEventListener("click", ()=>{
+    //console.log("cancel")
+    Profile_div.style.display = "none"
+})
+document.querySelector("#logout").addEventListener("click", ()=>{
+    //console.log("logout")
+    localStorage.removeItem("UserDeta")
+    alert("Now! you are logged out")
+    Profile_div.style.display = "none"
+    window.location.href = "../index.html"
+
 })
 
 let page = document.getElementById("sci")
