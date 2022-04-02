@@ -90,3 +90,15 @@ document.querySelector("#login_page").addEventListener("click",()=>{
     console.log("Hello2")
     window.location.href = "../account/accounts.html"
 })
+
+let page = document.getElementById("sci")
+page.addEventListener("click",()=>{
+    console.log(page.value)
+    if(page.value==='Science1'){
+        window.location.href = "./sciencehair.html"
+    }
+    else if(page.value==='Science2'){
+        window.location.href = "./scienceskin.html"
+    }
+})
+

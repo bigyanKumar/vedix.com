@@ -10,6 +10,20 @@ body {
     line-height: 1.5;
     
 }
+#sci{
+    display: block;
+    position: relative;
+    border: none;
+    color: rgb(109, 107, 107);
+    background-color: #f2e9d1;
+    font-size: 16px;
+    height: 30px;
+    margin-top: 2.8%;
+}
+#science{
+    display:block;
+    position:absolute;
+}
 #orderHead{
     display: flex;
     width: 100%;
@@ -182,7 +196,7 @@ body{
 #home_acq>div>div:nth-child(2){
     width: 300px;
     height: 52px;
-    padding-top: 20px;
+    padding-top: 50px;
     color: #414042;
 }
 #home_acq>div>div:nth-child(3){
