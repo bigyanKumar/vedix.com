@@ -63,10 +63,12 @@ window.addEventListener("load", () => {
     var x=JSON.stringify(UpdateUser);
     
     updateAdd(x,id);
+   
   
     console.log(infoObj);
 
     //console.log(data)
+   
    
   });
 });
@@ -86,7 +88,9 @@ const updateAdd = (store,mail) => {
 
 }
 
-
+document.querySelector("#submit").addEventListener("click",()=>{
+  window.location.href = "./shipping.html"
+})
 
 
     

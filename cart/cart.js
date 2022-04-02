@@ -61,7 +61,7 @@ const cartPop = ()=>{
     let inndiv2 = document.createElement("div")
     inndiv2.setAttribute("class","btn")
     let a1 = document.createElement("a")
-    a1.setAttribute("href","#")
+    a1.setAttribute("href","../information.html")
     let h5tag = document.createElement("h4")
     h5tag.innerText = "CHECKOUT"
     a1.append(h5tag)
