@@ -68,6 +68,8 @@ table>tr{
     width: 210px;
     height: 200px;
 }
-
+td{
+    border: 1px solid black;
+}
 
 

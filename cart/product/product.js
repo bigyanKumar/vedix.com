@@ -30,19 +30,23 @@ const app = (data,divA)=>{
            // BuynowPage.push(ele)
            BuynowPage = ele;
             localStorage.setItem("BuynowPage",JSON.stringify(BuynowPage))
+            window.location.href="../productdesPage/produsDescription.html"
         })
         img.src = ele.src
         let p1 = document.createElement("p")
         p1.innerText = ele.name
         let h1 = document.createElement("h4")
-        h1.innerText = "*****"
+        h1.innerText = "⭐⭐⭐⭐⭐"
+        h1.style.fontSize = "16px"
+        h1.style.paddingBottom = "25px"
         let pricediv = document.createElement("div")
         pricediv.style.display = "flex"
         pricediv.style.justifyContent = "space-evenly"
         pricediv.style.alignItems = "center"
+        pricediv.style.marginTop = "-55px"
         let p2 = document.createElement("p")
         p2.innerText = "Rs. " + (ele.price-(ele.dis*ele.price/100)).toFixed(1)
-
+        p2.style.fontWeight = "bold"
         let p3  = document.createElement("p")
         p3.innerText = "Rs. "+ele.price
         p3.style.textDecoration = "line-through"
@@ -208,7 +212,7 @@ const cartPop = ()=>{
     let inndiv2 = document.createElement("div")
     inndiv2.setAttribute("class","btn")
     let a1 = document.createElement("a")
-    a1.setAttribute("href","#")
+    a1.setAttribute("href","./cart.html")
     let h5tag = document.createElement("h4")
     h5tag.innerText = "CHECKOUT"
     a1.append(h5tag)
@@ -266,6 +270,7 @@ const cartAppdend = (Deta,div)=>{
         divsum.style.gap = "10px"
         divsum.setAttribute("id","inc")
         let h1 = document.createElement("h3")
+        h1.style.cursor = "pointer"
         h1.addEventListener("click",()=>{
             min(ele,ind)
         })
@@ -275,6 +280,7 @@ const cartAppdend = (Deta,div)=>{
         let h2 = document.createElement("h3")
         h2.innerText = ele.qnt
         let h3 =document.createElement("h3")
+        h3.style.cursor = "pointer"
         h3.addEventListener("click",()=>{
             max(ele,ind)
         })
@@ -337,3 +343,11 @@ const removeDeta = (ele,ind) =>{
     localStorage.setItem("cart",JSON.stringify(Cart))
     cartPop()
 }
+document.querySelector("#cart_page").addEventListener("click",()=>{
+    console.log("Hello")
+    window.location.href = "../cart.html"
+})
+document.querySelector("#login_page").addEventListener("click",()=>{
+    console.log("Hello2")
+    window.location.href = "../account/accounts.html"
+})

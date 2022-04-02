@@ -1,0 +1,320 @@
+#shippingmain{
+    /* border: 1px solid black; */
+    width: 72%;
+    margin: auto;
+    display:  flex;
+    /* flex-direction: row; */
+    font-family: "Segoe UI", "Roboto", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+
+}
+#shippingmain>div{
+    /* border: 1px solid black; */
+    width: 1000px;
+    height:1000px;
+}
+
+#shipimg{
+    padding-top: 40px;
+    height: 50px;
+}
+#selectcat{
+   /* border: 1px solid black; */
+   display: flex;
+   padding-top: 30px;
+   color: #e78471;
+   font-size: 18px;
+}
+
+#shipblack{
+   color: #9c9c9c;
+   margin-left: 8px;
+   margin-right: 8px;
+   font-weight: 900;
+}
+
+
+#shipdetails{
+   border: 1px solid  #9c9c9c;;
+   height: 200px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+#shipdetails>div{
+   /* border: 1px solid rgb(0, 255, 13); */
+   height: 100px;
+}
+#shipdetails1{
+   display: flex;
+}
+#shipdetails1>div{
+padding-top: 20px;
+/* border: 1px solid rgb(191, 13, 13);    */
+
+}
+#sdiv1{
+font-size: 20px;
+margin-top: 10px;
+margin-left: 10px;
+width: 90px;
+}
+
+#sdiv3{
+    width: 700px;   
+}
+
+ div>input{
+        font-size: 20px;
+        width: 690px;
+        height: 40px;
+    }
+
+#sdiv2 {
+    font-size: 20px;
+    margin-top: 10px;
+    text-align: right;
+    margin-right: 10px;
+    width: 90px;
+    color:#e78471;
+}
+    
+#sdiv{
+    /* border: 1px solid ; */
+    margin-left: 600px;
+    font-size: 20px;
+    margin-top: 10px;
+    text-align: right;
+    margin-right: 10px;
+    width: 90px;
+    font-weight: 600; 
+    color: black;
+}
+#shr{
+    width: 800px;
+    color: #9c9c9c00;
+}
+
+#smethod{
+    /* border: 1px solid rgb(97, 24, 24); */
+    height: 160px;
+    
+}
+
+#smethod>div{
+    /* border: 1px solid rgb(2, 86, 1); */
+    height: 80px;
+    
+}
+
+
+div>h2{
+font-size: 25px;
+line-height: 1.3em;
+font-family:  "Segoe UI", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",  sans-serif;
+padding-top: 10px;
+}
+#sfree{
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+#sfree>div :nth-child(2),#sfree>div :nth-child(3),#sfree>div :nth-child(4){
+
+    /* border: 1px solid black; */
+    width: 300px;
+    font-size: 20px;
+}
+
+#sinfo{
+    /* border: 1px solid green; */
+    height: 100px;
+    margin-top: 30px;
+    display: flex;
+    
+}
+#sinfo>div{
+    /* border: 1px solid red; */
+    height: 100px;
+    width: 300px;
+   
+}
+
+#sbttn{
+    width: 300px;
+    height: 70px;
+    font-size: 25px;
+    font-weight: 600; 
+    background-color: #e78471;
+    color: aliceblue;
+    border-radius: 10px;
+    margin-left: 90px;
+}
+#sbttn:hover{
+   
+    background-color: rgb(4, 4, 32);
+    color: aliceblue;
+    border-radius: 10px;
+}
+
+#inforet{
+    font-size: 23px;
+    color: #e78471;
+    padding-top: 26px;
+}
+
+#ship1{
+    margin-left: 20px;
+    margin-top: 20px;
+    border: 1px solid;
+    border-radius: 50%; 
+    /* padding: 10px;  */
+    background-color: rgb(18, 18, 214);
+    width: 25px; 
+    height: 25px; 
+}
+
+#ship1:hover{
+  background-color: #e78471;
+}
+
+#ship1 div{
+    border: 1px solid;
+    border-radius: 50%; 
+    margin: 6px; 
+    text-align: center;
+    width: 10px; 
+    height: 10px; 
+    background-color: aliceblue;
+}
+#ship2{
+    font-size: 20px;
+    /* border: 1px solid; */
+    width: 300px;
+    margin-left:15px ;
+    margin-top: 20px;
+}
+#ss1{
+    margin-top: 250px;
+    color: #000;
+}
+#lastdiv{
+    font-size: 19px;
+    color: #9c9c9c;
+}
+#showcartitems{
+    height: 200px;
+    border: 1px solid;
+    margin-top: 40px;
+    /* overflow:scroll; */
+    
+    height: auto;
+}
+#leftss{
+    display: flex;
+    margin-top: 40px;
+
+}
+#apply{
+    width: 90px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+#leftdis{
+    width: 600px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+#subss>div{
+    display: flex;
+    margin-top: 20px;
+    
+}
+#subssint{
+    width: 100px;
+    margin-left: 500px;
+    text-align: center;
+    
+}
+#subdiv{
+    margin-left:20px;
+    font-size: 20px;
+    margin-top: 10px;
+}
+#sshrtotal{
+    margin-top: 40px;
+    width: 680px;
+}
+
+#ssfree{
+    font-size: 25px;
+    margin-left: 500px;
+}
+
+/* ######################################## */
+ /* /* #ridgtdata{
+    background-color: #fafafa;
+    color: #9c9c9c;
+} */
+#ridgtdata{
+    margin-left: 20px;
+}
+
+#showdiv{
+    width: 740px;
+    height: 100px;
+    border: 1px solid green;
+    display: flex;
+   
+}
+#showdiv>div{
+    /* border: 1px solid black; */
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+    
+}
+#shipimage{
+   width: 100px;
+   height: 100px;
+  margin-bottom: 800px;
+    
+}
+#shipname{
+    margin-left:40px;
+    width: 500px;
+    text-align: left;
+    margin-top: 40px;
+}
+
+#shipprice{
+    margin-left: 10px;
+    width: 100px;
+    text-align: right;
+    margin-right: 3px;
+    margin-top: 40px;
+}
+
+
+#ssdiv1{
+    border: 1px solid black;
+    height: 40px;
+    font-size: 20px;
+   padding-bottom: 20px;
+}
+#ssdiv2{
+    border: 1px solid black;
+    height: 40px;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+#subss>div>div:nth-child(2){
+    margin-left: 500px;
+    border:  1px solid;
+    font-size: 20px;
+    width: 100px;
+}

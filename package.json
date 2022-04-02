@@ -1,0 +1,25 @@
+{
+  "name": "vedix.com",
+  "version": "1.0.0",
+  "description": "beauty products",
+  "main": "script/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"node script/index.js",
+    "server":"json-server --watch db.json --port 3001"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bigyanKumar/vedix.com.git"
+  },
+  "dependencies": {
+    "json-server": "^0.17.0"
+  },
+  "author": "Bigyan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bigyanKumar/vedix.com/issues"
+  },
+  "homepage": "https://github.com/bigyanKumar/vedix.com#readme",
+  "type":"module"
+}

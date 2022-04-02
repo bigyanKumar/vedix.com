@@ -17,6 +17,13 @@
 //       <a href=""><img class="logo" src="https://cdn.shopify.com/s/files/1/2028/2057/files/google-new.png?v=1576738325" alt=""></a>
 //   </div>
 // </div>
+window.addEventListener("load",()=>{
+    let Login =JSON.parse(localStorage.getItem("UserDeta"))||{}
+   if(Login.length!==undefined){
+    alert("User Logged In")
+    window.location.href = "../index.html"
+   }
+})
 let signIn = document.getElementById("signin")
 signIn.addEventListener("click",(event)=>{
     event.preventDefault()
@@ -27,24 +34,20 @@ signIn.addEventListener("click",(event)=>{
             username,
             password
         }
-        let payload = JSON.stringify(obj)
-      console.log(payload)
-       SignIn(payload)
+      //  let payload = JSON.stringify(obj)
+     // console.log(payload)
+       SignIn(obj)
 
 })
 const SignIn = (deta)=>{
-    fetch("https://masai-api-mocker.herokuapp.com/auth/login", {
-        method : 'POST',
-        headers : {
-            'Content-Type' : 'application/json'
-        },
-        body : deta
+
+    fetch(`http://localhost:3001/Users?username=${deta.username}&password=${deta.password}`, {
+        method : 'GET'
     })
     .then((res)=> res.json())
     .then((data)=> {
-        user = JSON.parse(deta)
-        let token = localStorage.setItem("LoginToken",data.token)
-        let username = localStorage.setItem("username",user.username)
+      localStorage.setItem("UserDeta",JSON.stringify(data))
+       window.location.href = "../index.html"
         })
     .catch((Err)=> console.log(Err))
     //localStorage.setItem("token")

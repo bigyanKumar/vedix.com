@@ -1,3 +1,8 @@
+body{
+    width: 100%;
+    max-width: 99%;
+    overflow-x: hidden;
+}
 #orderHead{
     display: flex;
     width: 100%;
@@ -95,7 +100,7 @@ justify-content: space-evenly;
     z-index: 999;
     bottom: 0;
     width: 100%;
-    max-width: 100%;
+    max-width:100%;
     background-color: #f2e9d1;
 
 }
@@ -153,7 +158,7 @@ body{
 #home_acq{
     position: relative;
     max-width: 100%;
-    background: url(https://cdn.shopify.com/s/files/1/0037/7690/5283/files/vx_banner_home_d.jpg?v=1609309319)no-repeat right bottom;
+    background: url(https://cdn.shopify.com/s/files/1/0037/7690/5283/files/homebanner_grey_m.jpg?v=1648713644)no-repeat right bottom;
     background-size: contain;
     background-position: center center;
     height: 540px;
@@ -310,6 +315,7 @@ body{
 }
 .vedix-box{
     width: 100%;
+    max-width: 100%;
     display: flex;
     color: #414042;
 }
@@ -353,17 +359,30 @@ body{
 }
 
 #vedix-Box1{
+    width: 100%;
+    max-width: 100%;
     padding: 50px 15px 0px; 
-    margin: 0px 80px;
+    margin: 0px 10%;
 }
 #vedix-Box2{
-
+    width: 100%;
+    max-width: 100%;
     padding: 50px 15px 0px;
-     margin: 0px 500px;
+     margin: 0px 20%;
 }
 #vedix-Box3{
     padding: 50px 15px 0px; 
-    margin: 0px 800px;
+    margin: 0% 40%;
+}
+#vedix-Box2>div:last-child>p{
+    max-width: 78%;
+    width: 100%;
+    text-align: justify;
+    
+}
+#vedix-Box3>div:last-child>h6{
+    width: fit-content;
+    text-align: justify;
 }
 
  @media only screen and (min-width: 421px) and (max-width: 720px) {
@@ -561,6 +580,9 @@ body{
             width: fit-content;
             text-align: justify;
         }
+        #home_acq>div>div:nth-child(1){
+            color: #131114;
+        }
 }
 
  @media only screen and (min-width: 0px) and (max-width: 420px) {
@@ -571,47 +593,52 @@ body{
         padding-left: 10px;
     }
     #nav>div{
-        width: 100%;
+        width: fit-content;
         height: auto;
         display: block;
         justify-content: left;
     }
+
     #nav>div>div:last-child{
-        width: 100%;
+        width: fit-content;
         display: block;
-        padding-top: 10px;
-        justify-content: left;
-        gap: 20px;
-        align-items: center;
+        
     }
-    #nav>div>div>div:first-child>a>img{
-        display: block;
-        align-items: center;
-        width: 50%;
-        height: 50%;
-    }
-    #nav>div>div>div:first-child>a>img{
-        display: block;
-        justify-content: center;
-        align-items: center;
-     }
+   #login_page{
+       padding: 30px;
+       margin-top: 10px;
+   }
+   #cart_page{
+       padding: 30px;
+       margin-top: 10px;
+   }
+ 
     #footer>div:first-child{
         display: block;
         justify-content: center;
         align-items: center;
         text-align: center;
         gap: 20px;
-        padding-top: 10px;
+        padding-top: 20px;
         
         }
         #home_acq>div>div:nth-child(1){
-            width: 100%;
-            height: 100%;
-            padding-top: 200px;
-            color: #414042;
+            color: #fbfafc;
+            margin-top: 10px;
+            max-width: 90%;
         }
         #home_acq{
             height: fit-content;
+        }
+        #home_acq>div>div:nth-child(1)>h1{
+            margin-top:-70px
+        }
+        #home_acq>div>div:nth-child(2)>h4{
+            margin-top:-50px;
+            color:white
+        }
+        #home_acq>div>div:nth-child(3)>div:first-child{
+            margin-top:-60px;
         }
         #freebie_offer>div:first-child>img{
             display: none;
@@ -746,45 +773,103 @@ body{
            align-items: center;
         }
         #vedix-Box1{
-            padding: 50px 15px 0px; 
+            padding: 10px 15px 0px; 
             margin: 0px 10px;
         }
         #vedix-Box1>div:last-child>h6{
-            width: fit-content;
+            width: 80%;
             text-align: justify;
             padding-right: 10px;
         }
         #vedix-Box1>div:last-child>p{
-            width: fit-content;
+            width: 80%;
+            max-width: 80%;
             text-align: justify;
-            padding-right: 10px;
         }
         #vedix-Box2{
             width: 100%;
-            padding: 50px 15px 0px;
+            padding: 10px 15px 0px;
              margin: 0px 10px;
         }
         #vedix-Box3>div:last-child>p{
-            width: fit-content;
+            width: 80%;
             text-align: justify;
            
         }
         #vedix-Box2>div:last-child>h6{
-            width: fit-content;
+            width: 80%;
             text-align: justify; 
         }
         #vedix-Box3{
             width: 100%;
-            padding: 50px 15px 0px; 
+            padding: 10px 15px 0px; 
             margin: 0px 10px;
         }
         #vedix-Box2>div:last-child>p{
-            width: fit-content;
+            width: 80%;
             text-align: justify;
             
         }
         #vedix-Box3>div:last-child>h6{
-            width: fit-content;
+            width: 80%;
             text-align: justify;
         }
+     /* nav bar setting */
+     #nav{
+        width: 100%;
+        height: auto;
+    }
+    #nav>div>div>div:first-child>a>img{
+        width: 50%;
+        height: 50%;
+    }
+   
+    #nav>div{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 2;
+        grid-template-rows: 1;
+        justify-content: left;
+    }
+    #nav>div>div:last-child{
+        width: 100%;
+        display: flex;
+        gap: 2px;
+        justify-content: left;
+        align-items: center;
+    }
+    #nav>div>div>div>a{
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+    }
+    #nav>div>div:last-child>div{
+        /* height: 40px; */
+        padding: 5px;
+        border: 1px solid black;
+    }
+    #nav>div>div:last-child>div:nth-child(3){
+        /* height: 40px; */
+        margin-top: -0px;
+    }
+    #nav>div>div:last-child>div:nth-child(4){
+        /* height: 40px; */
+        margin-top: -0px;
+    }
+    #nav>div>div:last-child>div:nth-child(1)>a{
+        /* height: 40px; */
+        font-size: 12px;
+    }
+    #nav>div>div:last-child>div:nth-child(2)>a{
+        /* height: 40px; */
+        font-size: 12px;
+    }
+    #nav>div>div:last-child>div:nth-child(1)>a>i{
+        /* height: 40px; */
+        font-size: 12px;
+    }
+    #nav>div>div:last-child>div:nth-child(2)>a>i{
+        /* height: 40px; */
+        font-size: 12px;
+    }
  }

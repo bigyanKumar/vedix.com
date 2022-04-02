@@ -22,15 +22,15 @@
         <div id="second">
            <h4>HAIR VOLUME</h4>
            <div class="frame">
-               <div>
+               <div id="frame1" onclick="fun1()" value="fine">
                 <img src="https://cdn.shopify.com/s/files/1/0037/7690/5283/files/VX_hair_volume-Fine.svg?v=1616748301" alt="">
                 <p>Fine</p>
                </div>
-               <div>
+               <div id="frame2" onclick="fun2()" value="medium">
                 <img src="https://cdn.shopify.com/s/files/1/0037/7690/5283/files/VX_hair_volume-Medium.svg?v=1616748301" alt="">
                 <p>Medium</p>
                </div>
-               <div>
+               <div id="frame3" onclick="fun3()" value="thick">
                 <img src="https://cdn.shopify.com/s/files/1/0037/7690/5283/files/VX_hair_volume-Thick.svg?v=1616748301" alt="">
                 <p>Thick</p>
                </div>
@@ -40,15 +40,15 @@
         <div id="third">
             <h4>HAIR TYPE</h4>
             <div class="frame">
-                <div>
+                <div id="frame4" onclick="fun4()" value="wavy">
                  <img src="https://cdn.shopify.com/s/files/1/0037/7690/5283/files/VX_hair_type-Wavy.svg?v=1616748301" alt="">
                  <p>Wavy</p>
                 </div>
-                <div>
+                <div id="frame5" onclick="fun5()" value="straight">
                  <img src="https://cdn.shopify.com/s/files/1/0037/7690/5283/files/VX_hair_type-Straight.svg?v=1616748301" alt="">
                  <p>Straight</p>
                 </div>
-                <div>
+                <div id="frame6" onclick="fun6()" value="curly">
                  <img src="https://cdn.shopify.com/s/files/1/0037/7690/5283/files/VX_hair_type-Curly.svg?v=1616748301" alt="">
                  <p>Curly</p>
                 </div>
@@ -58,15 +58,15 @@
          <div id="fourth">
             <h4>HAIR TEXTURE</h4>
             <div class="frame">
-                <div>
+                <div id="frame7" onclick="fun7()" value="rough">
                  <img src="https://cdn.shopify.com/s/files/1/0037/7690/5283/files/VX_hair_texture-Rough_n_Dry.svg?v=1616748301" alt="">
                  <p>Rough and dry</p>
                 </div>
-                <div>
+                <div id="frame8" onclick="fun8()" value="sliky">
                  <img src="https://cdn.shopify.com/s/files/1/0037/7690/5283/files/VX_hair_texture-Silk_n_Smooth.svg?v=1616748301" alt="">
                  <p>Silky and smooth</p>
                 </div>
-                <div>
+                <div id="frame9" onclick="fun9()" value="full">
                  <img src="https://cdn.shopify.com/s/files/1/0037/7690/5283/files/VX_hair_texture-Full_n_Lustrous.svg?v=1616748301" alt="">
                  <p>Full and lustrous</p>
                 </div>
@@ -76,15 +76,15 @@
          <div id="fifth">
             <h4>SCALP TEXTURE</h4>
             <div class="frame">
-                <div>
+                <div id="frame10" onclick="fun10()" value="dry">
                  <img src="https://cdn.shopify.com/s/files/1/0037/7690/5283/files/VX_scalp_texture-Dry.svg?v=1616748301" alt="">
                  <p>Dry</p>
                 </div>
-                <div>
+                <div id="frame11" onclick="fun11()" value="oily">
                  <img src="https://cdn.shopify.com/s/files/1/0037/7690/5283/files/VX_scalp_texture-Oily.svg?v=1616748301" alt="">
                  <p>Oily</p>
                 </div>
-                <div>
+                <div id="frame12" onclick="fun12()" value="NtO">
                  <img src="https://cdn.shopify.com/s/files/1/0037/7690/5283/files/VX_scalp_texture-Normal_Oily.svg?v=1616748301" alt="">
                  <p>Normal to oily</p>
                 </div>
@@ -94,11 +94,11 @@
          <div id="sixth">
             <h4>DANDRUFF</h4>
             <div class="frame">
-                <div>
+                <div id="frame13" onclick="fun13()" value="yes">
                  <img src="https://cdn.shopify.com/s/files/1/0037/7690/5283/files/VX_Dandruff-Yes.svg?v=1616748301" alt="">
                  <p>Yes</p>
                 </div>
-                <div>
+                <div id="frame14" onclick="fun14()" value="no">
                  <img src="https://cdn.shopify.com/s/files/1/0037/7690/5283/files/VX_Dandruff-No.svg?v=1616748301" alt="">
                  <p>No</p>
                 </div>
@@ -106,8 +106,8 @@
             <hr>
          </div>
        <div id="btns">
-        <button class="btn">PREVIOUS</button>
-        <button class="btn">CONTINUE</button>
+        <button class="btn" id="pre" onclick="pre()">PREVIOUS</button>
+        <button class="btn" id="next" onclick="next()">CONTINUE</button>
        </div>
 
     </div>

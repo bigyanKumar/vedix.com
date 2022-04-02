@@ -27,6 +27,67 @@ body{
    font-size: 16px;
    color: #414042;
 }
+#CartD{
+    width: 500px;
+    height: 810px;
+    max-width: 810px;
+    margin: auto;
+    display: block;
+    overflow-y: scroll;
+    background-color: white;
+    box-shadow: 0px 0px 10px 0px rgb(192, 192, 192);
+    color: #212529;
+}
+#CartD>div{
+    padding-left: 10px;
+    max-width: 95%;
+}
+#CartD>div:nth-child(2){
+    margin-top: -35px;
+    border-bottom: 0.1px solid rgb(185, 180, 180);
+}
+#CartD>div:nth-child(3)>h5{
+    background-color: black;
+    color: white;
+    padding: 15px 2px 15px 2px;
+}
+#CartD>div:nth-child(4){
+    height: 520px;
+    overflow: scroll;
+}
+#CartD>div:nth-child(5)>div{
+    max-width: 95%;
+    margin: auto;
+}
+.fa-minus,.fa-plus{
+    color: black;
+}
+#cartDiv{
+    max-width: 100%;
+}
+#cartDiv>div>img{
+    width: 80px;
+    height: 80px;
+    border: 0.3px solid black;
+    padding: 2px;
+}
+#cartDiv>div{
+    padding: 5px;
+    border: 0.2px solid black;
+}
+#inc>h3:nth-child(1){
+    border: .8px solid black;
+    border-radius: 50%;
+}
+#inc>h3:nth-child(3){
+    border: .8px solid black;
+    border-radius: 50%;
+}
+.fa-xmark{
+    width: 17px;
+    height: 17px;
+    color:black
+}
 @media only screen and (min-width: 421px) and (max-width: 720px) {
 
 }

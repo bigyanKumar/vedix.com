@@ -19,3 +19,11 @@ let Con= document.getElementById("container");
 Con.innerHTML=contain();
 let Nav = document.getElementById("nav");
 Nav.innerHTML = navBar()
+document.querySelector("#cart_page").addEventListener("click",()=>{
+    console.log("Hello")
+    window.location.href = "../cart.html"
+})
+document.querySelector("#login_page").addEventListener("click",()=>{
+    console.log("Hello2")
+    window.location.href = "../account/accounts.html"
+})

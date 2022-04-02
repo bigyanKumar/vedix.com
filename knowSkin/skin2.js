@@ -53,10 +53,18 @@ const main = () => {
     else{
 
         localStorage.setItem("skin1",JSON.stringify(obj));
-        window.location.href="skin2.html";
+        window.location.href="skinresult.html";
     }
 }
 
 const main1 = () => {
     window.location.href="skin1.html";
 }
+document.querySelector("#cart_page").addEventListener("click",()=>{
+    console.log("Hello")
+    window.location.href = "../cart.html"
+})
+document.querySelector("#login_page").addEventListener("click",()=>{
+    console.log("Hello2")
+    window.location.href = "../account/accounts.html"
+})
