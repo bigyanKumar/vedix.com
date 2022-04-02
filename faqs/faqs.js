@@ -14,10 +14,10 @@ const showDetail= ()=>{
 }
 
 const hair = () => {
-    window.location.href="../knowhair/hair1.html"
+    window.location.href="./knowhair/hair1.html"
 }
 const skin = () => {
-    window.location.href="../knowSkin/skin1.html"
+    window.location.href="./knowSkin/skin1.html"
 }
 
 import { contain,navBar} from "../module/module.js";
