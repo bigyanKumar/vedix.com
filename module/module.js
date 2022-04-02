@@ -14,9 +14,9 @@ const navBar = ()=>{
         </div>
     </div>
     <div>
-        <div><a href="">Know Your Skin<i class="fa-solid fa-angle-right"></i></a>
+        <div><a href="./knowSkin/skin1.html">Know Your Skin<i class="fa-solid fa-angle-right"></i></a>
         </div>
-        <div><a href="#">Know Your Hair<i class="fa-solid fa-angle-right"></i></a> </div>
+        <div><a href="./knowhair/hair1.html">Know Your Hair<i class="fa-solid fa-angle-right"></i></a> </div>
         <div id="cart_page"><a href="./cart.html"><img src="https://cdn.shopify.com/s/files/1/0037/7690/5283/files/cart_icon_93f3b819-aa16-479e-b6ba-c5007e8520d2.png?v=1623129140" alt="cart_img"></a></div>
         <div id="login_page"><a href="./account/accounts.html"><img src="https://cdn.shopify.com/s/files/1/0037/7690/5283/files/signin-lock.png?v=1623746079" alt="profile_img"></a></div>
     </div>
