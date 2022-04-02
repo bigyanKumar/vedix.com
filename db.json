@@ -1,10 +1,7 @@
 {
   "Users": [
     {
-      "name": "Bigyan Kumar",
-      "email": "bigyan@123",
-      "password": "123",
-      "username": "bigyan@123",
+      "address": "abcd",
       "id": 1
     },
     {
@@ -18,7 +15,13 @@
       "email": "apurvadiwaker@gmail.com",
       "password": "apurva",
       "username": "apurvadiwaker@gmail.com",
-      "id": 2
+      "id": 2,
+      "address": "ghjvbkn",
+      "locality": "gvhbjn",
+      "city": "ghbjn",
+      "state": "",
+      "pincode": "",
+      "phone": ""
     }
   ]
 }

@@ -1,5 +1,6 @@
 //console.log("hello")
 
+
 window.addEventListener("load", () => {
   const infoarr =JSON.parse(localStorage.getItem("userdetail")) || [];
   //console.log(infoarr)
@@ -33,6 +34,18 @@ window.addEventListener("load", () => {
     };
     infoarr.push(infoObj)
     console.log(infoarr)
+    let Deta=JSON.parse(localStorage.getItem('UserDeta'));
+      // console.log(Deta)
+      let id;
+      for(let i=0; i<Deta.length; i++)
+      {
+        console.log(Deta[i]);
+        if(email==Deta[i].email)
+          {
+             id = Deta[i].id
+            console.log(id)
+          }
+      }      
     localStorage.setItem("userdetail", JSON.stringify(infoarr));
     
     let UpdateUser ={
@@ -45,17 +58,8 @@ window.addEventListener("load", () => {
     };
 
     var x=JSON.stringify(UpdateUser);
-    fetch(`http://localhost:3001/Users/${email}`,{
-      method: "PATCH",
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: x
-    })
-    .then((res) => res.json())
-    .then((res) => console.log(res))
-    .catch((err) => console.log(err))
-  
+    
+    updateAdd(x,id);
   
     console.log(infoObj);
 
@@ -63,10 +67,21 @@ window.addEventListener("load", () => {
    
   });
 });
-
-// document.getElementById("submit").addEventListener("click", ()=>{
  
-// });
+
+const updateAdd = (store,mail) => {
+  fetch(`http://localhost:3001/Users/${mail}`,{
+      method: "PATCH",
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: store
+    })
+    .then((res) => res.json())
+    .then((res) => console.log(res))
+    .catch((err) => console.log(err))
+
+}
 
 
 
