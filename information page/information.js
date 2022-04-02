@@ -86,8 +86,8 @@ const updateAdd = (store,mail) => {
 
     //console.log(data)
    
-  });
-});
+  }
+})
 
 // document.querySelector("#cart_page").addEventListener("click",()=>{
 //   console.log("Hello")
@@ -100,7 +100,7 @@ const updateAdd = (store,mail) => {
 
  let cartdata = JSON.parse(localStorage.getItem("cart"))||[];
   //console.log(cartdata);
-
+  
 let subtotal = document.getElementById("amount");
 let finalamount = document.querySelector("#totalprice");
     console.log(finalamount)
