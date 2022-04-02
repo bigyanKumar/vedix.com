@@ -114,20 +114,12 @@ cartdata.forEach((elem)=>{
       div.append(image,name,price)
       cartproduct.append(div)
       
-// document.getElementById("submit").addEventListener("click", ()=>{
+ //document.getElementById("submit").addEventListener("click", ()=>{
  
-// });
+ });
 
 
 
 
     
 
-document.querySelector("#cart_page").addEventListener("click",()=>{
-  console.log("Hello")
-  window.location.href = "../cart.html"
-})
-document.querySelector("#login_page").addEventListener("click",()=>{
-  console.log("Hello2")
-  window.location.href = "../account/accounts.html"
-})
