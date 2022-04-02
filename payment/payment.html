@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="./payment.css">
+    <link rel="stylesheet" href="../style/index.css">
+    <script src="https://kit.fontawesome.com/0a03bfd4cc.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="payment_main">
+        <div>
+            <div>
+                <a href="../index.html">
+                    <img src="https://cdn.shopify.com/s/files/1/0037/7690/5283/files/logo.svg?v=1585630376" alt="Vedix Logo">
+                    </a>
+            </div>
+            <div><a href="#">Cart<i class="fa-solid fa-angle-right"></i></a><a href="#">information<i class="fa-solid fa-angle-right"></i></a><a href="#">Shipping<i class="fa-solid fa-angle-right"></i></a><a href="#">Payment<i class="fa-solid fa-angle-right"></i></a></div>
+            <div id="address">
+                <div>
+                    <p>Contact</p>
+                    <p></p>
+                    <p id="change_email" style="color: #e78471;">Change</p>
+                </div>
+                <div>
+                    <p>Ship to</p>
+                    <p></p>
+                    <p id="change_address" style="color: #e78471;" >Change</p>
+                </div>
+                <div>
+                    <P>Method</P>
+                    <P>Standard Shiping</P>
+                    <h5>. Free</h5>
+                </div>
+
+            </div>
+            <div>
+                <h3>
+                    Payment
+                </h3>
+                <p>All transactions are secure and encrypted.</p>
+            </div>
+            <div id="payment_div">
+                <div>
+                    <div>
+                        <div><img src="https://upload.wikimedia.org/wikipedia/en/8/89/Razorpay_logo.svg" alt="Razorpay.jpg"></div>
+                        <div><p>Cards, UPI, Wallets, Paypal, Netbanking.</p></div>
+                    </div>
+                    <div>
+                        <div>
+                            <img src="https://logos-world.net/wp-content/uploads/2020/04/Visa-Logo.png" alt="visa.logo">
+                            <img src="https://www.freepnglogos.com/uploads/mastercard-png/mastercard-logo-mastercard-logo-png-vector-download-19.png" alt="master_card.logo">
+                            <img src="https://download.logo.wine/logo/American_Express/American_Express-Logo.wine.png" alt="amex.logo">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/RuPay-Logo.png/800px-RuPay-Logo.png" alt="rupay.jpg">
+                        </div>
+                    </div>
+                    <div><p>and more...</p></div>
+                </div>
+                <div id="payment_img">
+                    <div>
+                        <img src="https://miro.medium.com/max/700/1*5rIPaiWYpQE1yNJl0BzryA.png" alt="">
+                    </div>
+                </div>
+                <div>
+                    <div><input type="radio" id="cod" name="Cod" value="COD">
+                        <label for="cod"> Cash on Delivery (COD)</label></div>
+                </div>
+            </div>
+            <div>
+                <h3>
+                    Billing Address
+                </h3>
+                <p>Select the address that match your card or payment method.</p>
+            </div>
+            <div>
+                <div><input type="radio" id="same" name="address" value="same">
+                    <label for="same">Same as shipping address</label></div>
+                    
+                    <div><input type="radio" id="diffrent" name="address" value="diffrent">
+                        <label for="diffrent">Use a diffrent billing address</label></div>
+            </div>
+            <div>
+                <div><p><a href="#" style="text-decoration: none;color: #e78471;">Return to shipping</a></p></div>
+                <div class="btn" style="border: none;border-radius: 5px;" ><a href="#"><h4>Complete order</h4></a></div>
+            </div>
+        </div>
+        <div id="cartApeend">
+            <div id="cartItem"></div>
+            <div>
+                <div><input type="text" id="promo" placeholder="Discount code"></div>
+                <div><button id="submit">Apply</button></div>
+            </div>
+            <div>
+                <div>
+                        <p>Subtotal</p>
+                        <p id="subTotalPrice">100.</p>
+                    </div>
+                    <div>
+                        <p>Shipping</p>
+                    <p>Free</p>
+                 </div>
+            </div>
+            <div>
+               <div>
+                   <p>Total</p>
+               
+                   <p>INR</p>
+                <h3 id="totalPrice" style="text-align: right;">1000.00</h3>
+            </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script src="./payment.js"></script>
