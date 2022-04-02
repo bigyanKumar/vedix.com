@@ -36,7 +36,7 @@ const createA = (deta)=>{
     })
     .then((res)=> res.json())
     .then((data)=> {
-        window.location.href = "./accoounts.js"
+        window.location.href = "./accoounts.html"
     })
     .catch((Err)=> console.log(Err))
 }
