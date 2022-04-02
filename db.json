@@ -8,17 +8,16 @@
       "id": 1
     },
     {
-<<<<<<< HEAD
       "name": "shaik shakeer",
       "email": "shakeer043@gmail.com",
       "password": "739608",
-      "username": "shakeer043@gmail.com",
-=======
+      "username": "shakeer043@gmail.com"
+    },
+    {
       "name": "Apurva Diwaker",
       "email": "apurvadiwaker@gmail.com",
       "password": "apurva",
       "username": "apurvadiwaker@gmail.com",
->>>>>>> 03ec45190671157ac95cee029b34875b2558342e
       "id": 2
     }
   ]
