@@ -11,6 +11,15 @@
     text-align:center;
     margin:auto;
 }
+.frame>div:hover,button:hover{
+    cursor: pointer;
+}
+.frame>div>img:hover{
+    background-color:lightsteelblue;
+}
+.btn:hover{
+    background-color: lightsalmon ;
+}
 #hair1{
     width: 35%; 
     /*border: 1px solid black; */
