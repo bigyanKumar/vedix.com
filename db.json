@@ -21,14 +21,15 @@
       "city": "ghbjn",
       "state": "",
       "pincode": "",
-      "phone": ""
-    },
-    {
-      "name": "Bigyan Kumar",
-      "email": "bigyan@123",
-      "password": "1234",
-      "username": "bigyan@123",
-      "id": 3
+      "phone": "",
+      "UserAddress": {
+        "address": "vgbjhn",
+        "locality": "sxdfcgvbh",
+        "city": "jaipur",
+        "state": "Rajasthan",
+        "pincode": "334401",
+        "phone": "23145467"
+      }
     }
   ]
 }

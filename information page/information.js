@@ -49,12 +49,15 @@ window.addEventListener("load", () => {
     localStorage.setItem("userdetail", JSON.stringify(infoarr));
     
     let UpdateUser ={
-      address,
-      locality,
-      city,
-      state,
-      pincode,
-      phone
+      UserAddress :{
+        address,
+        locality,
+        city,
+        state,
+        pincode,
+        phone
+      }
+     
     };
 
     var x=JSON.stringify(UpdateUser);
@@ -81,18 +84,67 @@ const updateAdd = (store,mail) => {
     .then((res) => console.log(res))
     .catch((err) => console.log(err))
 
-}
+    //console.log(data)
+   
+  }
+})
+
+// document.querySelector("#cart_page").addEventListener("click",()=>{
+//   console.log("Hello")
+//   window.location.href = "../cart.html"
+// })
+// document.querySelector("#login_page").addEventListener("click",()=>{
+//   console.log("Hello2")
+//   window.location.href = "../account/accounts.html"
+// })
+
+ let cartdata = JSON.parse(localStorage.getItem("cart"))||[];
+  //console.log(cartdata);
+  
+let subtotal = document.getElementById("amount");
+let finalamount = document.querySelector("#totalprice");
+    console.log(finalamount)
+
+let sum=0;
+let x=cartdata.reduce((acc,ele)=>{
+  return acc+ele.price;
+},0);
+
+//console.log(x)
+
+subtotal.innerText="Rs. "+ x;
+//finalamount.innerText="Rs. " +x;
+
+
+let cartproduct = document.getElementById("cartproduct");
+cartdata.forEach((elem)=>{
+  
+  let div= document.createElement("div");
+      div.setAttribute("id","showdiv");
+
+  let image = document.createElement("img");
+      image.setAttribute("src",elem.src);
+      image.setAttribute("id","image");
+      
+
+  let name = document.createElement("div");
+      name.innerText=elem.name;
+      name.setAttribute("id","name");
+     // console.log(name) ;
+  
+  let price =  document.createElement("div");
+      price.innerText = "Rs. "+elem.price;  
+      price.setAttribute("id",price);
+      
+      div.append(image,name,price)
+      cartproduct.append(div)
+      
+ //document.getElementById("submit").addEventListener("click", ()=>{
+ 
+ });
 
 
 
 
     
 
-document.querySelector("#cart_page").addEventListener("click",()=>{
-  console.log("Hello")
-  window.location.href = "../cart.html"
-})
-document.querySelector("#login_page").addEventListener("click",()=>{
-  console.log("Hello2")
-  window.location.href = "../account/accounts.html"
-})
