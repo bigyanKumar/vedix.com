@@ -25,11 +25,8 @@ let data2 = {
 data2.imgurl[0] = data.src;
 
 
-
-
-
 let page = document.getElementById("page");
-page.innerHTML = `<h4><a href=""#>Home</a> > <a href=""#>All</a> > <a href=""#>Products</a> > ${data.name} </h4>`;
+page.innerHTML = `<h4><a href="../index.html">Home</a> > <a href="../product.html">All</a> > <a href="../product.html">Products</a> > ${data.name} </h4>`;
 
 let img = document.getElementById("prodImg");
 let prodimg = document.createElement("img");
@@ -84,6 +81,7 @@ document.querySelector("#sec3").addEventListener("click",()=>{
     y.style.display = "none";
   }
 });
+
 // function show1() {
 //   console.log("working")
 //     var x = document.querySelector(".mydiv");
@@ -130,8 +128,8 @@ document.querySelector("#sec3").addEventListener("click",()=>{
           email,
           rating,
           reviewTitle,
-         review,
-         img
+          review,
+          img
       }
 
       let form = localStorage.setItem(JSON.stringify(obj))
@@ -145,7 +143,7 @@ document.querySelector("#sec3").addEventListener("click",()=>{
   let pr = JSON.parse(localStorage.getItem('products'))
   console.log(pr);
   s.innerHTML=null;
-  let addcart = JSON.parse(localStorage.getItem('cart'))
+  let addcart = JSON.parse(localStorage.getItem('cart'))||[];
   let count=0;
   for(let k=0;k<pr.length;k++)
   {
@@ -158,7 +156,7 @@ document.querySelector("#sec3").addEventListener("click",()=>{
       div.addEventListener("click",()=>{
         data = pr[k];
       //   console.log(data);
-        //  data.push(pr[k]);
+      //  data.push(pr[k]);
         localStorage.setItem('BuynowPage',JSON.stringify(data));
         window.location.href="produsDescription.html"
        })
@@ -207,7 +205,7 @@ document.querySelector("#sec3").addEventListener("click",()=>{
     console.log("abc");
     addcart.push(data);
     localStorage.setItem('cart', JSON.stringify(addcart));
-    window.location.href="#"
+    window.location.href="../information.html"
   })
   
   let total = document.querySelector("#total");
@@ -234,7 +232,7 @@ buybtn1.addEventListener("click", () => {
   console.log("abc");
   addcart.push(data);
   localStorage.setItem('cart', JSON.stringify(addcart));
-  window.location.href="#"
+  window.location.href="../information.html"
 })
 
 document.querySelector("#cart_page").addEventListener("click",()=>{
