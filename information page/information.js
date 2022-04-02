@@ -49,12 +49,15 @@ window.addEventListener("load", () => {
     localStorage.setItem("userdetail", JSON.stringify(infoarr));
     
     let UpdateUser ={
-      address,
-      locality,
-      city,
-      state,
-      pincode,
-      phone
+      UserAddress :{
+        address,
+        locality,
+        city,
+        state,
+        pincode,
+        phone
+      }
+     
     };
 
     var x=JSON.stringify(UpdateUser);
