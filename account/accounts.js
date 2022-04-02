@@ -46,6 +46,7 @@ const SignIn = (deta)=>{
     })
     .then((res)=> res.json())
     .then((data)=> {
+        localStorage.removeItem("UserDeta")
       localStorage.setItem("UserDeta",JSON.stringify(data))
        window.location.href = "../index.html"
         })
