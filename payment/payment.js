@@ -34,7 +34,7 @@ const CartDisplay =()=>{
         pqnt.style.color = "white"
         pqnt.style.fontWeight = "bold"
         pqnt.style.textAlign = "center"
-        pqnt.style.zIndex = "999"
+        pqnt.style.zIndex = "1"
         pqnt.style.background = "black"
         // pqnt.style.position = "fixed"
         div1.append(img,pqnt)
