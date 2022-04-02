@@ -27,7 +27,7 @@ signUp.addEventListener("click",(event)=>{
     console.log("signup")
 })
 const createA = (deta)=>{
-    fetch("http://localhost:3000/Users",{
+    fetch("http://localhost:3001/Users",{
         method : 'POST',
         headers : {
             'Content-Type' : 'application/json'

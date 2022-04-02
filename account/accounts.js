@@ -41,7 +41,7 @@ signIn.addEventListener("click",(event)=>{
 })
 const SignIn = (deta)=>{
 
-    fetch(`http://localhost:3000/Users?username=${deta.username}&password=${deta.password}`, {
+    fetch(`http://localhost:3001/Users?username=${deta.username}&password=${deta.password}`, {
         method : 'GET'
     })
     .then((res)=> res.json())
