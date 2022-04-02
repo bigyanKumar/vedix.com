@@ -155,8 +155,8 @@ h1{
 #container1{
     display:grid;
     grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(3,230px);
-    width:85%;
+    grid-template-rows: repeat(3,250px);
+    width:88%;
     gap:70px;
     margin:auto;
     margin-bottom:30px;
@@ -188,6 +188,33 @@ h1{
     
 }
 .c1>div>div>p{
+    margin-left:10px;
+    color:#e78471;
+    font-weight: bold;
+}
+.c2>div{
+    margin-left: 30px;
+    padding-top: 0px;
+}
+.c2{
+    display:flex;
+}
+.c2>img{
+    width:40%;
+    height:190px;
+    padding-top:18px;
+}
+.c2>div>div{
+    display:flex;
+}
+.c2>div>div>b{
+    background-color:#e78471;
+    height:3px;
+    width: 30px;
+    margin-top: 23px;
+    
+}
+.c2>div>div>p{
     margin-left:10px;
     color:#e78471;
     font-weight: bold;
