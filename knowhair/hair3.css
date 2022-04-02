@@ -77,3 +77,11 @@ hr#qo,#qt,#qth{
      justify-content:space-between;
      margin-left: -150px;
  }
+ .frame>button:hover{
+    cursor: pointer;
+    background-color: rgb(164, 180, 202);
+}
+
+.btn:hover{
+    background-color: lightsalmon ;
+}

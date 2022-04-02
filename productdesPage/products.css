@@ -7,6 +7,9 @@
     /* border:1px solid lightcoral; */
     
 }
+button:hover,img:hover{
+    cursor: pointer;
+}
 body{
     background-color:whitesmoke;
 }
