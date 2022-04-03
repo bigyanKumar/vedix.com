@@ -3,7 +3,7 @@
 let Deta=JSON.parse(localStorage.getItem('UserDeta'));
 
 
-  const infoarr =JSON.parse(localStorage.getItem("userdetail")) || [];
+  // const infoarr =JSON.parse(localStorage.getItem("userdetail")) || [];
   //console.log(infoarr)
   let form = document.getElementById("form");
   form.addEventListener("submit", (event) => {
@@ -34,7 +34,7 @@ let Deta=JSON.parse(localStorage.getItem('UserDeta'));
       pincode,
       phone,
     };
-    infoarr.push(infoObj)
+    // infoarr.push(infoObj)
     // console.log(infoarr)
   
     
@@ -43,7 +43,7 @@ let Deta=JSON.parse(localStorage.getItem('UserDeta'));
     
       
        
-    localStorage.setItem("userdetail", JSON.stringify(infoarr));
+    localStorage.setItem("userdetail", JSON.stringify(infoObj));
     
     let UpdateUser ={
       UserAddress :{
@@ -116,7 +116,7 @@ let x=cartdata.reduce((acc,ele)=>{
 //console.log(x)
 
 subtotal.innerText="Rs. "+ x;
-//finalamount.innerText="Rs. " +x;
+finalamount.innerText="Rs. " +x;
 
 
 let cartproduct = document.getElementById("cartproduct");
