@@ -1,5 +1,19 @@
 {
   "Users": [
-
+    {
+      "name": "shaik shakeer",
+      "email": "shakeer043@gmail.com",
+      "password": "123",
+      "username": "shakeer043@gmail.com",
+      "id": 1,
+      "UserAddress": {
+        "address": "",
+        "locality": "",
+        "city": "",
+        "state": "",
+        "pincode": "",
+        "phone": ""
+      }
+    }
   ]
 }
