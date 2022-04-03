@@ -1,4 +1,19 @@
 {
   "Users": [
+    {
+      "name": "apurva divakar",
+      "email": "apurvadiwaker@gmail.com",
+      "password": "apurva",
+      "username": "apurvadiwaker@gmail.com",
+      "id": 1,
+      "UserAddress": {
+        "address": "",
+        "locality": "",
+        "city": "",
+        "state": "",
+        "pincode": "",
+        "phone": ""
+      }
+    }
   ]
 }
