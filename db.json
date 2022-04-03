@@ -1,8 +1,19 @@
 {
   "Users": [
-   
-   
-     
-    
+    {
+      "name": "apurva divakar",
+      "email": "apurvadiwaker@gmail.com",
+      "password": "123",
+      "username": "apurvadiwaker@gmail.com",
+      "id": 1,
+      "UserAddress": {
+        "address": "citylight",
+        "locality": "surta",
+        "city": "surat",
+        "state": "Rajasthan",
+        "pincode": "334401",
+        "phone": "9782815209"
+      }
+    }
   ]
 }
