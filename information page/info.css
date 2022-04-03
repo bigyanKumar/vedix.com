@@ -235,6 +235,7 @@ padding-top: 8px;
 #showdiv{
     display: flex;
     justify-content: space-between;
+    /* width: 500px; */
     
 }
 #image{

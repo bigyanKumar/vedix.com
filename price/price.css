@@ -58,9 +58,9 @@ hr{
 #pricenav{
     text-align: center;
     background-color:#e3d6b4;
-    margin-left: 289px;
-    margin-right: 289px;
     height: 500px;
+    width: 1120px;
+    margin: auto;
     padding-top: 20px;
 }
 #pricenav>div>h2{
@@ -86,9 +86,10 @@ hr{
 
 #threecontainer{
     display:grid;
+    /* border: 1px solid black; */
     grid-template-columns: repeat(3,1fr);
     gap:20px;
-    width: 72%;
+    width: 1120px;
     margin: auto;
     /* margin-left: 290px; */
     padding-top: 40px;
@@ -98,10 +99,9 @@ hr{
     border: 1px solid orange;
     height: fit-content;
     border-radius: 10px;
-    /* width: 545px; */
+    width: 360px;
     background-color: #fffbf0;
-    margin-bottom: 40px;
-    padding-bottom: 10px;
+    
 }
 #fdiv{
     display: flex;
@@ -127,17 +127,22 @@ hr{
     font-size: 24px;
 }
 .pinfo{
+    border: 1px solid balck;
     color: orangered;
-    margin-left: 100px;
+    /* margin-left: 0px; */
     display: flex;
 }
 .pinfo>p{
+    border: 1px solid balck;
     font-size: 25px;
+    padding-right: 30px;
 }
 .pinfo>img{
+    /* border: 1px solid balck; */
     height: 30px;
-    margin-left: 10px;
+    /* margin-right: 0px; */
     padding-top: 22px;
+    padding-right: 900px;
 }
 #ll{
     display: flex;

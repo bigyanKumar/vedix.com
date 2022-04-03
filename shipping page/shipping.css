@@ -1,28 +1,30 @@
 #shippingmain{
     /* border: 1px solid black; */
-    width: 72%;
+    width: 1200px;
     margin: auto;
     display:  flex;
+    height: 900px;
+    margin-left: 290px;
     /* flex-direction: row; */
     font-family: "Segoe UI", "Roboto", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 
 }
 #shippingmain>div{
-    /* border: 1px solid black; */
-    width: 1000px;
-    height:1000px;
+    /* border: 1px solid blue; */
+    width: 500px;
+    height:900pc;
 }
 
 #shipimg{
     padding-top: 40px;
-    height: 50px;
+    height: 30px;
 }
 #selectcat{
    /* border: 1px solid black; */
    display: flex;
    padding-top: 30px;
    color: #e78471;
-   font-size: 18px;
+   font-size: 16px;
 }
 
 #shipblack{
@@ -38,6 +40,8 @@
    height: 200px;
     border-radius: 10px;
     margin-top: 30px;
+    padding-bottom: 10px;
+    /* width: 500px; */
 }
 
 #shipdetails>div{
@@ -49,29 +53,33 @@
 }
 #shipdetails1>div{
 padding-top: 20px;
+/* padding-bottom: 200px; */
 /* border: 1px solid rgb(191, 13, 13);    */
 
 }
 #sdiv1{
-font-size: 20px;
-margin-top: 10px;
+font-size: 16px;
+margin-top: 15px;
 margin-left: 10px;
 width: 90px;
 }
 
 #sdiv3{
-    width: 700px;   
+    width: 500px;
+    margin-left: 10px;
+
+    
 }
 
- div>input{
-        font-size: 20px;
-        width: 690px;
-        height: 40px;
-    }
+ /* div>input{
+        font-size: 16px;
+        width: 660px;
+        height: 15px;
+    } */
 
 #sdiv2 {
-    font-size: 20px;
-    margin-top: 10px;
+    font-size: 16px;
+    margin-top: 15px;
     text-align: right;
     margin-right: 10px;
     width: 90px;
@@ -79,18 +87,18 @@ width: 90px;
 }
     
 #sdiv{
-    /* border: 1px solid ; */
+    border: 1px solid oink;
     margin-left: 600px;
-    font-size: 20px;
+    font-size: 10px;
     margin-top: 10px;
     text-align: right;
     margin-right: 10px;
     width: 90px;
-    font-weight: 600; 
+    /* font-weight: 600;  */
     color: black;
 }
 #shr{
-    width: 800px;
+    width: 500px;
     color: #9c9c9c00;
 }
 
@@ -102,13 +110,14 @@ width: 90px;
 
 #smethod>div{
     /* border: 1px solid rgb(2, 86, 1); */
-    height: 80px;
+    height: 75px;
+    
     
 }
 
 
 div>h2{
-font-size: 25px;
+font-size: 20px;
 line-height: 1.3em;
 font-family:  "Segoe UI", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",  sans-serif;
 padding-top: 10px;
@@ -129,7 +138,7 @@ padding-top: 10px;
 #sinfo{
     /* border: 1px solid green; */
     height: 100px;
-    margin-top: 30px;
+    margin-top: 10px;
     display: flex;
     
 }
@@ -137,18 +146,20 @@ padding-top: 10px;
     /* border: 1px solid red; */
     height: 100px;
     width: 300px;
+    font-size: 16px;
+    /* padding-bottom: 0px; */
    
 }
 
 #sbttn{
-    width: 300px;
+    width: 200px;
     height: 70px;
-    font-size: 25px;
+    font-size: 16px;
     font-weight: 600; 
     background-color: #e78471;
     color: aliceblue;
     border-radius: 10px;
-    margin-left: 90px;
+    /* margin-left: 0px; */
 }
 #sbttn:hover{
    
@@ -199,16 +210,17 @@ padding-top: 10px;
     color: #000;
 }
 #lastdiv{
-    font-size: 19px;
+    font-size: 16px;
     color: #9c9c9c;
 }
 #showcartitems{
     height: 200px;
     border: 1px solid;
     margin-top: 40px;
-    /* overflow:scroll; */
+    overflow:scroll;
+    width: 500px;
     
-    height: auto;
+    /* height: auto; */
 }
 #leftss{
     display: flex;
@@ -231,6 +243,7 @@ padding-top: 10px;
 #subss>div{
     display: flex;
     margin-top: 20px;
+    /* border: 1px solid black; */
     
 }
 #subssint{
@@ -246,14 +259,18 @@ padding-top: 10px;
 }
 #sshrtotal{
     margin-top: 40px;
-    width: 680px;
+    width: 500px;
 }
 
 #ssfree{
     font-size: 25px;
-    margin-left: 500px;
+    margin-left: 300px;
+    /* margin-bottom: 400px; */
 }
 
+#subdiv{
+    margin-top: 30px;
+}
 /* ######################################## */
  /* /* #ridgtdata{
     background-color: #fafafa;
@@ -264,16 +281,16 @@ padding-top: 10px;
 }
 
 #showdiv{
-    width: 740px;
+    width: 450px;
     height: 100px;
-    border: 1px solid green;
+    /* border: 1px solid green; */
     display: flex;
    
 }
 #showdiv>div{
     /* border: 1px solid black; */
     color: black;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 500;
     
 }
@@ -291,7 +308,7 @@ padding-top: 10px;
 }
 
 #shipprice{
-    margin-left: 10px;
+    /* margin-left: 10px; */
     width: 100px;
     text-align: right;
     margin-right: 3px;
@@ -300,21 +317,45 @@ padding-top: 10px;
 
 
 #ssdiv1{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     height: 40px;
     font-size: 20px;
    padding-bottom: 20px;
+   /* width: 700px; */
 }
 #ssdiv2{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     height: 40px;
     font-size: 20px;
     padding-bottom: 20px;
 }
 
 #subss>div>div:nth-child(2){
-    margin-left: 500px;
+    margin-left: 300px;
     border:  1px solid;
     font-size: 20px;
     width: 100px;
 }
+
+#shipflex2{
+    display: flex;
+    /* border: 1px solid black; */
+}
+#shipflex2>div{
+    margin-top: 20px;
+    margin-left:30px ;
+}
+#shippingtotal1{
+    padding-left: 40px;
+    margin-top:20px ;
+    text-align: center;
+}
+
+#shippingtotal{
+    padding-left: 40px;
+    margin-top:20px ;
+    text-align: center;
+}
+/* #leftship{
+    width: 600px;
+} */

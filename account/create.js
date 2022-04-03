@@ -1,8 +1,8 @@
 window.addEventListener("load",()=>{
     let Login =JSON.parse(localStorage.getItem("UserDeta"))||{}
    if(Login.length!==undefined){
-       alert("User Logged In")
-    window.location.href = "../index.html"
+    alert("User Logged In")
+   window.location.href = "../index.html"
    }
 })
 let signUp = document.getElementById("create")
@@ -36,7 +36,8 @@ const createA = (deta)=>{
     })
     .then((res)=> res.json())
     .then((data)=> {
-        window.location.href = "./accoounts.html"
+        console.log("User Stored")
+        window.location.href = "./accounts.html"
     })
     .catch((Err)=> console.log(Err))
 }

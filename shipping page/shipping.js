@@ -1,7 +1,7 @@
 
 
 let cartdata=JSON.parse(localStorage.getItem("cart"));
-console.log(cartdata);
+// console.log(cartdata);
 
 let showdiv= document.querySelector("#showcartitems");
 
@@ -32,24 +32,24 @@ shipimage.setAttribute("src",ele.src);
 shipimage.setAttribute("id","shipimage");
 
 div1.append(shipimage);
-console.log(div1)
+// console.log(div1)
 
 
 let shipname= document.createElement("div");
 shipname.innerText=ele.name;
 shipname.setAttribute("id","shipname")
-console.log(shipname)
+// console.log(shipname)
 
 
 let shipprice = document.createElement("div");
-shipprice.innerText="Rs "+ele.price;
+shipprice.innerText="Rs"+ele.price;
 
 shipprice.setAttribute("id","shipprice")
 
 // console.log(shipprice);
 
 div.append(div1,shipname, shipprice);
-console.log(div)
+// console.log(div)
 showdiv.append(div);
 
 
@@ -91,4 +91,13 @@ let shipto = document.querySelector("#ssdiv2");
 
 
 // })
+
+
+// document.querySelector("#sbttn").addEventListener("click",()=>{
+//     window.location.href="./payment/payment.html"
+// })
+
+function next(){
+    window.location.href="./payment/payment.html"
+}
 

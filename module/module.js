@@ -18,7 +18,7 @@ const navBar = ()=>{
         </div>
         <div><a href="./knowhair/hair1.html">Know Your Hair<i class="fa-solid fa-angle-right"></i></a> </div>
         <div id="cart_page"><a href="./cart.html"><img src="https://cdn.shopify.com/s/files/1/0037/7690/5283/files/cart_icon_93f3b819-aa16-479e-b6ba-c5007e8520d2.png?v=1623129140" alt="cart_img"></a></div>
-        <div id="login_page"><a href="./account/accounts.html"><img src="https://cdn.shopify.com/s/files/1/0037/7690/5283/files/signin-lock.png?v=1623746079" alt="profile_img"></a></div>
+        <div id="login_page"><a href="#"><img src="https://cdn.shopify.com/s/files/1/0037/7690/5283/files/signin-lock.png?v=1623746079" alt="profile_img"></a></div>
     </div>
 </div>`
 }
@@ -70,7 +70,7 @@ const contain = ()=>{
     <p><a href="./whyVedix.html">Why Vedix</a></p>
     <select name="" id="sci">
     <option value="">Science</option>
-    <option value="Science1">Hair </option>
+    <option value="Science1"> Hair </option>
     <option value="Science2">Skin</option>
 </select>
     <p><a href="./price.html">Pricing</a></p>

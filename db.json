@@ -1,35 +1,11 @@
 {
   "Users": [
     {
-      "address": "abcd",
+      "name": "Bigyan Kumar",
+      "email": "bigyan@123",
+      "password": "123",
+      "username": "bigyan@123",
       "id": 1
-    },
-    {
-      "name": "shaik shakeer",
-      "email": "shakeer043@gmail.com",
-      "password": "739608",
-      "username": "shakeer043@gmail.com"
-    },
-    {
-      "name": "Apurva Diwaker",
-      "email": "apurvadiwaker@gmail.com",
-      "password": "apurva",
-      "username": "apurvadiwaker@gmail.com",
-      "id": 2,
-      "address": "ghjvbkn",
-      "locality": "gvhbjn",
-      "city": "ghbjn",
-      "state": "",
-      "pincode": "",
-      "phone": "",
-      "UserAddress": {
-        "address": "vgbjhn",
-        "locality": "sxdfcgvbh",
-        "city": "jaipur",
-        "state": "Rajasthan",
-        "pincode": "334401",
-        "phone": "23145467"
-      }
     }
   ]
 }

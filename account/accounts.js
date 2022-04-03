@@ -21,13 +21,13 @@ window.addEventListener("load",()=>{
     let Login =JSON.parse(localStorage.getItem("UserDeta"))||{}
    if(Login.length!==undefined){
     alert("User Logged In")
-    window.location.href = "../index.html"
+   window.location.href = "../index.html"
    }
 })
 let signIn = document.getElementById("signin")
 signIn.addEventListener("click",(event)=>{
     event.preventDefault()
-    console.log("signin")
+    //console.log("signin")
     let username = document.getElementById("Email").value
         let password = document.getElementById("pass").value
         let obj = {
@@ -46,9 +46,19 @@ const SignIn = (deta)=>{
     })
     .then((res)=> res.json())
     .then((data)=> {
-        localStorage.removeItem("UserDeta")
-      localStorage.setItem("UserDeta",JSON.stringify(data))
-       window.location.href = "../index.html"
+       //console.log(data[0])
+        if(data[0]==undefined){
+           // console.log("hello")
+            alert("some error form database or user not found")
+        }
+        else{
+            localStorage.removeItem("UserDeta")
+           localStorage.setItem("UserDeta",JSON.stringify(data))
+            window.location.href = "../index.html"
+        }
+           
+        
+       
         })
     .catch((Err)=> console.log(Err))
     //localStorage.setItem("token")

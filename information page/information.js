@@ -1,12 +1,14 @@
 //console.log("hello")
 
+let Deta=JSON.parse(localStorage.getItem('UserDeta'));
 
-window.addEventListener("load", () => {
-  const infoarr =JSON.parse(localStorage.getItem("userdetail")) || [];
+
+  // const infoarr =JSON.parse(localStorage.getItem("userdetail")) || [];
   //console.log(infoarr)
   let form = document.getElementById("form");
   form.addEventListener("submit", (event) => {
     event.preventDefault();
+   
 
     const formdata = new FormData(form);
     let email = formdata.get("enterEmail");
@@ -32,21 +34,16 @@ window.addEventListener("load", () => {
       pincode,
       phone,
     };
-    infoarr.push(infoObj)
-    console.log(infoarr)
-    let Deta=JSON.parse(localStorage.getItem('UserDeta'));
-      // console.log(Deta)
-      let id;
-      for(let i=0; i<Deta.length; i++)
-      {
-        console.log(Deta[i]);
-        if(email==Deta[i].email)
-          {
-             id = Deta[i].id
-            console.log(id)
-          }
-      }      
-    localStorage.setItem("userdetail", JSON.stringify(infoarr));
+    // infoarr.push(infoObj)
+    // console.log(infoarr)
+  
+    
+      let id=Deta[0].id;
+      // console.log(id);
+    
+      
+       
+    localStorage.setItem("userdetail", JSON.stringify(infoObj));
     
     let UpdateUser ={
       UserAddress :{
@@ -60,19 +57,22 @@ window.addEventListener("load", () => {
      
     };
 
-    var x=JSON.stringify(UpdateUser);
+    let x=JSON.stringify(UpdateUser);
     
-    updateAdd(x,id);
-  
-    console.log(infoObj);
+      updateAdd(x,id);
+   
+    console.log(x);
+    // console.log(infoObj);
 
-    //console.log(data)
+   
+   
    
   });
-});
+
  
 
 const updateAdd = (store,mail) => {
+   console.log(store,mail)
   fetch(`http://localhost:3001/Users/${mail}`,{
       method: "PATCH",
       headers: {
@@ -81,7 +81,10 @@ const updateAdd = (store,mail) => {
       body: store
     })
     .then((res) => res.json())
-    .then((res) => console.log(res))
+    .then((res) => {
+      console.log(res);
+      window.location.href = "./shipping.html"
+    })
     .catch((err) => console.log(err))
 
     //console.log(data)
@@ -142,7 +145,9 @@ cartdata.forEach((elem)=>{
  
  });
 
-
+// document.querySelector("#submit").addEventListener("click",()=>{
+//   window.location.href = "./shipping.html"
+// })
 
 
     
