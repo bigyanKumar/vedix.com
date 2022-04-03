@@ -27,7 +27,15 @@
       "email": "dipes94@gmail.com",
       "password": "12345",
       "username": "dipes94@gmail.com",
-      "id": 2
+      "id": 2,
+      "UserAddress": {
+        "address": "123,CHAK-HAMARENGA RD.",
+        "locality": "P.S HARIPAL",
+        "city": "CHAK",
+        "state": "West Bengal",
+        "pincode": "712407",
+        "phone": "9163929339"
+      }
     }
   ]
 }
