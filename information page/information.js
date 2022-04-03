@@ -105,7 +105,7 @@ const updateAdd = (store,mail) => {
   //console.log(cartdata);
   
 let subtotal = document.getElementById("amount");
-let finalamount = document.querySelector("#totalprice");
+let finalamount = document.querySelector("#totalPrice");
     console.log(finalamount)
 
 let sum=0;
