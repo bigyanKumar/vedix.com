@@ -1,28 +1,8 @@
 {
   "Users": [
     {
-<<<<<<< Updated upstream
       "name": "Bigyan Kumar",
       "email": "bigyan@123",
-=======
-      "name": "apurva divakar",
-      "email": "apurvadiwaker@gmail.com",
-      "password": "apurva",
-      "username": "apurvadiwaker@gmail.com",
-      "id": 1,
-      "UserAddress": {
-        "address": "citylight",
-        "locality": "",
-        "city": "surat",
-        "state": "Rajasthan",
-        "pincode": "334001",
-        "phone": "09782815209"
-      }
-    },
-    {
-      "name": "TARUNA nn",
-      "email": "tarunanangla131@gmail.com",
->>>>>>> Stashed changes
       "password": "123",
       "username": "bigyan@123",
       "id": 1,
