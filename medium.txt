@@ -1,3 +1,4 @@
+
 Vedix Website Clone
 We are creating this blog to share our experience of working on a project assigned to us by our Masai School. We were assigned in this project with the help of all team ,my team name is challenging team.
 Our team consists of the following members: Bigyan Kumar Sandilya, Apurva Divaker, Priyanshu Kumar, Taruna, Dipesh Ghosh, Shaik Shakeer .
@@ -52,4 +53,8 @@ Another challenge was solving the problem of redundant CSS classes. It happened 
 We had to learn how to make animations and carousels as few sections of some pages required us to create image cards, moving navbar, opening & closing animations, etc. Here, reading the documentation and looking at the snippets come in handy to solve such problems.
 As we are not using and UI libraries yet, we faced a lot of challenges while getting a similar layout on different screen sizes. Although we were able to manage most of it, this issue is something that we got to know could only be resolved with the UI libraries (which we have not studied yet), so we decide to move on and fix other things.
 
+
+
+https://medium.com/@shakeer043/vedix-website-clone-25f45ac4c31b
+https://medium.com/@bigyankumarnwd/vedix-website-clone-2e860ad789bd
 
