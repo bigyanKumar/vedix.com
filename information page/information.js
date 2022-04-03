@@ -1,5 +1,15 @@
 //console.log("hello")
 
+window.addEventListener("load",()=>{
+  let UserLogin = JSON.parse(localStorage.getItem("UserDeta"))||[]
+  if(UserLogin[0]===undefined){
+    alert("Please Login First")
+    window.location.href = "./account/accounts.html"
+  }
+})
+
+
+
 let Deta=JSON.parse(localStorage.getItem('UserDeta'));
 
 
@@ -90,7 +100,6 @@ const updateAdd = (store,mail) => {
     //console.log(data)
    
   }
-// })
 
 // document.querySelector("#cart_page").addEventListener("click",()=>{
 //   console.log("Hello")
