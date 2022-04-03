@@ -100,7 +100,6 @@ const updateAdd = (store,mail) => {
     //console.log(data)
    
   }
-// })
 
 // document.querySelector("#cart_page").addEventListener("click",()=>{
 //   console.log("Hello")
