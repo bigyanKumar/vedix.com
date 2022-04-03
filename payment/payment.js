@@ -116,6 +116,7 @@ document.querySelector("#ship").addEventListener("click",()=>{
 })
 
 document.querySelector("#getotp").addEventListener("click",(event)=>{
+    event.preventDefault()
     let cardno = form.card.value 
     let name = form.name.value  
     let date = form.date.value 
@@ -133,7 +134,8 @@ document.querySelector("#getotp").addEventListener("click",(event)=>{
     document.getElementById("payM").style.display="block"
     document.getElementById("otp").style.display = "block"
 })
-document.querySelector("#payM").addEventListener("click",()=>{
+document.querySelector("#payM").addEventListener("click",(event)=>{
+    event.preventDefault()
     if(form.otp.value=="12345"){
    let deta=  JSON.parse(localStorage.getItem("CardDetails"))||{}
    let UserD = JSON.parse(localStorage.getItem("UserDeta"))
