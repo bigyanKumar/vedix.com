@@ -1,26 +1,4 @@
 {
   "Users": [
-    {
-      "name": "Bigyan Kumar",
-      "email": "bigyan@123",
-      "password": "123",
-      "username": "bigyan@123",
-      "id": 1,
-      "UserAddress": {
-        "address": "citylight",
-        "locality": "gangasher",
-        "city": "surat",
-        "state": "Rajasthan",
-        "pincode": "334401",
-        "phone": "9782815209"
-      },
-      "payment": {
-        "cardno": "",
-        "name": "",
-        "date": "",
-        "year": "",
-        "cvv": ""
-      }
-    }
   ]
 }
