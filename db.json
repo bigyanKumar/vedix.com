@@ -1,28 +1,8 @@
 {
   "Users": [
     {
-<<<<<<< Updated upstream
       "name": "Bigyan Kumar",
       "email": "bigyan@123",
-=======
-      "name": "apurva divakar",
-      "email": "apurvadiwaker@gmail.com",
-      "password": "apurva",
-      "username": "apurvadiwaker@gmail.com",
-      "id": 1,
-      "UserAddress": {
-        "address": "citylight",
-        "locality": "",
-        "city": "surat",
-        "state": "Rajasthan",
-        "pincode": "334001",
-        "phone": "09782815209"
-      }
-    },
-    {
-      "name": "TARUNA nn",
-      "email": "tarunanangla131@gmail.com",
->>>>>>> Stashed changes
       "password": "123",
       "username": "bigyan@123",
       "id": 1,
@@ -35,11 +15,26 @@
         "phone": "9782815209"
       },
       "payment": {
-        "cardno": "",
-        "name": "",
-        "date": "",
-        "year": "",
-        "cvv": ""
+        "cardno": "2143567",
+        "name": "Apurva Divakar",
+        "date": "2134",
+        "year": "123",
+        "cvv": "2134"
+      }
+    },
+    {
+      "name": "apurva divakar",
+      "email": "apurvadiwaker@gmail.com",
+      "password": "123",
+      "username": "apurvadiwaker@gmail.com",
+      "id": 2,
+      "UserAddress": {
+        "address": "citylight",
+        "locality": "",
+        "city": "",
+        "state": "",
+        "pincode": "",
+        "phone": ""
       }
     }
   ]
