@@ -92,3 +92,12 @@ let shipto = document.querySelector("#ssdiv2");
 
 // })
 
+
+// document.querySelector("#sbttn").addEventListener("click",()=>{
+//     window.location.href="./payment/payment.html"
+// })
+
+function next(){
+    window.location.href="./payment/payment.html"
+}
+
