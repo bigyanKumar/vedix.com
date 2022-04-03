@@ -1,221 +1,119 @@
-#science{
-       
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    /* border: 1px solid black;   */
-    /* color: white; */
-    margin-left: 300px;
-    margin-right: 300px;
-    height: 800px;
-    }
-    #science>div:nth-child(1){
-    /* border: 1px solid black;  */
-    height: 800px; 
-    width: 770px;
-    margin-left: 0px;
+#sciencehairpage{
+  /* border: 1px solid black; */
+  width: 1100px;
+  margin: auto;
+  height: 550px;
+  display: flex;
+}
 
-   }
+#sciencehairpage>div{
+  /* border: 1px solid black; */
+  width: 500px;
+ 
+  height: 550px;
+}
 
-   #picsci{
-    /* border: 1px solid black;  */
-    height: 680px; 
-    width: 700px;
-    padding-top: 130px;
-   }
-   hr{
-       width:100px;
-       height: 5px;  
-       margin-left: 0;
-       background-color: #e78471; 
-            
-   }
-   #science>div>h1{
-    /* border: 1px solid black; */
-    /* width: 350px;  */
-    height: 40px;  
-    color: #414042;
-    font-family: sans-serif;
-    font-weight: 600;
-    font-size: 40px;
-    padding-top: 70px;
-   }
+hr{
+width: 60px;
+height: 3px;  
+margin-left: 0;
+background-color: #e78471; 
+}
 
-   #scip{
-    /* border: 1px solid black; */
-    width: 815px;
-    height: 100px;
-    font-family: sans-serif;
-    line-height: 35px;
-    font-size: 22px;
-    color: #414042;
-   }
-   h3{
-       /* border: 1px solid black; */
-       width: 500px;
-       font-family: sans-serif;
-       font-size: 25px;
-       color: #414042;
-       margin-bottom: 0.1em;
-       line-height: 30px;
-       margin-top: 10px;
-   }
-
-   #scibutton{
-     background: #e78471 0 0 no-repeat padding-box;
-     /* border: 1px solid #414042; */
-     letter-spacing: .5px;
-     color: #fff;
-     width: 250px;
-     height: 50px;
-     border-radius: 2px;
-     font-weight: 600; 
-     font-size: 20px; 
-     margin-left: 355px;
-
-   }
-
-   #scibutton:hover{
-     color: #e78471;
-     /* border: 1px solid #414042; */
-     letter-spacing: .5px;
-     background-color: #fff;
-     width: 250px;
-     height: 50px;
-     border-radius: 2px;
-     font-weight: 600; 
-     font-size: 20px; 
-     margin-left: 355px;
-
-   }
-
-
-   /* down to the earth */
-
-
-   #footersci{
-       background-color:#fff8f1 ;
-       height: 1250px;
-   }
-
-   #divhead{
-       margin-left:350px ;
-       margin-right:350px ;
-       padding-top: 60px;
-   }
-   #divhead>h2{
-     font-size: 40px;
-     font-weight: 600;
-     font-family: Montserrat,sans-serif;
- color: #414042;
- width: 100%
-   }
-
-   #sci1>h3{
-     font-size: 30px;
-     font-weight: 600;
-     font-family: Montserrat,sans-serif;
- color: #414042;
- width: 100%
-   }
-
-   #ppp1{
-     font-family: Source Sans Pro,sans-serif;
- font-size: 20px;
+.science>p{
+  font-family: sans-serif;
+  width:575px;
+ font-size: 16px;
  letter-spacing: .48px;
- line-height: 26px;
- margin-bottom: 10px;
-   }
+ line-height: 40px;
+margin-bottom: 10px;
+}
+/* .scileft{
+  width: 700px;
+} */
+
+.sciright{
+  height:500px;
+  width: 550px;
+  margin-left: 40px;
+  margin-top: 40px;
+}
+#seth3{
+  width: 350px;
+}
+.scibutton{
+background: #e78471 0 0 no-repeat padding-box;
+/* border: 1px solid #414042; */
+letter-spacing: .5px;
+color: #fff;
+width: 200px;
+height: 40px;
+border-radius: 2px;
+font-weight: 600; 
+font-size: 16px; 
+margin-left: 260px;
+
+}
+
+.scibutton:hover{
+
+background-color: #fff;
+color: #e78471;
+}
+.scileft{
+margin-top: 50px;
+}
+
+.scienceskindown{
+height: 950px;
+background-color: #fffbf0;
+}
+#sciencediv1{
+height: 930px;
+/* border: 1px solid black; */
+width:1100px;
+margin: auto;
+}
+#ssdown{
+/* border: 1px solid black; */
+  width: 1100px;
+  margin: auto;
+  height: 550px;
+  display: flex;
+}
+#ssdown>div{
+  /* border: 1px solid black; */
+  width: 600px;
+  height: 550px;
+}
+#scibutton1{
+background: #e78471 0 0 no-repeat padding-box;
+/* border: 1px solid #414042; */
+letter-spacing: .5px;
+color: #fff;
+width: 200px;
+height: 40px;
+border-radius: 2px;
+font-weight: 600; 
+font-size: 16px; 
+
+display: block;
+margin-left: auto;
+margin-right: auto;
+
+
+}
+#scibutton1:hover{
+color: #e78471;
+
+background-color: #fff;
 
 
 
-   #division{
-    
-    display: flex;
-    flex-direction: row;
-    /* justify-content: space-around; */
-    /* border: 1px solid black;   */
-    margin-left: 350px;
-    margin-right: 300px;
-    height: 700px;
-    gap:90px;
-    }
-
-    #division>div:nth-child(1){
-    
-   
-   
-    /* border: 1px solid black;   */
-    margin-left: 0px;
-    margin-right:0px;
-    height: 700px;
-    
-     width: 850px;
-    }
-    #imgdiv{
-    
-    margin-top: 40px;     
-    height: 640px;
-    width: 680px;
-    }
-
-   #h3sc{
-     font-size: 27px;
-     font-weight: 600;
-     font-family: Montserrat,sans-serif;
-     color: #414042;
-      width: 100%
-   }
-   
-   h4{
-     font-size: 25px;
-     font-weight: 600;
-     font-family: Montserrat,sans-serif;
-     color: #414042;
-      width: 100%
-   }
-   
-   #sclast{
-    
-    /* border: 1px solid black;   */
-   
-    margin-left: 350px;
-    margin-right: 300px;
-    height: 150px;
-   }
-
-
-   #scibutton1{
-     background: #e78471 0 0 no-repeat padding-box;
-     /* border: 1px solid #414042; */
-     letter-spacing: .5px;
-     color: #fff;
-     width: 250px;
-     height: 50px;
-     border-radius: 2px;
-     font-weight: 600; 
-     font-size: 20px; 
-   
-     display: block;
-     margin-left: auto;
-     margin-right: auto;
-     
-
-   }
-   #scibutton1:hover{
-     color: #e78471;
-     /* border: 1px solid #414042; */
-     letter-spacing: .5px;
-     background-color: #fff;
-     width: 250px;
-     height: 50px;
-     border-radius: 2px;
-     font-weight: 600; 
-     font-size: 20px; 
-     
-     display: block;
-     margin-left: auto;
-     margin-right: auto;
-     
-
-   }
+}
+#sci2>img{
+margin-top: 30px;
+height: 400px;
+height: 460px;
+margin-left: 20px;
+}

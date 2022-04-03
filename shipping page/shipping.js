@@ -42,7 +42,7 @@ console.log(shipname)
 
 
 let shipprice = document.createElement("div");
-shipprice.innerText="Rs "+ele.price;
+shipprice.innerText="Rs"+ele.price;
 
 shipprice.setAttribute("id","shipprice")
 

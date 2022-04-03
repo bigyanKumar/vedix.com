@@ -21,7 +21,7 @@ window.addEventListener("load",()=>{
     let Login =JSON.parse(localStorage.getItem("UserDeta"))||{}
    if(Login.length!==undefined){
     alert("User Logged In")
-    window.location.href = "../index.html"
+   window.location.href = "../index.html"
    }
 })
 let signIn = document.getElementById("signin")
