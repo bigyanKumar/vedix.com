@@ -10,6 +10,26 @@
     <script src="https://kit.fontawesome.com/0a03bfd4cc.js" crossorigin="anonymous"></script>
 </head>
 <body>
+
+
+    <div id="payment"><div id="PaymentAp">
+        <h1>Payment Gateway</h1>
+        <form action="">
+            <br><br>
+            <input type="number" id="card"placeholder="16 digit Card Number">
+            <br><br>
+            <input type="text" id="name" placeholder="Card Holder Name">
+            <br><br>
+            <input type="number" id="date" placeholder="Expiry Date">
+            <input type="number" id="year" placeholder="Expiry Year">
+            <br><br>
+            <input type="password" id="cvv" placeholder="CVV">
+            <br><br>
+            <input type="password" id="otp" placeholder="Otp">
+            <br>
+            <button id="getotp">GET OTP</button> <button id="payM">Pay Now</button>
+        </form>
+    </div></div>
     <div id="payment_main">
         <div>
             <div>
@@ -21,13 +41,13 @@
             <div id="address">
                 <div>
                     <p>Contact</p>
-                    <p></p>
-                    <p id="change_email" style="color: #e78471;">Change</p>
+                    <p id="email"></p>
+                    <p id="change_email">Change</p>
                 </div>
                 <div>
                     <p>Ship to</p>
-                    <p></p>
-                    <p id="change_address" style="color: #e78471;" >Change</p>
+                    <p id="address"></p>
+                    <p id="change_address">Change</p>
                 </div>
                 <div>
                     <P>Method</P>
@@ -64,8 +84,13 @@
                     </div>
                 </div>
                 <div>
-                    <div><input type="radio" id="cod" name="Cod" value="COD">
+                    <div><input type="radio" id="cod" name="Pmode" value="COD">
                         <label for="cod"> Cash on Delivery (COD)</label></div>
+                        
+                </div>
+                <div>
+                    <div><input type="radio" id="pod" name="Pmode" value="POD">
+                        <label for="pod"> Pay on Delivery (POD)</label></div>
                 </div>
             </div>
             <div>
@@ -83,14 +108,14 @@
             </div>
             <div>
                 <div><p><a href="#" style="text-decoration: none;color: #e78471;">Return to shipping</a></p></div>
-                <div class="btn" style="border: none;border-radius: 5px;" ><a href="#"><h4>Complete order</h4></a></div>
+                <div class="btn" id="ship" style="border: none;border-radius: 5px;" ><a href="#"><h4>Complete order</h4></a></div>
             </div>
         </div>
         <div id="cartApeend">
             <div id="cartItem"></div>
             <div>
                 <div><input type="text" id="promo" placeholder="Discount code"></div>
-                <div><button id="submit">Apply</button></div>
+                <div class="hov"><button id="submit">Apply</button></div>
             </div>
             <div>
                 <div>

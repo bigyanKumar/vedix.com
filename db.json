@@ -5,7 +5,22 @@
       "email": "bigyan@123",
       "password": "123",
       "username": "bigyan@123",
-      "id": 1
+      "id": 1,
+      "UserAddress": {
+        "address": "anti",
+        "locality": "",
+        "city": "kadirganj",
+        "state": "bihar",
+        "pincode": "805104",
+        "phone": "9999"
+      },
+      "payment": {
+        "cardno": "",
+        "name": "",
+        "date": "",
+        "year": "",
+        "cvv": ""
+      }
     }
   ]
 }

@@ -1,6 +1,12 @@
 
 window.addEventListener("load",()=>{
-    
+    let userdetail = JSON.parse(localStorage.getItem("userdetail"))
+    console.log(userdetail)
+    document.querySelector("#email").innerHTML = userdetail.email
+    // document.querySelector("#address").innerHTML = "At :"+userdetail.address+", "+"Post :"+userdetail.city+", "
+    // `At :${userdetail.address}, Post :${userdetail.city}, 
+    // State :${userdetail.state}, Pin-Code :${userdetail.pincode}, Phone :${userdetail.phone}`
+
 })
 let CartD = JSON.parse(localStorage.getItem("cart"))||[]
 let appendCart = document.getElementById("cartItem")
@@ -58,8 +64,8 @@ const CartDisplay =()=>{
         appendCart.append(div)
         Total += ((ele.price-(ele.dis*ele.price/100)*ele.qnt))
     })
-    ToPrice.innerText = Total
-    subtotal.innerText = Total
+    ToPrice.innerText = Total.toFixed(2)
+    subtotal.innerText = Total.toFixed(2)
 }
 CartDisplay()
 let count = 0
@@ -83,5 +89,78 @@ apply.addEventListener("click",()=>{
 }
 
 })
+let form = document.querySelector("form")
+let paymentPopup = document.getElementById("payment")
+let PaymentM = ""
+let Pmethod = document.querySelectorAll('input[type=radio][name="Pmode"]');
+    Pmethod.forEach(Pmethod => Pmethod.addEventListener('change', () => {
+        PaymentM = Pmethod.value
+    }))
+let address = ""
+ let Address = document.querySelectorAll('input[type=radio][name="address"]')
+    Address.forEach(Address => Address.addEventListener("change",()=>{
+            address = Address.value
+    }))
+document.querySelector("#ship").addEventListener("click",()=>{
+    if(PaymentM==="COD" && address!== ""){
+        //console.log(address)
+        alert("Your Order has been placed, Thank You")
+    }
+    else if(address==="" && PaymentM!=="POD"){
+        alert("Please Select Address type one of them")
+    }
+    else if(PaymentM==="POD" && address!== ""){
+        paymentPopup.style.display = "block"
+    }
+
+})
+
+document.querySelector("#getotp").addEventListener("click",(event)=>{
+    let cardno = form.card.value 
+    let name = form.name.value  
+    let date = form.date.value 
+    let year = form.year.value
+    let cvv = form.cvv.value
+    obj = {
+        payment:{cardno,
+            name,
+            date,
+            year,
+            cvv,}
+    }
+    localStorage.setItem("CardDetails",JSON.stringify(obj))
+    document.querySelector("#getotp").style.display = "none"
+    document.getElementById("payM").style.display="block"
+    document.getElementById("otp").style.display = "block"
+})
+document.querySelector("#payM").addEventListener("click",()=>{
+    if(form.otp.value=="12345"){
+   let deta=  JSON.parse(localStorage.getItem("CardDetails"))||{}
+   let UserD = JSON.parse(localStorage.getItem("UserDeta"))
+   let PayDetails = JSON.stringify(deta)
+   callDetabase(PayDetails,UserD[0].id)
+    }
+    else{
+        alert("Pleases Enter valid otp")
+    }
+})
 
 
+const callDetabase = (PayDetails,id)=>{
+   // console.log(PayDetails)
+    fetch(`http://localhost:3001/Users/${id}`,{
+      method: "PATCH",
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: PayDetails
+    })
+    .then((res) => res.json())
+    .then((res) => {
+        console.log(res)
+     alert("Your Order has been placed, Thank You for Shoping")
+     localStorage.removeItem("cart")
+      window.location.href = "../index.html"
+    })
+    .catch((err) => console.log(err))
+}
