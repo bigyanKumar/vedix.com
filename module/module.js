@@ -70,8 +70,8 @@ const contain = ()=>{
     <p><a href="./whyVedix.html">Why Vedix</a></p>
     <select name="" id="sci">
     <option value="">Science</option>
-    <option value="Science1"> Hair </option>
-    <option value="Science2">Skin</option>
+    <option value="Science1"><a href="./sciencehair.html"> Hair</a> </option>
+    <option value="Science2"><a href="./scienceskin.html">Skin</a></option>
 </select>
     <p><a href="./price.html">Pricing</a></p>
     <p><a href="./main.html">Reviews</a></p>
