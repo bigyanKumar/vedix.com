@@ -212,7 +212,7 @@ h4{
 }
 #total{
     height:6%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display:flex;
     justify-content: space-between;
    
