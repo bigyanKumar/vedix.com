@@ -278,6 +278,7 @@ padding-top: 10px;
 } */
 #ridgtdata{
     margin-left: 20px;
+    /* background-color: #9c9c9c; */
 }
 
 #showdiv{
@@ -319,15 +320,15 @@ padding-top: 10px;
 #ssdiv1{
     /* border: 1px solid black; */
     height: 40px;
-    font-size: 20px;
-   padding-bottom: 20px;
+    font-size: 16px;
+    padding-bottom: 20px;
    /* width: 700px; */
 }
 #ssdiv2{
     /* border: 1px solid black; */
     height: 40px;
-    font-size: 20px;
-    padding-bottom: 20px;
+    font-size: 16px;
+    padding-bottom: 30px;
 }
 
 #subss>div>div:nth-child(2){

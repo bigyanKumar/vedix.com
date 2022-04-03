@@ -13,8 +13,8 @@ window.addEventListener("load",()=>{
 let Deta=JSON.parse(localStorage.getItem('UserDeta'));
 
 
-  // const infoarr =JSON.parse(localStorage.getItem("userdetail")) || [];
-  //console.log(infoarr)
+  const infoarr =JSON.parse(localStorage.getItem("Taruna")) || [];
+  console.log(infoarr)
   let form = document.getElementById("form");
   form.addEventListener("submit", (event) => {
     event.preventDefault();
@@ -44,8 +44,8 @@ let Deta=JSON.parse(localStorage.getItem('UserDeta'));
       pincode,
       phone,
     };
-    // infoarr.push(infoObj)
-    // console.log(infoarr)
+    infoarr.push(infoObj)
+    console.log(infoarr)
   
     
       let id=Deta[0].id;
@@ -55,6 +55,7 @@ let Deta=JSON.parse(localStorage.getItem('UserDeta'));
        
     localStorage.setItem("userdetail", JSON.stringify(infoObj));
     
+    localStorage.setItem("Taruna",JSON.stringify(infoarr));
     let UpdateUser ={
       UserAddress :{
         address,
