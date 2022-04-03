@@ -21,6 +21,50 @@
       "password": "123",
       "username": "tarunanangla131@gmail.com",
       "id": 2
+    },
+    {
+      "name": "TARUNA bn",
+      "email": "tarunanangla131@gmail.com",
+      "password": "123",
+      "username": "tarunanangla131@gmail.com",
+      "id": 3
+    },
+    {
+      "name": "TARU hhh",
+      "email": "navtesh10102003@gmail.com",
+      "password": "1234",
+      "username": "navtesh10102003@gmail.com",
+      "id": 4,
+      "UserAddress": {
+        "address": "BLOCK D-1/51 MANSA RAM PARK UTTAM NAGAR",
+        "locality": "NEW DELHI-110059",
+        "city": "West delhi",
+        "state": "Delhi",
+        "pincode": "110059",
+        "phone": "09811687795"
+      }
+    },
+    {
+      "name": "TARUNA nnnn",
+      "email": "tarunanangla131@gmail.com",
+      "password": "1236",
+      "username": "tarunanangla131@gmail.com",
+      "id": 5
+    },
+    {
+      "name": "soni nangla",
+      "email": "rock@gamil.com",
+      "password": "1236",
+      "username": "rock@gamil.com",
+      "id": 6,
+      "UserAddress": {
+        "address": "BLOCK D-1/51 MANSA RAM PARK UTTAM NAGAR",
+        "locality": "NEW DELHI-110059",
+        "city": "West delhi",
+        "state": "Delhi",
+        "pincode": "110059",
+        "phone": "09811687795"
+      }
     }
   ]
 }
