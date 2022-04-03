@@ -31,10 +31,17 @@
       "UserAddress": {
         "address": "citylight",
         "locality": "",
-        "city": "",
+        "city": "surat",
         "state": "",
         "pincode": "",
         "phone": ""
+      },
+      "payment": {
+        "cardno": "4356789",
+        "name": "Apurva Divakar",
+        "date": "2435",
+        "year": "435e6",
+        "cvv": "3546"
       }
     }
   ]

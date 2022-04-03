@@ -161,7 +161,7 @@ const callDetabase = (PayDetails,id)=>{
     .then((res) => {
         console.log(res)
      alert("Your Order has been placed, Thank You for Shoping")
-     localStorage.removeItem("cart")
+     localStorage.clear("cart")
       window.location.href = "../index.html"
     })
     .catch((err) => console.log(err))
