@@ -8,19 +8,41 @@
       "id": 1,
       "UserAddress": {
         "address": "",
-        "locality": "",
+        "locality": "surat",
         "city": "",
         "state": "",
         "pincode": "",
-        "phone": ""
+        "phone": "3465789"
       }
     },
     {
+<<<<<<< HEAD
       "name": "Dipesh GHOSH",
       "email": "dipes94@gmail.com",
       "password": "adfgh",
       "username": "dipes94@gmail.com",
       "id": 2
+=======
+      "name": "TARUNA ddfd",
+      "email": "tarunanangla131@gmail.com",
+      "password": "123",
+      "username": "tarunanangla131@gmail.com",
+      "id": 2
+    },
+    {
+      "name": "TARUNA nnnn",
+      "email": "tarunanangla131@gmail.com",
+      "password": "123",
+      "username": "tarunanangla131@gmail.com",
+      "id": 3
+    },
+    {
+      "name": "TARUNA vhj",
+      "email": "tarunanangla131@gmail.com",
+      "password": "123",
+      "username": "tarunanangla131@gmail.com",
+      "id": 4
+>>>>>>> 4c3cd0c7f6760aa36079d5f9eced674dcb5b1084
     }
   ]
 }
