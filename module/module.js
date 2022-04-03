@@ -80,7 +80,7 @@ const contain = ()=>{
 </div>
 <div>
     <p><a href="#">Shop<i class="fa-solid fa-angle-right"></i></a></p>
-   <p> <a href="#">Know Your Hair<i class="fa-solid fa-angle-right"></i></a></p>
+   <p> <a href="./knowhair/hair1.html">Know Your Hair<i class="fa-solid fa-angle-right"></i></a></p>
 </div>`
 }
 const Deta = (Products,search) => {

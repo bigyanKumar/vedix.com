@@ -58,10 +58,10 @@ showdiv.append(div);
 
 
 
+let infoarr =JSON.parse(localStorage.getItem("Taruna")) || [];
+  console.log(infoarr);
 
 
-let infoarr =JSON.parse(localStorage.getItem("userdetail"));
-console.log(infoarr)
 
 let contact = document.querySelector("#ssdiv1");
 let shipto = document.querySelector("#ssdiv2");
@@ -83,6 +83,8 @@ let shipto = document.querySelector("#ssdiv2");
        
             contact.append(shipemail);
             shipto.append(shipaddress)
+
+            
        } 
     }
 
