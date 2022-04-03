@@ -86,6 +86,11 @@
   padding-top: 15px;
   padding-left: 10px;
 }
+#payment_div>div:nth-child(4)>div{
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-bottom: 15px;
+  }
 
 #payment_div>div:nth-child(1){
     width: 100%;
@@ -124,6 +129,7 @@
 #payment_div>div:nth-child(1)>div:nth-child(3){
     display: block;
     padding-left: 15px;
+
 }
 #payment_main>div:first-child>div:nth-child(7){
     border: 0.4px solid black;
