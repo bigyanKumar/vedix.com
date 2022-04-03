@@ -205,7 +205,7 @@ document.querySelector("#sec3").addEventListener("click",()=>{
     console.log("abc");
     addcart.push(data);
     localStorage.setItem('cart', JSON.stringify(addcart));
-    window.location.href="../information.html"
+    window.location.href="../cart.html"
   })
   
   let total = document.querySelector("#total");
@@ -232,7 +232,7 @@ buybtn1.addEventListener("click", () => {
   console.log("abc");
   addcart.push(data);
   localStorage.setItem('cart', JSON.stringify(addcart));
-  window.location.href="../information.html"
+  window.location.href="../cart.html"
 })
 
 document.querySelector("#cart_page").addEventListener("click",()=>{

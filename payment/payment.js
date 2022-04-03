@@ -137,10 +137,13 @@ document.querySelector("#getotp").addEventListener("click",(event)=>{
 document.querySelector("#payM").addEventListener("click",(event)=>{
     event.preventDefault()
     if(form.otp.value=="12345"){
-   let deta=  JSON.parse(localStorage.getItem("CardDetails"))||{}
-   let UserD = JSON.parse(localStorage.getItem("UserDeta"))
-   let PayDetails = JSON.stringify(deta)
-   callDetabase(PayDetails,UserD[0].id)
+//    let deta=  JSON.parse(localStorage.getItem("CardDetails"))||{}
+//    let UserD = JSON.parse(localStorage.getItem("UserDeta"))
+//    let PayDetails = JSON.stringify(deta)
+//    callDetabase(PayDetails,UserD[0].id)
+        alert("Your Order has been placed, Thank You for Shoping")
+        localStorage.removeItem("cart")
+        window.location.href = "../index.html"
     }
     else{
         alert("Pleases Enter valid otp")
@@ -148,21 +151,20 @@ document.querySelector("#payM").addEventListener("click",(event)=>{
 })
 
 
-const callDetabase = (PayDetails,id)=>{
-   // console.log(PayDetails)
-    fetch(`http://localhost:3001/Users/${id}`,{
-      method: "PATCH",
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: PayDetails
-    })
-    .then((res) => res.json())
-    .then((res) => {
-        console.log(res)
-     alert("Your Order has been placed, Thank You for Shoping")
-     localStorage.removeItem("cart")
-      window.location.href = "../index.html"
-    })
-    .catch((err) => console.log(err))
-}
+// const callDetabase = (PayDetails,id)=>{
+//    // console.log(PayDetails)
+//     fetch(`http://localhost:3001/Users/${id}`,{
+//       method: "PATCH",
+//       headers: {
+//         'Content-Type': 'application/json'
+//       },
+//       body: PayDetails
+//     })
+//     .then((res) => res.json())
+//     .then((res) => {
+//         console.log(res)
+   
+//     })
+//     .catch((err) => console.log(err))
+// }
+
