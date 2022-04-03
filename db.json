@@ -1,48 +1,4 @@
 {
   "Users": [
-    {
-      "name": "Bigyan Kumar",
-      "email": "bigyan@123",
-      "password": "123",
-      "username": "bigyan@123",
-      "id": 1,
-      "UserAddress": {
-        "address": "citylight",
-        "locality": "gangasher",
-        "city": "surat",
-        "state": "Rajasthan",
-        "pincode": "334401",
-        "phone": "9782815209"
-      },
-      "payment": {
-        "cardno": "2143567",
-        "name": "Apurva Divakar",
-        "date": "2134",
-        "year": "123",
-        "cvv": "2134"
-      }
-    },
-    {
-      "name": "apurva divakar",
-      "email": "apurvadiwaker@gmail.com",
-      "password": "123",
-      "username": "apurvadiwaker@gmail.com",
-      "id": 2,
-      "UserAddress": {
-        "address": "citylight",
-        "locality": "",
-        "city": "surat",
-        "state": "",
-        "pincode": "",
-        "phone": ""
-      },
-      "payment": {
-        "cardno": "4356789",
-        "name": "Apurva Divakar",
-        "date": "2435",
-        "year": "435e6",
-        "cvv": "3546"
-      }
-    }
   ]
 }
