@@ -1,11 +1,19 @@
 {
   "Users": [
     {
-      "name": "rock nn",
-      "email": "tarunanangla131@gmail.com",
+      "name": "sonu cc",
+      "email": "sonu@gmail.com",
       "password": "1236",
-      "username": "tarunanangla131@gmail.com",
-      "id": 1
+      "username": "sonu@gmail.com",
+      "id": 1,
+      "UserAddress": {
+        "address": "BLOCK D-1/51 MANSA RAM PARK UTTAM NAGAR",
+        "locality": "NEW DELHI-110059",
+        "city": "West delhi",
+        "state": "Delhi",
+        "pincode": "110059",
+        "phone": "09811687795"
+      }
     }
   ]
 }
