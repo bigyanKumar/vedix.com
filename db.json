@@ -1,18 +1,5 @@
 {
   "Users": [
-    {
-      "name": "TARUNA nnnn",
-      "email": "tarunanangla131@gmail.com",
-      "password": "1234",
-      "username": "tarunanangla131@gmail.com",
-      "id": 1
-    },
-    {
-      "name": "sonia nangla",
-      "email": "soni@gmail.com",
-      "password": "1236",
-      "username": "soni@gmail.com",
-      "id": 2
-    }
+    
   ]
 }
