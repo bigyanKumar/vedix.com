@@ -1,4 +1,5 @@
-# vedix.com
+[![Netlify Status](https://api.netlify.com/api/v1/badges/7aebd5b9-a99a-428c-b4f2-2e734a5aa17b/deploy-status)](https://app.netlify.com/sites/loquacious-tanuki-fd5505/deploys)
+vedix.com
  Unit-3 Project
 
 
