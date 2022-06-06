@@ -2,6 +2,12 @@
 vedix.com
  Unit-3 Project
 
+![Screenshot 2022-06-04 125557](https://user-images.githubusercontent.com/99668292/172027050-e0067d79-23b1-44e9-b941-d59443bd53ac.jpg)
+
+
+ 
+
+ 
 
  So for running this project on your system you need to first run server mannually by giving command => npm run server 
  than json server will start on port 3001 just check and now you can run all functionality of this clone website.
